@@ -35,7 +35,7 @@ class BitrixInstaller extends BaseInstaller
     );
 
     /**
-     * @var array Storage for informations about duplicates at all the time of installation packages.
+     * @var array Storage for informations about.htm duplicates at all the time of installation packages.
      */
     private static $checkedDuplicates = array();
 

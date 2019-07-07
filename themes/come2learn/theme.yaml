@@ -1,0 +1,19 @@
+name: Come2Learn
+description: 'This is custom theme made by admin Azharul Islalm'
+author: 'Md. Azharul Islam'
+homepage: 'http://developerazad.com/portfolio'
+code: ''
+
+form:
+  fields:
+    site_name:
+      label: Site name
+      common: The global website name
+      default: Come2Learn
+
+    site_description:
+      label: Site Description
+      common: The global website description
+      default: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad assumenda ea eius, enim fuga inventore laboriosam maiores nam nisi obcaecati odio praesentium quae recusandae reiciendis rem repellat repellendus soluta suscipit.
+
+

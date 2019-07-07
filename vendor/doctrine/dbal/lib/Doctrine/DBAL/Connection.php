@@ -155,7 +155,7 @@ class Connection implements DriverConnection
     private $_params = array();
 
     /**
-     * The DatabasePlatform object that provides information about the
+     * The DatabasePlatform object that provides information about.htm the
      * database platform used by the connection.
      *
      * @var \Doctrine\DBAL\Platforms\AbstractPlatform

@@ -114,7 +114,7 @@ class CodeCleanerTest extends \PHPUnit\Framework\TestCase
     {
         // n.b. We used to check that `var_dump(1,2,)` failed, but PHP Parser
         // 4.x backported trailing comma function calls from PHP 7.3 for free!
-        // so we're not going to spend too much time worrying about it :)
+        // so we're not going to spend too much time worrying about.htm it :)
 
         return [
             ['function "what'],

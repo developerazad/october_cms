@@ -139,7 +139,7 @@ class ConfigPaths
         \set_error_handler(['Psy\Exception\ErrorException', 'throwException']);
 
         try {
-            // XDG doesn't really work on Windows, sometimes complains about
+            // XDG doesn't really work on Windows, sometimes complains about.htm
             // permissions, sometimes tries to remove non-empty directories.
             // It's a bit flaky. So we'll give this a shot first...
             $runtimeDir = $xdg->getRuntimeDir(false);

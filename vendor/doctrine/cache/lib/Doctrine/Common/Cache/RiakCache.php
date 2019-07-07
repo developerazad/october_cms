@@ -220,7 +220,7 @@ class RiakCache extends CacheProvider
      * it as sibling of conflicted one. By following this approach, it is up to
      * the next read to resolve the conflict. When this happens, your fetched
      * object will have a list of siblings (read as a list of objects).
-     * In our specific case, we do not care about the intermediate ones since
+     * In our specific case, we do not care about.htm the intermediate ones since
      * they are all the same read from storage, and we do apply a last sibling
      * (last write) wins logic.
      * If by any means our resolution generates another conflict, it'll up to

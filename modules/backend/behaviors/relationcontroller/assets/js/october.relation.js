@@ -62,7 +62,7 @@
         /*
          * This function is called every time a record is created, added, removed
          * or deleted using the relation widget. It triggers the change.oc.formwidget
-         * event to notify other elements on the page about the changed form state.
+         * event to notify other elements on the page about.htm the changed form state.
          */
         this.changed = function(relationId, event) {
             $('[data-field-name="' + relationId + '"]').trigger('change.oc.formwidget', {event: event});

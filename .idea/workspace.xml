@@ -2,12 +2,120 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb6e8eae-f4b2-42f6-97b3-a6aa0bc00b7a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/artisan" beforeDir="false" afterPath="$PROJECT_DIR$/artisan" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/autoload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/backend/assets/vendor/sweet-alert/sweet-alert.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/backend/assets/vendor/sweet-alert/sweet-alert.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/backend/behaviors/relationcontroller/assets/js/october.relation.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/backend/behaviors/relationcontroller/assets/js/october.relation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/backend/classes/NavigationManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/backend/classes/NavigationManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/backend/classes/Skin.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/backend/classes/Skin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/backend/formwidgets/codeeditor/assets/js/build-min.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/backend/formwidgets/codeeditor/assets/js/build-min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/backend/formwidgets/codeeditor/assets/js/codeeditor.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/backend/formwidgets/codeeditor/assets/js/codeeditor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/backend/formwidgets/codeeditor/assets/vendor/ace/mode-php.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/backend/formwidgets/codeeditor/assets/vendor/ace/mode-php.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/backend/formwidgets/codeeditor/assets/vendor/ace/worker-html.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/backend/formwidgets/codeeditor/assets/vendor/ace/worker-html.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/backend/formwidgets/codeeditor/assets/vendor/emmet/emmet.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/backend/formwidgets/codeeditor/assets/vendor/emmet/emmet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/backend/formwidgets/colorpicker/assets/vendor/spectrum/spectrum.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/backend/formwidgets/colorpicker/assets/vendor/spectrum/spectrum.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/backend/formwidgets/markdowneditor/assets/js/markdowneditor.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/backend/formwidgets/markdowneditor/assets/js/markdowneditor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/backend/formwidgets/richeditor/assets/js/build-min.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/backend/formwidgets/richeditor/assets/js/build-min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/backend/widgets/reportcontainer/assets/vendor/isotope/jquery.isotope.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/backend/widgets/reportcontainer/assets/vendor/isotope/jquery.isotope.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cms/classes/CodeParser.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/cms/classes/CodeParser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cms/classes/ComponentBase.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/cms/classes/ComponentBase.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cms/classes/Page.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/cms/classes/Page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/cms/twig/DebugExtension.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/cms/twig/DebugExtension.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/system/assets/ui/less/site.typography.less" beforeDir="false" afterPath="$PROJECT_DIR$/modules/system/assets/ui/less/site.typography.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/system/assets/ui/storm-min.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/system/assets/ui/storm-min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/system/assets/ui/vendor/flot/excanvas.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/system/assets/ui/vendor/flot/excanvas.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/system/assets/ui/vendor/moment/moment.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/system/assets/ui/vendor/moment/moment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/system/assets/ui/vendor/raphael/raphael.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/system/assets/ui/vendor/raphael/raphael.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/system/assets/ui/vendor/select2/js/select2.full.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/system/assets/ui/vendor/select2/js/select2.full.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/system/classes/CombineAssets.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/system/classes/CombineAssets.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/system/classes/ErrorHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/system/classes/ErrorHandler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/system/classes/PluginBase.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/system/classes/PluginBase.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/system/classes/PluginManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/system/classes/PluginManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/system/classes/SettingsManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/system/classes/SettingsManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/system/classes/UpdateManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/system/classes/UpdateManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/system/models/PluginVersion.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/system/models/PluginVersion.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/blog/models/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/blog/models/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/blog/models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/blog/models/Post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/rainlab/blog/vendor/composer/installers/src/Composer/Installers/BitrixInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/rainlab/blog/vendor/composer/installers/src/Composer/Installers/BitrixInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/07/97/079762004a2ea9188f1dd657d58c119ef053a39d" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/07/97/079762004a2ea9188f1dd657d58c119ef053a39d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/0e/84/0e84bf082a6e8ae0ab1f97c45bbe66b25af2da13" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/0e/84/0e84bf082a6e8ae0ab1f97c45bbe66b25af2da13" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/11/de/11de31e1eabb2682cf62ee9c9ccb0630f1019006" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/11/de/11de31e1eabb2682cf62ee9c9ccb0630f1019006" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/1b/16/1b169a2bc21909d496203717176bb88d6199df92" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/1b/16/1b169a2bc21909d496203717176bb88d6199df92" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/22/43/2243f500ae1632e1e609a9d4d08e7bad65800071" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/22/43/2243f500ae1632e1e609a9d4d08e7bad65800071" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/39/b3/39b390983a0b76c77d6e7318b5b3791ea4b9c42d" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/39/b3/39b390983a0b76c77d6e7318b5b3791ea4b9c42d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/3b/3d/3b3d3c8e28d961ac6e6604c52fe6728377c8d9a9" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/3b/3d/3b3d3c8e28d961ac6e6604c52fe6728377c8d9a9" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/59/03/5903028199ff7a3449cd536871972f948b1764b8" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/59/03/5903028199ff7a3449cd536871972f948b1764b8" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/framework/cache/66/65/666582ffea28796aac87443dbbc6420b7c6df7cd" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/66/65/666582ffea28796aac87443dbbc6420b7c6df7cd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/72/4d/724d64623b82cdd367a46a1a3611b8fce75faedf" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/72/4d/724d64623b82cdd367a46a1a3611b8fce75faedf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/72/76/72761af2e91bf0dc050403234aa40f2899fad905" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/72/76/72761af2e91bf0dc050403234aa40f2899fad905" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/77/61/77616e1c5e0d202cb4cf522bddafaebf56f27660" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/77/61/77616e1c5e0d202cb4cf522bddafaebf56f27660" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/framework/cache/97/37/9737833e426f53b3dcb4d98fdcb68c76762765de" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/97/37/9737833e426f53b3dcb4d98fdcb68c76762765de" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/97/39/9739b3a900e31d6b7467fc7f7b244804b462b524" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/97/39/9739b3a900e31d6b7467fc7f7b244804b462b524" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/9a/e8/9ae8ba54c10c58926a7502abb5f7ba6ba6d19951" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/9a/e8/9ae8ba54c10c58926a7502abb5f7ba6ba6d19951" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/a0/c9/a0c910eb995ad1e9281e5bb05187281e039e242f" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/a0/c9/a0c910eb995ad1e9281e5bb05187281e039e242f" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/ad/3b/ad3b3f8f795e4d26bc46a96c0256b7ddc8c4e07d" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/ad/3b/ad3b3f8f795e4d26bc46a96c0256b7ddc8c4e07d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/framework/cache/b1/b6/b1b6b61b6cd58fcbec08f9d00687d524901e8a6d" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/b1/b6/b1b6b61b6cd58fcbec08f9d00687d524901e8a6d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/classes.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/classes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/BhMpQ11w0VEinNI3WLiayfD8E9DNWT2PCbQ2JLME" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/sessions/BhMpQ11w0VEinNI3WLiayfD8E9DNWT2PCbQ2JLME" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/responsiv-clean/partials/site/sidebar.htm" beforeDir="false" afterPath="$PROJECT_DIR$/themes/responsiv-clean/partials/site/sidebar.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/b2/b7/b2b7360cd887a6386a97d6da5f9131f20d67fa24" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/b2/b7/b2b7360cd887a6386a97d6da5f9131f20d67fa24" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/be/34/be34f3e78111f488d5d5dcdf0b19c06188569edf" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/be/34/be34f3e78111f488d5d5dcdf0b19c06188569edf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/c2/fa/c2fa14298e46749c8c3cf36eff771719e649e3cd" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/c2/fa/c2fa14298e46749c8c3cf36eff771719e649e3cd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/c7/25/c725e8b5206635549392316fa86668b8cdce898c" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/c7/25/c725e8b5206635549392316fa86668b8cdce898c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/c7/6c/c76c5382b5531318fdf5c64374196fdc54e5a872" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/c7/6c/c76c5382b5531318fdf5c64374196fdc54e5a872" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/cd/59/cd5984bb2d2f74a83f274ec2ccf5ef6fc319b4d6" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/cd/59/cd5984bb2d2f74a83f274ec2ccf5ef6fc319b4d6" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/d0/1e/d01e8e95ac402ba16ad83ad09f6851991c3b6212" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/d0/1e/d01e8e95ac402ba16ad83ad09f6851991c3b6212" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/e4/aa/e4aa754f4a08ac41654257c760134c39b9e48092" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/e4/aa/e4aa754f4a08ac41654257c760134c39b9e48092" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/4hZlSRp2zfXdE82m8ZwinXpFRaOzqdB9H0OJD9QE" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/sessions/4hZlSRp2zfXdE82m8ZwinXpFRaOzqdB9H0OJD9QE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/demo/assets/vendor/bootstrap/less/type.less" beforeDir="false" afterPath="$PROJECT_DIR$/themes/demo/assets/vendor/bootstrap/less/type.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/responsiv-clean/assets/vendor/bootstrap/less/type.less" beforeDir="false" afterPath="$PROJECT_DIR$/themes/responsiv-clean/assets/vendor/bootstrap/less/type.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/responsiv-clean/assets/vendor/isotope/isotope.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/responsiv-clean/assets/vendor/isotope/isotope.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/responsiv-clean/theme_fields.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/themes/responsiv-clean/theme_fields.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installers/src/Composer/Installers/BitrixInstaller.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installers/src/Composer/Installers/BitrixInstaller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/cache/lib/Doctrine/Common/Cache/RiakCache.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/lib/Doctrine/Common/Cache/RiakCache.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/common/lib/Doctrine/Common/NotifyPropertyChanged.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/doctrine/common/lib/Doctrine/Common/NotifyPropertyChanged.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/Driver/StaticPHPDriver.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/Driver/StaticPHPDriver.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/ServerInfoAwareConnection.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/ServerInfoAwareConnection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Sharding/ShardManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Sharding/ShardManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Types/ConversionException.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Types/ConversionException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Grammars/SqlServerGrammar.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Grammars/SqlServerGrammar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Inspiring.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Inspiring.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Constraints/HasInDatabase.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Constraints/HasInDatabase.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Constraints/SoftDeletedInDatabase.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Constraints/SoftDeletedInDatabase.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Notifications/Messages/SimpleMessage.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Notifications/Messages/SimpleMessage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Notifications/Messages/SlackMessage.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Notifications/Messages/SlackMessage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Validation/Concerns/ValidatesAttributes.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Validation/Concerns/ValidatesAttributes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/leafo/scssphp/example/Server.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/leafo/scssphp/example/Server.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/leafo/scssphp/src/Parser.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/leafo/scssphp/src/Parser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Internal/PrintableNewAnonClassNode.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/Internal/PrintableNewAnonClassNode.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/ParserAbstract.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/lib/PhpParser/ParserAbstract.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/october/rain/src/Database/DataFeed.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/october/rain/src/Database/DataFeed.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/october/rain/src/Exception/ErrorHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/october/rain/src/Exception/ErrorHandler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/october/rain/tests/Halcyon/ModelTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/october/rain/tests/Halcyon/ModelTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/october/rain/tests/Parse/IniTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/october/rain/tests/Parse/IniTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/oyejorge/less.php/lessc.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/oyejorge/less.php/lessc.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/oyejorge/less.php/lib/Less/Environment.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/oyejorge/less.php/lib/Less/Environment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/oyejorge/less.php/lib/Less/Tree/NameValue.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/oyejorge/less.php/lib/Less/Tree/NameValue.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/psy/psysh/src/CodeCleaner/PassableByReferencePass.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/psy/psysh/src/CodeCleaner/PassableByReferencePass.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/psy/psysh/src/CodeCleaner/ValidClassNamePass.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/psy/psysh/src/CodeCleaner/ValidClassNamePass.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/psy/psysh/src/Command/HelpCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/psy/psysh/src/Command/HelpCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/psy/psysh/src/ConfigPaths.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/psy/psysh/src/ConfigPaths.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/psy/psysh/src/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/psy/psysh/src/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/psy/psysh/test/CodeCleanerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/psy/psysh/test/CodeCleanerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Mime/MimePartTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/unit/Swift/Mime/MimePartTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Output/ConsoleOutputInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/console/Output/ConsoleOutputInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/event-dispatcher/Debug/TraceableEventDispatcher.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/event-dispatcher/Debug/TraceableEventDispatcher.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Cookie.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Cookie.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Request.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Request.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/DataCollector/ConfigDataCollector.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/DataCollector/ConfigDataCollector.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/Debug/TraceableEventDispatcher.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/Debug/TraceableEventDispatcher.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/process/Pipes/UnixPipes.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/process/Pipes/UnixPipes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/routing/RequestContext.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/routing/RequestContext.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Generator/UrlGeneratorTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/routing/Tests/Generator/UrlGeneratorTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/var-dumper/Tests/Caster/SplCasterTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Tests/Caster/SplCasterTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/twig/twig/src/Source.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/twig/twig/src/Source.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/twig/twig/src/Template.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/twig/twig/src/Template.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,14 +123,71 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/come2learn/layouts/default.htm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="403">
+              <caret line="37" column="46" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/come2learn/pages/contact.htm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/come2learn/pages/about.htm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/themes/come2learn/partials/site/header.htm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="13" column="52" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/themes/come2learn/assets/css/theme.css" />
+        <option value="$PROJECT_DIR$/themes/come2learn/theme.yaml" />
+        <option value="$PROJECT_DIR$/themes/come2learn/layouts/default.htm" />
+        <option value="$PROJECT_DIR$/themes/come2learn/pages/home.htm" />
+        <option value="$PROJECT_DIR$/themes/come2learn/partials/site/footer.htm" />
+        <option value="$PROJECT_DIR$/themes/come2learn/pages/contact.htm" />
+        <option value="$PROJECT_DIR$/themes/come2learn/pages/about.htm" />
+        <option value="$PROJECT_DIR$/themes/come2learn/partials/site/header.htm" />
+      </list>
+    </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="805" />
     <option name="height" value="647" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -40,7 +205,67 @@
             <path>
               <item name="octoberCMS" type="b2602c69:ProjectViewProjectNode" />
               <item name="octoberCMS" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="octoberCMS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="octoberCMS" type="462c0819:PsiDirectoryNode" />
               <item name="themes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="octoberCMS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="octoberCMS" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="come2learn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="octoberCMS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="octoberCMS" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="come2learn" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="octoberCMS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="octoberCMS" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="come2learn" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="octoberCMS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="octoberCMS" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="come2learn" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="octoberCMS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="octoberCMS" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="come2learn" type="462c0819:PsiDirectoryNode" />
+              <item name="partials" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="octoberCMS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="octoberCMS" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="come2learn" type="462c0819:PsiDirectoryNode" />
+              <item name="partials" type="462c0819:PsiDirectoryNode" />
+              <item name="site" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="octoberCMS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="octoberCMS" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="octoberCMS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="octoberCMS" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="partials" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -53,6 +278,14 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\octoberCMS\themes\come2learn\assets\javascript" />
+      <recent name="D:\xampp\htdocs\octoberCMS\themes\come2learn\assets\vendor" />
+      <recent name="D:\xampp\htdocs\octoberCMS\themes\come2learn\assets\css" />
+      <recent name="D:\xampp\htdocs\octoberCMS\themes\come2learn\assets\images" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -76,38 +309,150 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1562508996310</updated>
-      <workItem from="1562508998483" duration="611000" />
+      <workItem from="1562508998483" duration="7605000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="611000" />
+    <option name="totallyTimeSpent" value="7605000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14421669" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.14421669" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="0" />
+      <window_info anchor="bottom" id="Database Changes" order="1" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="3" />
+      <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="5" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.328594" />
+      <window_info anchor="bottom" id="Run" order="7" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="11" />
+      <window_info anchor="right" id="Database" order="0" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/plugins/october/demo/components/todo/default.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="35" lean-forward="true" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/demo/assets/css/theme.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/come2learn/assets/css/vendor.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/come2learn/assets/css/theme.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/come2learn/theme.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/demo/partials/site/footer.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/come2learn/assets/vendor/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/come2learn/assets/vendor/jquery.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/demo/assets/javascript/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/come2learn/assets/javascript/app.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/demo/pages/home.htm">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/demo/content/welcome.htm">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/demo/theme.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/demo/partials/site/header.htm">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/demo/layouts/default.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="14" column="73" selection-start-line="13" selection-start-column="8" selection-end-line="14" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/come2learn/pages/home.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/come2learn/partials/site/footer.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="42" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/come2learn/layouts/default.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="37" column="46" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/come2learn/pages/contact.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/come2learn/pages/about.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/come2learn/partials/site/header.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="52" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

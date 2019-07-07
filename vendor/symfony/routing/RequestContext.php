@@ -14,7 +14,7 @@ namespace Symfony\Component\Routing;
 use Symfony\Component\HttpFoundation\Request;
 
 /**
- * Holds information about the current request.
+ * Holds information about.htm the current request.
  *
  * This class implements a fluent interface.
  *

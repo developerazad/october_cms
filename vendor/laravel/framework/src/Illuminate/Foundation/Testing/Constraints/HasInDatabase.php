@@ -68,7 +68,7 @@ class HasInDatabase extends Constraint
     }
 
     /**
-     * Get additional info about the records found in the database table.
+     * Get additional info about.htm the records found in the database table.
      *
      * @param  string  $table
      * @return string

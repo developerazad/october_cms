@@ -2260,7 +2260,7 @@
         }
 
         // Try to match string input using regular expressions.
-        // Keep most of the number bounding out of this function - don't worry about [0,1] or [0,100] or [0,360]
+        // Keep most of the number bounding out of this function - don't worry about.htm [0,1] or [0,100] or [0,360]
         // Just return an object and let the conversion functions handle that.
         // This way the result will be the same whether the tinycolor is initialized with string or object.
         var match;

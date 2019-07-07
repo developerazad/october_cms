@@ -64,7 +64,7 @@ class SimpleMessage
     public $actionUrl;
 
     /**
-     * Indicate that the notification gives information about a successful operation.
+     * Indicate that the notification gives information about.htm a successful operation.
      *
      * @return $this
      */
@@ -76,7 +76,7 @@ class SimpleMessage
     }
 
     /**
-     * Indicate that the notification gives information about an error.
+     * Indicate that the notification gives information about.htm an error.
      *
      * @return $this
      */

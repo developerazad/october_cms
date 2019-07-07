@@ -48,7 +48,7 @@ class ConversionException extends \Doctrine\DBAL\DBALException
 
     /**
      * Thrown when a Database to Doctrine Type Conversion fails and we can make a statement
-     * about the expected format.
+     * about.htm the expected format.
      *
      * @param string $value
      * @param string $toType

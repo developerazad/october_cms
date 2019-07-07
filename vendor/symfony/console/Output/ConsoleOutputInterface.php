@@ -13,7 +13,7 @@ namespace Symfony\Component\Console\Output;
 
 /**
  * ConsoleOutputInterface is the interface implemented by ConsoleOutput class.
- * This adds information about stderr output stream.
+ * This adds information about.htm stderr output stream.
  *
  * @author Dariusz Górecki <darek.krk@gmail.com>
  */

@@ -84,7 +84,7 @@ class SlackMessage
     public $http = [];
 
     /**
-     * Indicate that the notification gives information about a successful operation.
+     * Indicate that the notification gives information about.htm a successful operation.
      *
      * @return $this
      */
@@ -96,7 +96,7 @@ class SlackMessage
     }
 
     /**
-     * Indicate that the notification gives information about a warning.
+     * Indicate that the notification gives information about.htm a warning.
      *
      * @return $this
      */
@@ -108,7 +108,7 @@ class SlackMessage
     }
 
     /**
-     * Indicate that the notification gives information about an error.
+     * Indicate that the notification gives information about.htm an error.
      *
      * @return $this
      */

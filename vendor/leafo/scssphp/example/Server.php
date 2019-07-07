@@ -419,7 +419,7 @@ class Server
     /**
      * Execute scssphp on a .scss file or a scssphp cache structure
      *
-     * The scssphp cache structure contains information about a specific
+     * The scssphp cache structure contains information about.htm a specific
      * scss file having been parsed. It can be used as a hint for future
      * calls to determine whether or not a rebuild is required.
      *
@@ -453,7 +453,7 @@ class Server
             } elseif (isset($in['files']) and is_array($in['files'])) {
                 foreach ($in['files'] as $fname => $ftime) {
                     if (! file_exists($fname) or filemtime($fname) > $ftime) {
-                        // One of the files we knew about previously has changed
+                        // One of the files we knew about.htm previously has changed
                         // so we should look at our incoming root again.
                         $root = $in['root'];
                         break;

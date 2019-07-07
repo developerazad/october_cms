@@ -100,7 +100,7 @@ class PassableByReferencePass extends CodeCleanerPass
             if ($this->isPassableByReference($arg)) {
                 $nonPassable = 0;
             } elseif (++$nonPassable > 2) {
-                // There can be *at most* two non-passable-by-reference args in a row. This is about
+                // There can be *at most* two non-passable-by-reference args in a row. This is about.htm
                 // as close as we can get to validating the arguments for this function :-/
                 throw new FatalErrorException(self::EXCEPTION_MESSAGE, 0, E_ERROR, null, $node->getLine());
             }

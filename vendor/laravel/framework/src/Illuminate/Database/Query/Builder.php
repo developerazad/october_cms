@@ -494,7 +494,7 @@ class Builder
             return $this->addArrayOfWheres($column, $boolean);
         }
 
-        // Here we will make some assumptions about the operator. If only 2 values are
+        // Here we will make some assumptions about.htm the operator. If only 2 values are
         // passed to the method, we will assume that the operator is an equals sign
         // and keep going. Otherwise, we'll require the operator to be passed in.
         list($value, $operator) = $this->prepareValueAndOperator(
@@ -665,7 +665,7 @@ class Builder
 
         // Finally, we will add this where clause into this array of clauses that we
         // are building for the query. All of them will be compiled via a grammar
-        // once the query is about to be executed and run against the database.
+        // once the query is about.htm to be executed and run against the database.
         $type = 'Column';
 
         $this->wheres[] = compact(
@@ -1340,7 +1340,7 @@ class Builder
     {
         $type = 'Basic';
 
-        // Here we will make some assumptions about the operator. If only 2 values are
+        // Here we will make some assumptions about.htm the operator. If only 2 values are
         // passed to the method, we will assume that the operator is an equals sign
         // and keep going. Otherwise, we'll require the operator to be passed in.
         list($value, $operator) = $this->prepareValueAndOperator(

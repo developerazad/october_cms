@@ -32,7 +32,7 @@ namespace Doctrine\Common;
 interface NotifyPropertyChanged
 {
     /**
-     * Adds a listener that wants to be notified about property changes.
+     * Adds a listener that wants to be notified about.htm property changes.
      *
      * @param PropertyChangedListener $listener
      *

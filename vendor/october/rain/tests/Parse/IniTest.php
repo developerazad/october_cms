@@ -256,7 +256,7 @@ class IniTest extends TestCase
         $this->assertArrayHasKey('var', $result);
         $this->assertArrayHasKey('editorContent', $result);
 
-        // Ensures we do not care about EOL sequences
+        // Ensures we do not care about.htm EOL sequences
         $result['editorContent'] = str_replace("\r\n", "\n", $result['editorContent']);
         $vars['editorContent'] = str_replace("\r\n", "\n", $vars['editorContent']);
 

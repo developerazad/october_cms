@@ -12,7 +12,7 @@
 namespace Twig;
 
 /**
- * Holds information about a non-compiled Twig template.
+ * Holds information about.htm a non-compiled Twig template.
  *
  * @author Fabien Potencier <fabien@symfony.com>
  */

@@ -27,7 +27,7 @@ namespace Doctrine\DBAL\Sharding;
  * API only covers single shard queries, no fan-out support. It is primarily
  * suited for multi-tenant applications.
  *
- * The assumption about sharding here
+ * The assumption about.htm sharding here
  * is that a distribution value can be found that gives access to all the
  * necessary data for all use-cases. Switching between shards should be done with
  * caution, especially if lazy loading is implemented. Any query is always
@@ -68,7 +68,7 @@ interface ShardManager
     function getCurrentDistributionValue();
 
     /**
-     * Gets information about the amount of shards and other details.
+     * Gets information about.htm the amount of shards and other details.
      *
      * Format is implementation specific, each shard is one element and has an
      * 'id' attribute at least.

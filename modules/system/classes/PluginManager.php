@@ -534,7 +534,7 @@ class PluginManager
     }
 
     /**
-     * Populates information about disabled plugins from database
+     * Populates information about.htm disabled plugins from database
      * @return void
      */
     protected function populateDisabledPluginsFromDb()

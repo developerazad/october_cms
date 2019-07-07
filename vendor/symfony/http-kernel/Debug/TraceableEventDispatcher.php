@@ -16,7 +16,7 @@ use Symfony\Component\HttpKernel\KernelEvents;
 use Symfony\Component\EventDispatcher\Event;
 
 /**
- * Collects some data about event listeners.
+ * Collects some data about.htm event listeners.
  *
  * This event dispatcher delegates the dispatching to another one.
  *

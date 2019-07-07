@@ -99,7 +99,7 @@ abstract class ComponentBase extends Extendable
     }
 
     /**
-     * Returns information about this component, including name and description.
+     * Returns information about.htm this component, including name and description.
      */
     abstract public function componentDetails();
 

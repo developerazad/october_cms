@@ -179,7 +179,7 @@ class UpdateManager
     public function check($force = false)
     {
         /*
-         * Already know about updates, never retry.
+         * Already know about.htm updates, never retry.
          */
         $oldCount = Parameter::get('system::update.count');
         if ($oldCount > 0) {
@@ -311,7 +311,7 @@ class UpdateManager
     }
 
     /**
-     * Requests details about a project based on its identifier.
+     * Requests details about.htm a project based on its identifier.
      * @param  string $projectId
      * @return array
      */
@@ -486,7 +486,7 @@ class UpdateManager
     /**
      * Looks up a plugin from the update server.
      * @param string $name Plugin name.
-     * @return array Details about the plugin.
+     * @return array Details about.htm the plugin.
      */
     public function requestPluginDetails($name)
     {
@@ -597,7 +597,7 @@ class UpdateManager
     /**
      * Looks up a theme from the update server.
      * @param string $name Theme name.
-     * @return array Details about the theme.
+     * @return array Details about.htm the theme.
      */
     public function requestThemeDetails($name)
     {

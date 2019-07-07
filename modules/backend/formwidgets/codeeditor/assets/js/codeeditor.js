@@ -109,7 +109,7 @@
             options = this.options,
             $form = this.$el.closest('form');
 
-        // Fixes a weird notice about scrolling
+        // Fixes a weird notice about.htm scrolling
         editor.$blockScrolling = Infinity
 
         this.$form = $form

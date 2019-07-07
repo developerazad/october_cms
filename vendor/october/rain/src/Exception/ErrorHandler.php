@@ -130,7 +130,7 @@ class ErrorHandler
     //
 
     /**
-     * We are about to display an error page to the user,
+     * We are about.htm to display an error page to the user,
      * provide an opportunity to handle extra functions.
      * @return void
      */

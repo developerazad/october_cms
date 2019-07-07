@@ -14,7 +14,7 @@ use October\Rain\Router\Helper as RouterHelper;
 abstract class Skin
 {
     /**
-     * Returns information about this skin, including name and description.
+     * Returns information about.htm this skin, including name and description.
      */
     abstract public function skinDetails();
 

@@ -1885,7 +1885,7 @@ class Parser
      * Parser interpolation
      *
      * @param array   $out
-     * @param boolean $lookWhite save information about whitespace before and after
+     * @param boolean $lookWhite save information about.htm whitespace before and after
      *
      * @return boolean
      */

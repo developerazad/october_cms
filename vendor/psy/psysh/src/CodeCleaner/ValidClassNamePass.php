@@ -49,7 +49,7 @@ class ValidClassNamePass extends NamespaceAwarePass
     /**
      * Validate class, interface and trait definitions.
      *
-     * Validate them upon entering the node, so that we know about their
+     * Validate them upon entering the node, so that we know about.htm their
      * presence and can validate constant fetches and static calls in class or
      * trait methods.
      *

@@ -35,7 +35,7 @@ class ErrorHandler extends ErrorHandlerBase
     // }
 
     /**
-     * We are about to display an error page to the user,
+     * We are about.htm to display an error page to the user,
      * if it is an ApplicationException, this event should be logged.
      * @return void
      */

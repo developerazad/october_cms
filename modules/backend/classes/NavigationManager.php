@@ -406,7 +406,7 @@ class NavigationManager
     }
 
     /**
-     * Returns information about the current navigation context.
+     * Returns information about.htm the current navigation context.
      * @return mixed Returns an object with the following fields:
      * - mainMenuCode
      * - sideMenuCode

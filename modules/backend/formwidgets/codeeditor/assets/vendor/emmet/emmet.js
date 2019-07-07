@@ -2110,7 +2110,7 @@ emmet.define('abbreviationParser', function(require, _) {
             var tree = parseAbbreviation(abbr);
 
             if (options.contextNode) {
-                // add info about context node –
+                // add info about.htm context node –
                 // a parent XHTML node in editor inside which abbreviation is 
                 // expanded
                 tree._name = options.contextNode.name;
@@ -5575,7 +5575,7 @@ emmet.define('actionUtils', function(require, _) {
 
         /**
          * Common syntax detection method for editors that doesn’t provide any
-         * info about current syntax scope.
+         * info about.htm current syntax scope.
          * @param {IEmmetEditor} editor Current editor
          * @param {String} hint Any syntax hint that editor can provide
          * for syntax detection. Default is 'html'

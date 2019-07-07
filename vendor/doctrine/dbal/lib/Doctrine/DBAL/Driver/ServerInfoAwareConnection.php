@@ -20,7 +20,7 @@
 namespace Doctrine\DBAL\Driver;
 
 /**
- * Contract for a connection that is able to provide information about the server it is connected to.
+ * Contract for a connection that is able to provide information about.htm the server it is connected to.
  *
  * @author Steve Müller <st.mueller@dzh-online.de>
  * @link   www.doctrine-project.org

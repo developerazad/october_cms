@@ -81,7 +81,7 @@ class StaticPHPDriver implements MappingDriver
 
     /**
      * {@inheritDoc}
-     * @todo Same code exists in AnnotationDriver, should we re-use it somehow or not worry about it?
+     * @todo Same code exists in AnnotationDriver, should we re-use it somehow or not worry about.htm it?
      */
     public function getAllClassNames()
     {

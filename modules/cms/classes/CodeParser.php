@@ -244,7 +244,7 @@ class CodeParser
     }
 
     /**
-     * Returns information about all cached files.
+     * Returns information about.htm all cached files.
      * @return mixed Returns an array representing the cached data or NULL.
      */
     protected function getCachedInfo()
@@ -262,7 +262,7 @@ class CodeParser
     }
 
     /**
-     * Returns information about a cached file
+     * Returns information about.htm a cached file
      * @return integer
      */
     protected function getCachedFileInfo()

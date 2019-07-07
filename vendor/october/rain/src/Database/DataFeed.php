@@ -252,7 +252,7 @@ class DataFeed
     }
 
     /**
-     * Returns a data stored about an item by its tag name.
+     * Returns a data stored about.htm an item by its tag name.
      * @return array
      */
     protected function getDataByTag($tag)

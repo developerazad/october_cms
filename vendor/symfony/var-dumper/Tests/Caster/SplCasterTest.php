@@ -50,12 +50,12 @@ SplFileInfo {
 %A}
 EOTXT
             ),
-            array('https://google.com/about', <<<'EOTXT'
+            array('https://google.com/about.htm', <<<'EOTXT'
 SplFileInfo {
 %Apath: "https://google.com"
-  filename: "about"
-  basename: "about"
-  pathname: "https://google.com/about"
+  filename: "about.htm"
+  basename: "about.htm"
+  pathname: "https://google.com/about.htm"
   extension: ""
   realPath: false
 %A}

@@ -172,7 +172,7 @@ class Page extends CmsCompoundObject
 
     /**
      * Handler for the pages.menuitem.resolveItem event.
-     * Returns information about a menu item. The result is an array
+     * Returns information about.htm a menu item. The result is an array
      * with the following keys:
      * - url - the menu item URL. Not required for menu item types that return all available records.
      *   The URL should be returned relative to the website root and include the subdirectory, if any.

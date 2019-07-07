@@ -2088,7 +2088,7 @@ var functionMap = {
     ],
     "apache_lookup_uri": [
         "object apache_lookup_uri(string URI)",
-        "Perform a partial request of the given URI to obtain information about it"
+        "Perform a partial request of the given URI to obtain information about.htm it"
     ],
     "apache_note": [
         "string apache_note(string note_name [, string note_value])",
@@ -2584,7 +2584,7 @@ var functionMap = {
     ],
     "cal_info": [
         "array cal_info([int calendar])",
-        "Returns information about a particular calendar"
+        "Returns information about.htm a particular calendar"
     ],
     "cal_to_jd": [
         "int cal_to_jd(int calendar, int month, int day, int year)",
@@ -2800,7 +2800,7 @@ var functionMap = {
     ],
     "count_chars": [
         "mixed count_chars(string input [, int mode])",
-        "Returns info about what characters are used in input"
+        "Returns info about.htm what characters are used in input"
     ],
     "crc32": [
         "string crc32(string str)",
@@ -2904,7 +2904,7 @@ var functionMap = {
     ],
     "curl_multi_info_read": [
         "array curl_multi_info_read(resource mh [, long msgs_in_queue])",
-        "Get information about the current transfers"
+        "Get information about.htm the current transfers"
     ],
     "curl_multi_init": [
         "resource curl_multi_init(void)",
@@ -2996,11 +2996,11 @@ var functionMap = {
     ],
     "date_parse": [
         "array date_parse(string date)",
-        "Returns associative array with detailed info about given date"
+        "Returns associative array with detailed info about.htm given date"
     ],
     "date_parse_from_format": [
         "array date_parse_from_format(string format, string date)",
-        "Returns associative array with detailed info about given date"
+        "Returns associative array with detailed info about.htm given date"
     ],
     "date_sub": [
         "DateTime date_sub(DateTime object, DateInterval interval)",
@@ -3008,7 +3008,7 @@ var functionMap = {
     ],
     "date_sun_info": [
         "array date_sun_info(long time, float latitude, float longitude)",
-        "Returns an array with information about sun set\/rise and twilight begin\/end"
+        "Returns an array with information about.htm sun set\/rise and twilight begin\/end"
     ],
     "date_sunrise": [
         "mixed date_sunrise(mixed time [, int format [, float latitude [, float longitude [, float zenith [, float gmt_offset]]]]])",
@@ -3708,7 +3708,7 @@ var functionMap = {
     ],
     "enchant_broker_describe": [
         "array enchant_broker_describe(resource broker)",
-        "Enumerates the Enchant providers and tells you some rudimentary information about them. The same info is provided through phpinfo()"
+        "Enumerates the Enchant providers and tells you some rudimentary information about.htm them. The same info is provided through phpinfo()"
     ],
     "enchant_broker_dict_exists": [
         "bool enchant_broker_dict_exists(resource broker, string tag)",
@@ -3980,7 +3980,7 @@ var functionMap = {
     ],
     "finfo_buffer": [
         "string finfo_buffer(resource finfo, char *string [, int options [, resource context]])",
-        "Return infromation about a string buffer."
+        "Return infromation about.htm a string buffer."
     ],
     "finfo_close": [
         "resource finfo_close(resource finfo)",
@@ -3988,7 +3988,7 @@ var functionMap = {
     ],
     "finfo_file": [
         "string finfo_file(resource finfo, char *file_name [, int options [, resource context]])",
-        "Return information about a file."
+        "Return information about.htm a file."
     ],
     "finfo_open": [
         "resource finfo_open([int options [, string arg]])",
@@ -4256,7 +4256,7 @@ var functionMap = {
     ],
     "get_browser": [
         "mixed get_browser([string browser_name [, bool return_array]])",
-        "Get information about the capabilities of a browser. If browser_name is omitted or null, HTTP_USER_AGENT is used. Returns an object by default; if return_array is true, returns an array."
+        "Get information about.htm the capabilities of a browser. If browser_name is omitted or null, HTTP_USER_AGENT is used. Returns an object by default; if return_array is true, returns an array."
     ],
     "get_called_class": [
         "string get_called_class()",
@@ -4876,7 +4876,7 @@ var functionMap = {
     ],
     "ibase_db_info": [
         "string ibase_db_info(resource service_handle, string db, int action [, int argument])",
-        "Request statistics about a database"
+        "Request statistics about.htm a database"
     ],
     "ibase_delete_user": [
         "bool ibase_delete_user(resource service_handle, string user_name, string password [, string first_name [, string middle_name [, string last_name]]])",
@@ -4912,7 +4912,7 @@ var functionMap = {
     ],
     "ibase_field_info": [
         "array ibase_field_info(resource query_result, int field_number)",
-        "Get information about a field"
+        "Get information about.htm a field"
     ],
     "ibase_free_event_handler": [
         "bool ibase_free_event_handler(resource event)",
@@ -4956,7 +4956,7 @@ var functionMap = {
     ],
     "ibase_param_info": [
         "array ibase_param_info(resource query, int field_number)",
-        "Get information about a parameter"
+        "Get information about.htm a parameter"
     ],
     "ibase_pconnect": [
         "resource ibase_pconnect(string database [, string username [, string password [, string charset [, int buffers [, int dialect [, string role]]]]]])",
@@ -4984,7 +4984,7 @@ var functionMap = {
     ],
     "ibase_server_info": [
         "string ibase_server_info(resource service_handle, int action)",
-        "Request information about a database server"
+        "Request information about.htm a database server"
     ],
     "ibase_service_attach": [
         "resource ibase_service_attach(string host, string dba_username, string dba_password)",
@@ -5592,7 +5592,7 @@ var functionMap = {
     ],
     "imap_mailboxmsginfo": [
         "object imap_mailboxmsginfo(resource stream_id)",
-        "Returns info about the current mailbox"
+        "Returns info about.htm the current mailbox"
     ],
     "imap_mime_header_decode": [
         "array imap_mime_header_decode(string str)",
@@ -6260,7 +6260,7 @@ var functionMap = {
     ],
     "lstat": [
         "array lstat(string filename)",
-        "Give information about a file or symbolic link"
+        "Give information about.htm a file or symbolic link"
     ],
     "ltrim": [
         "string ltrim(string str [, string character_mask])",
@@ -6732,7 +6732,7 @@ var functionMap = {
     ],
     "msg_stat_queue": [
         "array msg_stat_queue(resource queue)",
-        "Returns information about a message queue"
+        "Returns information about.htm a message queue"
     ],
     "msgfmt_create": [
         "MessageFormatter msgfmt_create( string $locale, string $pattern )",
@@ -6804,7 +6804,7 @@ var functionMap = {
     ],
     "mssql_fetch_field": [
         "object mssql_fetch_field(resource result_id [, int offset])",
-        "Gets information about certain fields in a query result"
+        "Gets information about.htm certain fields in a query result"
     ],
     "mssql_fetch_object": [
         "object mssql_fetch_object(resource result_id)",
@@ -7016,7 +7016,7 @@ var functionMap = {
     ],
     "mysql_info": [
         "string mysql_info([int link_identifier])",
-        "Returns a string containing information about the most recent query"
+        "Returns a string containing information about.htm the most recent query"
     ],
     "mysql_insert_id": [
         "int mysql_insert_id([int link_identifier])",
@@ -7096,7 +7096,7 @@ var functionMap = {
     ],
     "mysqli_cache_stats": [
         "array mysqli_cache_stats(void)",
-        "Returns statistics about the zval cache"
+        "Returns statistics about.htm the zval cache"
     ],
     "mysqli_change_user": [
         "bool mysqli_change_user(object link, string user, string password, string database)",
@@ -7216,7 +7216,7 @@ var functionMap = {
     ],
     "mysqli_get_client_stats": [
         "array mysqli_get_client_stats(void)",
-        "Returns statistics about the zval cache"
+        "Returns statistics about.htm the zval cache"
     ],
     "mysqli_get_client_version": [
         "int mysqli_get_client_version(void)",
@@ -7224,7 +7224,7 @@ var functionMap = {
     ],
     "mysqli_get_connection_stats": [
         "array mysqli_get_connection_stats(void)",
-        "Returns statistics about the zval cache"
+        "Returns statistics about.htm the zval cache"
     ],
     "mysqli_get_host_info": [
         "string mysqli_get_host_info (object link)",
@@ -7248,7 +7248,7 @@ var functionMap = {
     ],
     "mysqli_info": [
         "string mysqli_info(object link)",
-        "Get information about the most recent query"
+        "Get information about.htm the most recent query"
     ],
     "mysqli_init": [
         "resource mysqli_init(void)",
@@ -8000,7 +8000,7 @@ var functionMap = {
     ],
     "odbc_data_source": [
         "array odbc_data_source(resource connection_id, int fetch_type)",
-        "Return information about the currently connected data source"
+        "Return information about.htm the currently connected data source"
     ],
     "odbc_error": [
         "string odbc_error([resource connection_id])",
@@ -8064,7 +8064,7 @@ var functionMap = {
     ],
     "odbc_gettypeinfo": [
         "resource odbc_gettypeinfo(resource connection_id [, int data_type])",
-        "Returns a result identifier containing information about data types supported by the data source"
+        "Returns a result identifier containing information about.htm data types supported by the data source"
     ],
     "odbc_longreadlen": [
         "bool odbc_longreadlen(int result_id, int length)",
@@ -8124,7 +8124,7 @@ var functionMap = {
     ],
     "odbc_statistics": [
         "resource odbc_statistics(resource connection_id, string qualifier, string owner, string name, int unique, int accuracy)",
-        "Returns a result identifier that contains statistics about a single table and the indexes associated with the table"
+        "Returns a result identifier that contains statistics about.htm a single table and the indexes associated with the table"
     ],
     "odbc_tableprivileges": [
         "resource odbc_tableprivileges(resource connection_id, string qualifier, string owner, string name)",
@@ -8292,7 +8292,7 @@ var functionMap = {
     ],
     "openssl_x509_checkpurpose": [
         "int openssl_x509_checkpurpose(mixed x509cert, int purpose, array cainfo [, string untrustedfile])",
-        "Checks the CERT to see if it can be used for the purpose in purpose. cainfo holds information about trusted CAs"
+        "Checks the CERT to see if it can be used for the purpose in purpose. cainfo holds information about.htm trusted CAs"
     ],
     "openssl_x509_export": [
         "bool openssl_x509_export(mixed x509, string &out [, bool notext = true])",
@@ -8356,7 +8356,7 @@ var functionMap = {
     ],
     "pathinfo": [
         "array pathinfo(string path[, int options])",
-        "Returns information about a certain string"
+        "Returns information about.htm a certain string"
     ],
     "pclose": [
         "int pclose(resource fp)",
@@ -8804,7 +8804,7 @@ var functionMap = {
     ],
     "php_uname": [
         "string php_uname(void)",
-        "Return information about the system PHP was built on"
+        "Return information about.htm the system PHP was built on"
     ],
     "phpcredits": [
         "void phpcredits([int flag])",
@@ -8812,7 +8812,7 @@ var functionMap = {
     ],
     "phpinfo": [
         "void phpinfo([int what])",
-        "Output a page of useful information about PHP and the current request"
+        "Output a page of useful information about.htm PHP and the current request"
     ],
     "phpversion": [
         "string phpversion([string extension])",
@@ -9020,7 +9020,7 @@ var functionMap = {
     ],
     "print_r": [
         "mixed print_r(mixed var [, bool return])",
-        "Prints out or returns information about the specified variable"
+        "Prints out or returns information about.htm the specified variable"
     ],
     "printf": [
         "int printf(string format [, mixed arg1 [, mixed ...]])",
@@ -9032,7 +9032,7 @@ var functionMap = {
     ],
     "proc_get_status": [
         "array proc_get_status(resource process)",
-        "get information about a process opened by proc_open"
+        "get information about.htm a process opened by proc_open"
     ],
     "proc_nice": [
         "bool proc_nice(int priority)",
@@ -9992,7 +9992,7 @@ var functionMap = {
     ],
     "stat": [
         "array stat(string filename)",
-        "Give information about a file"
+        "Give information about.htm a file"
     ],
     "str_getcsv": [
         "array str_getcsv(string input[, string delimiter[, string enclosure[, string escape]]])",

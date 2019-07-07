@@ -214,7 +214,7 @@
      * This will ensure that `catchIt` function will be called before `eatIt`.
      *
      * If you want to put your handler before non-indexed handlers, specify a negative value.
-     * Note: I assume most of the time you don’t need to worry about z-index, but it’s nice to have this feature “just in case”.
+     * Note: I assume most of the time you don’t need to worry about.htm z-index, but it’s nice to have this feature “just in case”.
     \*/
     eve.on = function (name, f) {
         if (typeof f != "function") {
@@ -3904,7 +3904,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	     | var c = paper.image("apple.png", 10, 10, 80, 80);
 	    \*/
 	    paperproto.image = function (src, x, y, w, h) {
-	        var out = R._engine.image(this, src || "about:blank", x || 0, y || 0, w || 0, h || 0);
+	        var out = R._engine.image(this, src || "about.htm:blank", x || 0, y || 0, w || 0, h || 0);
 	        this.__set__ && this.__set__.push(out);
 	        return out;
 	    };
@@ -5590,7 +5590,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	     **
 	     * Adds given font to the registered set of fonts for RaphaÃ«l. Should be used as an internal call from within CufÃ³nâ€™s font file.
 	     * Returns original parameter, so it could be used with chaining.
-	     # <a href="http://wiki.github.com/sorccu/cufon/about">More about CufÃ³n and how to convert your font form TTF, OTF, etc to JavaScript file.</a>
+	     # <a href="http://wiki.github.com/sorccu/cufon/about">More about.htm CufÃ³n and how to convert your font form TTF, OTF, etc to JavaScript file.</a>
 	     **
 	     > Parameters
 	     **
@@ -6149,7 +6149,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	     * This will ensure that `catchIt` function will be called before `eatIt`.
 	     *
 	     * If you want to put your handler before non-indexed handlers, specify a negative value.
-	     * Note: I assume most of the time you donâ€™t need to worry about z-index, but itâ€™s nice to have this feature â€œjust in caseâ€.
+	     * Note: I assume most of the time you donâ€™t need to worry about.htm z-index, but itâ€™s nice to have this feature â€œjust in caseâ€.
 	    \*/
 	    eve.on = function (name, f) {
 	        if (typeof f != "function") {

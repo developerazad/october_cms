@@ -1,0 +1,40 @@
+description = "default theme"
+==
+<!DOCTYPE html>
+
+<htm>
+    <head>
+        <meta charset="UTF-8">
+        <title>Come2Learn - {{ this.page.title}}</title>
+        <meta name="description" content="this.page.meta_description">
+        <meta name="title" content="this.page.meta_title">
+        <meta name="author" content="Developerazad">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="generator" content="Developerazad">
+        <link rel="icon" type="image/png" href="{{ 'assets/images/come2learn.png' | theme }}">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{{ 'assets/css/theme.css' | theme }}">
+        <link href="{{ 'assets/css/vendor.css'|theme }}" rel="stylesheet">
+        <link href="{{ 'assets/css/theme.css'|theme }}" rel="stylesheet">
+        {% styles %}
+    </head>
+
+    <body>
+        <header>
+            {% partial 'site/header' %}
+        </header>
+
+        <div class="container">
+            {% page %}
+        </div>
+
+
+        <footer>
+            {% partial 'site/footer' %}
+        </footer>
+
+        <script src="{{ 'assets/vendor/bootstrap.js' }}"></script>
+        <script src="{{ 'assets/vendor/jquery.js' }}"></script>
+        <script src="{{ 'assets/javascript/app.js' }}"></script>
+    </body>
+</htm>

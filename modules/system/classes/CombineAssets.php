@@ -754,7 +754,7 @@ class CombineAssets
     //
 
     /**
-     * Stores information about a asset collection against
+     * Stores information about.htm a asset collection against
      * a cache identifier.
      * @param string $cacheKey Cache identifier.
      * @param array $cacheInfo List of asset files.
@@ -776,7 +776,7 @@ class CombineAssets
     }
 
     /**
-     * Look up information about a cache identifier.
+     * Look up information about.htm a cache identifier.
      * @param string $cacheKey Cache identifier
      * @return array Cache information
      */

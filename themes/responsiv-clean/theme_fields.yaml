@@ -11,7 +11,7 @@ fields:
 
     site_motto:
         label: Site motto
-        comment: A short statement about the website.
+        comment: A short statement about.htm the website.
         default: Get back to basics
         span: auto
 

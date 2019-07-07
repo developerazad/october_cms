@@ -103,7 +103,7 @@ if (!\function_exists('Psy\debug')) {
 
 if (!\function_exists('Psy\info')) {
     /**
-     * Get a bunch of debugging info about the current PsySH environment and
+     * Get a bunch of debugging info about.htm the current PsySH environment and
      * configuration.
      *
      * If a Configuration param is passed, that configuration is stored and

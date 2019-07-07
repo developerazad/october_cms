@@ -321,7 +321,7 @@
          */
         var editor = this.editor = ace.edit(this.$code.attr('id'))
 
-        // Fixes a weird notice about scrolling
+        // Fixes a weird notice about.htm scrolling
         editor.$blockScrolling = Infinity
 
         editor.getSession().setValue(this.$textarea.val())

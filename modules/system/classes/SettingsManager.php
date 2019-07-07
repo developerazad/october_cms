@@ -320,7 +320,7 @@ class SettingsManager
     }
 
     /**
-     * Returns information about the current settings context.
+     * Returns information about.htm the current settings context.
      * @return mixed Returns an object with the following fields:
      * - itemCode
      * - owner

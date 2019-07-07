@@ -25,7 +25,7 @@ class HalcyonModelTest extends TestCase
         $pages = HalcyonTestPage::all();
 
         $this->assertCount(2, $pages);
-        $this->assertContains('about.htm', $pages->lists('fileName'));
+        $this->assertContains('about.htm.htm', $pages->lists('fileName'));
         $this->assertContains('home.htm', $pages->lists('fileName'));
     }
 
@@ -261,7 +261,7 @@ ESC;
         $this->assertEquals('Another test', $page->title);
 
         $page = HalcyonTestPage::find('testfile2a');
-        $page->fileName = 'about';
+        $page->fileName = 'about.htm';
 
         @unlink($targetFile);
 
@@ -329,7 +329,7 @@ ESC;
         sort($files);
 
         $this->assertCount(2, $files);
-        $this->assertEquals(['about.htm', 'home.htm'], $files);
+        $this->assertEquals(['about.htm.htm', 'home.htm'], $files);
     }
 
     public function testAddDynamicPoperty()

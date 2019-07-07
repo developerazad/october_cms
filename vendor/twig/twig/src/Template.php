@@ -63,14 +63,14 @@ abstract class Template
     abstract public function getTemplateName();
 
     /**
-     * Returns debug information about the template.
+     * Returns debug information about.htm the template.
      *
      * @return array Debug information
      */
     abstract public function getDebugInfo();
 
     /**
-     * Returns information about the original template source code.
+     * Returns information about.htm the original template source code.
      *
      * @return Source
      */

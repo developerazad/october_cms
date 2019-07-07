@@ -3875,7 +3875,7 @@ function TreeBuilder() {
 				|| (publicId == "-//W3C//DTD XHTML 1.0 Strict//EN" && (systemId == "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"))
 				|| (publicId == "-//W3C//DTD XHTML 1.1//EN" && (systemId == "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"))
 			) {
-			} else if (!((systemId == null || systemId == "about:legacy-compat") && publicId == null)) {
+			} else if (!((systemId == null || systemId == "about.htm:legacy-compat") && publicId == null)) {
 				tree.parseError("unknown-doctype");
 			}
 		}

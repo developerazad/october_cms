@@ -35,7 +35,7 @@ class PluginBase extends ServiceProviderBase
     public $disabled = false;
 
     /**
-     * Returns information about this plugin, including plugin name and developer name.
+     * Returns information about.htm this plugin, including plugin name and developer name.
      *
      * @return array
      * @throws SystemException

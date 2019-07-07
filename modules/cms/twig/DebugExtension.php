@@ -134,7 +134,7 @@ class DebugExtension extends TwigExtension
     }
 
     /**
-     * Dump information about a variable
+     * Dump information about.htm a variable
      * @param mixed $variables Variable to dump
      * @param mixed $caption Caption [and subcaption] of the dump
      * @return void
