@@ -1,10 +1,11 @@
 [blogPosts]
-postsPerPage = "5"
+pageNumber = "{{ :page }}"
+postsPerPage = 5
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
 categoryPage = "blog/category"
 postPage = "blog/post"
-sortOrder = "published_at desc"
 ==
-
 <div class="sidebar-close visible-sm visible-xs">
     <a href="javascript:;" onclick="toggleSidebar()" class="close">&times;</a>
 </div>
@@ -16,6 +17,16 @@ sortOrder = "published_at desc"
     <p class="site-motto">
         {{ this.theme.site_motto }}
     </p>
+</div>
+
+<div class="sidebar-segment">
+    <h2 class="segment-title">Main Menu</h2>
+    <ul class="segment-list">
+        
+            <li><a href="{{ 'home'|page }}">Home</a></li>
+            <li><a href="{{ 'contact'|page }}">Contact</a></li>
+        
+    </ul>
 </div>
 
 <div class="sidebar-segment">
