@@ -32,9 +32,13 @@ class __TwigTemplate_4746ff5b124afc46bbe5a741664f4e416f524d64ae03ee12e4f6b60351b
     protected function doDisplay(array $context, array $blocks = [])
     {
         // line 1
-        echo "<div class=\"well\">
-    <br>
-    <h4>Wecome to Come2Learn</h4>
+        echo "<div class=\"jumbotron\">
+    <h2 class=\"text-center\">Welcome to Come2Learn</h2>
+    <h3 class=\"text-center\">";
+        // line 3
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "theme", [], "any", false, false, false, 3), "siteName", [], "any", false, false, false, 3), "html", null, true);
+        echo "</h3>
+    <p class=\"text-center\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam aspernatur blanditiis consectetur, distinctio eius enim id illum impedit ipsum iure odit placeat porro sed tempora unde ut! Ex, voluptates.</p>
 </div>";
     }
 
@@ -43,16 +47,22 @@ class __TwigTemplate_4746ff5b124afc46bbe5a741664f4e416f524d64ae03ee12e4f6b60351b
         return "D:\\xampp\\htdocs\\octoberCMS/themes/come2learn/pages/home.htm";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  35 => 1,);
+        return array (  39 => 3,  35 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Source("<div class=\"well\">
-    <br>
-    <h4>Wecome to Come2Learn</h4>
+        return new Source("<div class=\"jumbotron\">
+    <h2 class=\"text-center\">Welcome to Come2Learn</h2>
+    <h3 class=\"text-center\">{{this.theme.siteName}}</h3>
+    <p class=\"text-center\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam aspernatur blanditiis consectetur, distinctio eius enim id illum impedit ipsum iure odit placeat porro sed tempora unde ut! Ex, voluptates.</p>
 </div>", "D:\\xampp\\htdocs\\octoberCMS/themes/come2learn/pages/home.htm", "");
     }
 }

@@ -48,17 +48,37 @@ class __TwigTemplate_4d8ecacae1b5fd993f00d3bfa8b6e257b2bbe5554c0e953eabc823fa9ef
         </div>
         <div id=\"navbar\" class=\"collapse navbar-collapse\">
             <ul class=\"nav navbar-nav\">
-                <li><a href=\"";
+                <li class=\"";
         // line 14
-        echo url("/");
+        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, false, 14), "id", [], "any", false, false, false, 14) == "home")) {
+            echo "active";
+        }
+        echo "\"><a href=\"";
+        echo $this->extensions['Cms\Twig\Extension']->pageFilter("home");
         echo "\">Home</a></li>
-                <li><a href=\"";
+                <li class=\"";
         // line 15
-        echo url("/about");
+        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, false, 15), "id", [], "any", false, false, false, 15) == "about")) {
+            echo "active";
+        }
+        echo "\"><a href=\"";
+        echo $this->extensions['Cms\Twig\Extension']->pageFilter("about");
         echo "\">About</a></li>
-                <li><a href=\"";
+                <li class=\"";
         // line 16
-        echo url("/contact");
+        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, false, 16), "id", [], "any", false, false, false, 16) == "blog")) {
+            echo "active";
+        }
+        echo "\"><a href=\"";
+        echo $this->extensions['Cms\Twig\Extension']->pageFilter("blog");
+        echo "\">Blog</a></li>
+                <li class=\"";
+        // line 17
+        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, false, 17), "id", [], "any", false, false, false, 17) == "contact")) {
+            echo "active";
+        }
+        echo "\"><a href=\"";
+        echo $this->extensions['Cms\Twig\Extension']->pageFilter("contact");
         echo "\">Contact</a></li>
             </ul>
         </div><!--/.nav-collapse -->
@@ -79,7 +99,7 @@ class __TwigTemplate_4d8ecacae1b5fd993f00d3bfa8b6e257b2bbe5554c0e953eabc823fa9ef
 
     public function getDebugInfo()
     {
-        return array (  61 => 16,  57 => 15,  53 => 14,  46 => 10,  35 => 1,);
+        return array (  77 => 17,  69 => 16,  61 => 15,  53 => 14,  46 => 10,  35 => 1,);
     }
 
     public function getSourceContext()
@@ -97,9 +117,10 @@ class __TwigTemplate_4d8ecacae1b5fd993f00d3bfa8b6e257b2bbe5554c0e953eabc823fa9ef
         </div>
         <div id=\"navbar\" class=\"collapse navbar-collapse\">
             <ul class=\"nav navbar-nav\">
-                <li><a href=\"{{ url('/')}}\">Home</a></li>
-                <li><a href=\"{{ url('/about')}}\">About</a></li>
-                <li><a href=\"{{ url('/contact')}}\">Contact</a></li>
+                <li class=\"{% if this.page.id=='home' %}active{% endif %}\"><a href=\"{{ 'home' | page }}\">Home</a></li>
+                <li class=\"{% if this.page.id=='about'%}active{% endif %}\"><a href=\"{{ 'about' | page }}\">About</a></li>
+                <li class=\"{% if this.page.id=='blog' %}active{% endif %}\"><a href=\"{{ 'blog' | page }}\">Blog</a></li>
+                <li class=\"{% if this.page.id=='contact' %}active{% endif %}\"><a href=\"{{ 'contact'|page }}\">Contact</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>
