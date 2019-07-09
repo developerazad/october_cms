@@ -2555,23 +2555,23 @@ var functionMap = {
         "Decompresses BZip2 compressed data"
     ],
     "bzerrno": [
-        "int bzerrno(resource bz)",
+        "int bzerrno(resources bz)",
         "Returns the error number"
     ],
     "bzerror": [
-        "array bzerror(resource bz)",
+        "array bzerror(resources bz)",
         "Returns the error number and error string in an associative array"
     ],
     "bzerrstr": [
-        "string bzerrstr(resource bz)",
+        "string bzerrstr(resources bz)",
         "Returns the error string"
     ],
     "bzopen": [
-        "resource bzopen(string|int file|fp, string mode)",
+        "resources bzopen(string|int file|fp, string mode)",
         "Opens a new BZip2 stream"
     ],
     "bzread": [
-        "string bzread(resource bz[, int length])",
+        "string bzread(resources bz[, int length])",
         "Reads up to length bytes from a BZip2 stream, or 1024 bytes if length is not specified"
     ],
     "cal_days_in_month": [
@@ -2663,7 +2663,7 @@ var functionMap = {
         "Clear file stat cache"
     ],
     "closedir": [
-        "void closedir([resource dir_handle])",
+        "void closedir([resources dir_handle])",
         "Close directory connection identified by the dir_handle"
     ],
     "closelog": [
@@ -2783,7 +2783,7 @@ var functionMap = {
         "uuencode a string"
     ],
     "copy": [
-        "bool copy(string source_file, string destination_file [, resource context])",
+        "bool copy(string source_file, string destination_file [, resources context])",
         "Copy a file"
     ],
     "cos": [
@@ -2859,71 +2859,71 @@ var functionMap = {
         "Checks for character(s) representing a hexadecimal digit"
     ],
     "curl_close": [
-        "void curl_close(resource ch)",
+        "void curl_close(resources ch)",
         "Close a cURL session"
     ],
     "curl_copy_handle": [
-        "resource curl_copy_handle(resource ch)",
+        "resources curl_copy_handle(resources ch)",
         "Copy a cURL handle along with all of it's preferences"
     ],
     "curl_errno": [
-        "int curl_errno(resource ch)",
+        "int curl_errno(resources ch)",
         "Return an integer containing the last error number"
     ],
     "curl_error": [
-        "string curl_error(resource ch)",
+        "string curl_error(resources ch)",
         "Return a string contain the last error for the current session"
     ],
     "curl_exec": [
-        "bool curl_exec(resource ch)",
+        "bool curl_exec(resources ch)",
         "Perform a cURL session"
     ],
     "curl_getinfo": [
-        "mixed curl_getinfo(resource ch [, int option])",
+        "mixed curl_getinfo(resources ch [, int option])",
         "Get information regarding a specific transfer"
     ],
     "curl_init": [
-        "resource curl_init([string url])",
+        "resources curl_init([string url])",
         "Initialize a cURL session"
     ],
     "curl_multi_add_handle": [
-        "int curl_multi_add_handle(resource mh, resource ch)",
+        "int curl_multi_add_handle(resources mh, resources ch)",
         "Add a normal cURL handle to a cURL multi handle"
     ],
     "curl_multi_close": [
-        "void curl_multi_close(resource mh)",
+        "void curl_multi_close(resources mh)",
         "Close a set of cURL handles"
     ],
     "curl_multi_exec": [
-        "int curl_multi_exec(resource mh, int &still_running)",
+        "int curl_multi_exec(resources mh, int &still_running)",
         "Run the sub-connections of the current cURL handle"
     ],
     "curl_multi_getcontent": [
-        "string curl_multi_getcontent(resource ch)",
+        "string curl_multi_getcontent(resources ch)",
         "Return the content of a cURL handle if CURLOPT_RETURNTRANSFER is set"
     ],
     "curl_multi_info_read": [
-        "array curl_multi_info_read(resource mh [, long msgs_in_queue])",
+        "array curl_multi_info_read(resources mh [, long msgs_in_queue])",
         "Get information about.htm the current transfers"
     ],
     "curl_multi_init": [
-        "resource curl_multi_init(void)",
+        "resources curl_multi_init(void)",
         "Returns a new cURL multi handle"
     ],
     "curl_multi_remove_handle": [
-        "int curl_multi_remove_handle(resource mh, resource ch)",
+        "int curl_multi_remove_handle(resources mh, resources ch)",
         "Remove a multi handle from a set of cURL handles"
     ],
     "curl_multi_select": [
-        "int curl_multi_select(resource mh[, double timeout])",
+        "int curl_multi_select(resources mh[, double timeout])",
         "Get all the sockets associated with the cURL extension, which can then be \"selected\""
     ],
     "curl_setopt": [
-        "bool curl_setopt(resource ch, int option, mixed value)",
+        "bool curl_setopt(resources ch, int option, mixed value)",
         "Set an option for a cURL transfer"
     ],
     "curl_setopt_array": [
-        "bool curl_setopt_array(resource ch, array options)",
+        "bool curl_setopt_array(resources ch, array options)",
         "Set an array of option for a cURL transfer"
     ],
     "curl_version": [
@@ -3107,23 +3107,23 @@ var functionMap = {
         "* Set formatter timezone_id."
     ],
     "dba_close": [
-        "void dba_close(resource handle)",
+        "void dba_close(resources handle)",
         "Closes database"
     ],
     "dba_delete": [
-        "bool dba_delete(string key, resource handle)",
+        "bool dba_delete(string key, resources handle)",
         "Deletes the entry associated with key    If inifile: remove all other key lines"
     ],
     "dba_exists": [
-        "bool dba_exists(string key, resource handle)",
+        "bool dba_exists(string key, resources handle)",
         "Checks, if the specified key exists"
     ],
     "dba_fetch": [
-        "string dba_fetch(string key, [int skip ,] resource handle)",
+        "string dba_fetch(string key, [int skip ,] resources handle)",
         "Fetches the data associated with key"
     ],
     "dba_firstkey": [
-        "string dba_firstkey(resource handle)",
+        "string dba_firstkey(resources handle)",
         "Resets the internal key pointer and returns the first key"
     ],
     "dba_handlers": [
@@ -3131,7 +3131,7 @@ var functionMap = {
         "List configured database handlers"
     ],
     "dba_insert": [
-        "bool dba_insert(string key, string value, resource handle)",
+        "bool dba_insert(string key, string value, resources handle)",
         "If not inifile: Insert value as key, return false, if key exists already     If inifile: Add vakue as key (next instance of key)"
     ],
     "dba_key_split": [
@@ -3143,27 +3143,27 @@ var functionMap = {
         "List opened databases"
     ],
     "dba_nextkey": [
-        "string dba_nextkey(resource handle)",
+        "string dba_nextkey(resources handle)",
         "Returns the next key"
     ],
     "dba_open": [
-        "resource dba_open(string path, string mode [, string handlername, string ...])",
+        "resources dba_open(string path, string mode [, string handlername, string ...])",
         "Opens path using the specified handler in mode"
     ],
     "dba_optimize": [
-        "bool dba_optimize(resource handle)",
+        "bool dba_optimize(resources handle)",
         "Optimizes (e.g. clean up, vacuum) database"
     ],
     "dba_popen": [
-        "resource dba_popen(string path, string mode [, string handlername, string ...])",
+        "resources dba_popen(string path, string mode [, string handlername, string ...])",
         "Opens path using the specified handler in mode persistently"
     ],
     "dba_replace": [
-        "bool dba_replace(string key, string value, resource handle)",
+        "bool dba_replace(string key, string value, resources handle)",
         "Inserts value as key, replaces key, if key exists already    If inifile: remove all other key lines"
     ],
     "dba_sync": [
-        "bool dba_sync(resource handle)",
+        "bool dba_sync(resources handle)",
         "Synchronizes database"
     ],
     "dcgettext": [
@@ -3223,7 +3223,7 @@ var functionMap = {
         "Output a message and terminate the current script"
     ],
     "dir": [
-        "object dir(string directory[, resource context])",
+        "object dir(string directory[, resources context])",
         "Directory class with properties, handle and class and methods read, rewind and close"
     ],
     "dirname": [
@@ -3707,87 +3707,87 @@ var functionMap = {
         "Determine whether a variable is empty"
     ],
     "enchant_broker_describe": [
-        "array enchant_broker_describe(resource broker)",
+        "array enchant_broker_describe(resources broker)",
         "Enumerates the Enchant providers and tells you some rudimentary information about.htm them. The same info is provided through phpinfo()"
     ],
     "enchant_broker_dict_exists": [
-        "bool enchant_broker_dict_exists(resource broker, string tag)",
+        "bool enchant_broker_dict_exists(resources broker, string tag)",
         "Wether a dictionary exists or not. Using non-empty tag"
     ],
     "enchant_broker_free": [
-        "boolean enchant_broker_free(resource broker)",
+        "boolean enchant_broker_free(resources broker)",
         "Destroys the broker object and its dictionnaries"
     ],
     "enchant_broker_free_dict": [
-        "resource enchant_broker_free_dict(resource dict)",
-        "Free the dictionary resource"
+        "resources enchant_broker_free_dict(resources dict)",
+        "Free the dictionary resources"
     ],
     "enchant_broker_get_dict_path": [
-        "string enchant_broker_get_dict_path(resource broker, int dict_type)",
+        "string enchant_broker_get_dict_path(resources broker, int dict_type)",
         "Get the directory path for a given backend, works with ispell and myspell"
     ],
     "enchant_broker_get_error": [
-        "string enchant_broker_get_error(resource broker)",
+        "string enchant_broker_get_error(resources broker)",
         "Returns the last error of the broker"
     ],
     "enchant_broker_init": [
-        "resource enchant_broker_init()",
+        "resources enchant_broker_init()",
         "create a new broker object capable of requesting"
     ],
     "enchant_broker_list_dicts": [
-        "string enchant_broker_list_dicts(resource broker)",
+        "string enchant_broker_list_dicts(resources broker)",
         "Lists the dictionaries available for the given broker"
     ],
     "enchant_broker_request_dict": [
-        "resource enchant_broker_request_dict(resource broker, string tag)",
+        "resources enchant_broker_request_dict(resources broker, string tag)",
         "create a new dictionary using tag, the non-empty language tag you wish to request  a dictionary for (\"en_US\", \"de_DE\", ...)"
     ],
     "enchant_broker_request_pwl_dict": [
-        "resource enchant_broker_request_pwl_dict(resource broker, string filename)",
+        "resources enchant_broker_request_pwl_dict(resources broker, string filename)",
         "creates a dictionary using a PWL file. A PWL file is personal word file one word per line. It must exist before the call."
     ],
     "enchant_broker_set_dict_path": [
-        "bool enchant_broker_set_dict_path(resource broker, int dict_type, string value)",
+        "bool enchant_broker_set_dict_path(resources broker, int dict_type, string value)",
         "Set the directory path for a given backend, works with ispell and myspell"
     ],
     "enchant_broker_set_ordering": [
-        "bool enchant_broker_set_ordering(resource broker, string tag, string ordering)",
+        "bool enchant_broker_set_ordering(resources broker, string tag, string ordering)",
         "Declares a preference of dictionaries to use for the language  described\/referred to by 'tag'. The ordering is a comma delimited  list of provider names. As a special exception, the \"*\" tag can  be used as a language tag to declare a default ordering for any  language that does not explictly declare an ordering."
     ],
     "enchant_dict_add_to_personal": [
-        "void enchant_dict_add_to_personal(resource dict, string word)",
+        "void enchant_dict_add_to_personal(resources dict, string word)",
         "add 'word' to personal word list"
     ],
     "enchant_dict_add_to_session": [
-        "void enchant_dict_add_to_session(resource dict, string word)",
+        "void enchant_dict_add_to_session(resources dict, string word)",
         "add 'word' to this spell-checking session"
     ],
     "enchant_dict_check": [
-        "bool enchant_dict_check(resource dict, string word)",
+        "bool enchant_dict_check(resources dict, string word)",
         "If the word is correctly spelled return true, otherwise return false"
     ],
     "enchant_dict_describe": [
-        "array enchant_dict_describe(resource dict)",
+        "array enchant_dict_describe(resources dict)",
         "Describes an individual dictionary 'dict'"
     ],
     "enchant_dict_get_error": [
-        "string enchant_dict_get_error(resource dict)",
+        "string enchant_dict_get_error(resources dict)",
         "Returns the last error of the current spelling-session"
     ],
     "enchant_dict_is_in_session": [
-        "bool enchant_dict_is_in_session(resource dict, string word)",
+        "bool enchant_dict_is_in_session(resources dict, string word)",
         "whether or not 'word' exists in this spelling-session"
     ],
     "enchant_dict_quick_check": [
-        "bool enchant_dict_quick_check(resource dict, string word [, array &suggestions])",
+        "bool enchant_dict_quick_check(resources dict, string word [, array &suggestions])",
         "If the word is correctly spelled return true, otherwise return false, if suggestions variable     is provided, fill it with spelling alternatives."
     ],
     "enchant_dict_store_replacement": [
-        "void enchant_dict_store_replacement(resource dict, string mis, string cor)",
+        "void enchant_dict_store_replacement(resources dict, string mis, string cor)",
         "add a correction for 'mis' using 'cor'.  Notes that you replaced @mis with @cor, so it's possibly more likely  that future occurrences of @mis will be replaced with @cor. So it might  bump @cor up in the suggestion list."
     ],
     "enchant_dict_suggest": [
-        "array enchant_dict_suggest(resource dict, string word)",
+        "array enchant_dict_suggest(resources dict, string word)",
         "Will return a list of values if any of those pre-conditions are not met."
     ],
     "end": [
@@ -3879,35 +3879,35 @@ var functionMap = {
         "Calculate EZMLM list hash value."
     ],
     "fclose": [
-        "bool fclose(resource fp)",
+        "bool fclose(resources fp)",
         "Close an open file pointer"
     ],
     "feof": [
-        "bool feof(resource fp)",
+        "bool feof(resources fp)",
         "Test for end-of-file on a file pointer"
     ],
     "fflush": [
-        "bool fflush(resource fp)",
+        "bool fflush(resources fp)",
         "Flushes output"
     ],
     "fgetc": [
-        "string fgetc(resource fp)",
+        "string fgetc(resources fp)",
         "Get a character from file pointer"
     ],
     "fgetcsv": [
-        "array fgetcsv(resource fp [,int length [, string delimiter [, string enclosure [, string escape]]]])",
+        "array fgetcsv(resources fp [,int length [, string delimiter [, string enclosure [, string escape]]]])",
         "Get line from file pointer and parse for CSV fields"
     ],
     "fgets": [
-        "string fgets(resource fp[, int length])",
+        "string fgets(resources fp[, int length])",
         "Get a line from file pointer"
     ],
     "fgetss": [
-        "string fgetss(resource fp [, int length [, string allowable_tags]])",
+        "string fgetss(resources fp [, int length [, string allowable_tags]])",
         "Get a line from file pointer and strip HTML tags"
     ],
     "file": [
-        "array file(string filename [, int flags[, resource context]])",
+        "array file(string filename [, int flags[, resources context]])",
         "Read entire file into an array"
     ],
     "file_exists": [
@@ -3915,11 +3915,11 @@ var functionMap = {
         "Returns true if filename exists"
     ],
     "file_get_contents": [
-        "string file_get_contents(string filename [, bool use_include_path [, resource context [, long offset [, long maxlen]]]])",
+        "string file_get_contents(string filename [, bool use_include_path [, resources context [, long offset [, long maxlen]]]])",
         "Read the entire file into a string"
     ],
     "file_put_contents": [
-        "int file_put_contents(string file, mixed data [, int flags [, resource context]])",
+        "int file_put_contents(string file, mixed data [, int flags [, resources context]])",
         "Write\/Create a file with contents data and return the number of bytes written"
     ],
     "fileatime": [
@@ -3979,23 +3979,23 @@ var functionMap = {
         "* Returns an array with all arguments defined in 'definition'."
     ],
     "finfo_buffer": [
-        "string finfo_buffer(resource finfo, char *string [, int options [, resource context]])",
+        "string finfo_buffer(resources finfo, char *string [, int options [, resources context]])",
         "Return infromation about.htm a string buffer."
     ],
     "finfo_close": [
-        "resource finfo_close(resource finfo)",
-        "Close fileinfo resource."
+        "resources finfo_close(resources finfo)",
+        "Close fileinfo resources."
     ],
     "finfo_file": [
-        "string finfo_file(resource finfo, char *file_name [, int options [, resource context]])",
+        "string finfo_file(resources finfo, char *file_name [, int options [, resources context]])",
         "Return information about.htm a file."
     ],
     "finfo_open": [
-        "resource finfo_open([int options [, string arg]])",
-        "Create a new fileinfo resource."
+        "resources finfo_open([int options [, string arg]])",
+        "Create a new fileinfo resources."
     ],
     "finfo_set_flags": [
-        "bool finfo_set_flags(resource finfo, int options)",
+        "bool finfo_set_flags(resources finfo, int options)",
         "Set libmagic configuration options."
     ],
     "floatval": [
@@ -4003,7 +4003,7 @@ var functionMap = {
         "Get the float value of a variable"
     ],
     "flock": [
-        "bool flock(resource fp, int operation [, int &wouldblock])",
+        "bool flock(resources fp, int operation [, int &wouldblock])",
         "Portable file locking"
     ],
     "floor": [
@@ -4023,7 +4023,7 @@ var functionMap = {
         "Match filename against pattern"
     ],
     "fopen": [
-        "resource fopen(string filename, string mode [, bool use_include_path [, resource context]])",
+        "resources fopen(string filename, string mode [, bool use_include_path [, resources context]])",
         "Open a file or a URL and return a file pointer"
     ],
     "forward_static_call": [
@@ -4031,19 +4031,19 @@ var functionMap = {
         "Call a user function which is the first parameter"
     ],
     "fpassthru": [
-        "int fpassthru(resource fp)",
+        "int fpassthru(resources fp)",
         "Output all remaining data from a file pointer"
     ],
     "fprintf": [
-        "int fprintf(resource stream, string format [, mixed arg1 [, mixed ...]])",
+        "int fprintf(resources stream, string format [, mixed arg1 [, mixed ...]])",
         "Output a formatted string into a stream"
     ],
     "fputcsv": [
-        "int fputcsv(resource fp, array fields [, string delimiter [, string enclosure]])",
+        "int fputcsv(resources fp, array fields [, string delimiter [, string enclosure]])",
         "Format line as CSV and write to file pointer"
     ],
     "fread": [
-        "string fread(resource fp, int length)",
+        "string fread(resources fp, int length)",
         "Binary-safe file read"
     ],
     "frenchtojd": [
@@ -4051,23 +4051,23 @@ var functionMap = {
         "Converts a french republic calendar date to julian day count"
     ],
     "fscanf": [
-        "mixed fscanf(resource stream, string format [, string ...])",
+        "mixed fscanf(resources stream, string format [, string ...])",
         "Implements a mostly ANSI compatible fscanf()"
     ],
     "fseek": [
-        "int fseek(resource fp, int offset [, int whence])",
+        "int fseek(resources fp, int offset [, int whence])",
         "Seek on a file pointer"
     ],
     "fsockopen": [
-        "resource fsockopen(string hostname, int port [, int errno [, string errstr [, float timeout]]])",
+        "resources fsockopen(string hostname, int port [, int errno [, string errstr [, float timeout]]])",
         "Open Internet or Unix domain socket connection"
     ],
     "fstat": [
-        "array fstat(resource fp)",
+        "array fstat(resources fp)",
         "Stat() on a filehandle"
     ],
     "ftell": [
-        "int ftell(resource fp)",
+        "int ftell(resources fp)",
         "Get file pointer's read\/write position"
     ],
     "ftok": [
@@ -4075,139 +4075,139 @@ var functionMap = {
         "Convert a pathname and a project identifier to a System V IPC key"
     ],
     "ftp_alloc": [
-        "bool ftp_alloc(resource stream, int size[, &response])",
+        "bool ftp_alloc(resources stream, int size[, &response])",
         "Attempt to allocate space on the remote FTP server"
     ],
     "ftp_cdup": [
-        "bool ftp_cdup(resource stream)",
+        "bool ftp_cdup(resources stream)",
         "Changes to the parent directory"
     ],
     "ftp_chdir": [
-        "bool ftp_chdir(resource stream, string directory)",
+        "bool ftp_chdir(resources stream, string directory)",
         "Changes directories"
     ],
     "ftp_chmod": [
-        "int ftp_chmod(resource stream, int mode, string filename)",
+        "int ftp_chmod(resources stream, int mode, string filename)",
         "Sets permissions on a file"
     ],
     "ftp_close": [
-        "bool ftp_close(resource stream)",
+        "bool ftp_close(resources stream)",
         "Closes the FTP stream"
     ],
     "ftp_connect": [
-        "resource ftp_connect(string host [, int port [, int timeout]])",
+        "resources ftp_connect(string host [, int port [, int timeout]])",
         "Opens a FTP stream"
     ],
     "ftp_delete": [
-        "bool ftp_delete(resource stream, string file)",
+        "bool ftp_delete(resources stream, string file)",
         "Deletes a file"
     ],
     "ftp_exec": [
-        "bool ftp_exec(resource stream, string command)",
+        "bool ftp_exec(resources stream, string command)",
         "Requests execution of a program on the FTP server"
     ],
     "ftp_fget": [
-        "bool ftp_fget(resource stream, resource fp, string remote_file, int mode[, int resumepos])",
+        "bool ftp_fget(resources stream, resources fp, string remote_file, int mode[, int resumepos])",
         "Retrieves a file from the FTP server and writes it to an open file"
     ],
     "ftp_fput": [
-        "bool ftp_fput(resource stream, string remote_file, resource fp, int mode[, int startpos])",
+        "bool ftp_fput(resources stream, string remote_file, resources fp, int mode[, int startpos])",
         "Stores a file from an open file to the FTP server"
     ],
     "ftp_get": [
-        "bool ftp_get(resource stream, string local_file, string remote_file, int mode[, int resume_pos])",
+        "bool ftp_get(resources stream, string local_file, string remote_file, int mode[, int resume_pos])",
         "Retrieves a file from the FTP server and writes it to a local file"
     ],
     "ftp_get_option": [
-        "mixed ftp_get_option(resource stream, int option)",
+        "mixed ftp_get_option(resources stream, int option)",
         "Gets an FTP option"
     ],
     "ftp_login": [
-        "bool ftp_login(resource stream, string username, string password)",
+        "bool ftp_login(resources stream, string username, string password)",
         "Logs into the FTP server"
     ],
     "ftp_mdtm": [
-        "int ftp_mdtm(resource stream, string filename)",
+        "int ftp_mdtm(resources stream, string filename)",
         "Returns the last modification time of the file, or -1 on error"
     ],
     "ftp_mkdir": [
-        "string ftp_mkdir(resource stream, string directory)",
+        "string ftp_mkdir(resources stream, string directory)",
         "Creates a directory and returns the absolute path for the new directory or false on error"
     ],
     "ftp_nb_continue": [
-        "int ftp_nb_continue(resource stream)",
+        "int ftp_nb_continue(resources stream)",
         "Continues retrieving\/sending a file nbronously"
     ],
     "ftp_nb_fget": [
-        "int ftp_nb_fget(resource stream, resource fp, string remote_file, int mode[, int resumepos])",
+        "int ftp_nb_fget(resources stream, resources fp, string remote_file, int mode[, int resumepos])",
         "Retrieves a file from the FTP server asynchronly and writes it to an open file"
     ],
     "ftp_nb_fput": [
-        "int ftp_nb_fput(resource stream, string remote_file, resource fp, int mode[, int startpos])",
+        "int ftp_nb_fput(resources stream, string remote_file, resources fp, int mode[, int startpos])",
         "Stores a file from an open file to the FTP server nbronly"
     ],
     "ftp_nb_get": [
-        "int ftp_nb_get(resource stream, string local_file, string remote_file, int mode[, int resume_pos])",
+        "int ftp_nb_get(resources stream, string local_file, string remote_file, int mode[, int resume_pos])",
         "Retrieves a file from the FTP server nbhronly and writes it to a local file"
     ],
     "ftp_nb_put": [
-        "int ftp_nb_put(resource stream, string remote_file, string local_file, int mode[, int startpos])",
+        "int ftp_nb_put(resources stream, string remote_file, string local_file, int mode[, int startpos])",
         "Stores a file on the FTP server"
     ],
     "ftp_nlist": [
-        "array ftp_nlist(resource stream, string directory)",
+        "array ftp_nlist(resources stream, string directory)",
         "Returns an array of filenames in the given directory"
     ],
     "ftp_pasv": [
-        "bool ftp_pasv(resource stream, bool pasv)",
+        "bool ftp_pasv(resources stream, bool pasv)",
         "Turns passive mode on or off"
     ],
     "ftp_put": [
-        "bool ftp_put(resource stream, string remote_file, string local_file, int mode[, int startpos])",
+        "bool ftp_put(resources stream, string remote_file, string local_file, int mode[, int startpos])",
         "Stores a file on the FTP server"
     ],
     "ftp_pwd": [
-        "string ftp_pwd(resource stream)",
+        "string ftp_pwd(resources stream)",
         "Returns the present working directory"
     ],
     "ftp_raw": [
-        "array ftp_raw(resource stream, string command)",
+        "array ftp_raw(resources stream, string command)",
         "Sends a literal command to the FTP server"
     ],
     "ftp_rawlist": [
-        "array ftp_rawlist(resource stream, string directory [, bool recursive])",
+        "array ftp_rawlist(resources stream, string directory [, bool recursive])",
         "Returns a detailed listing of a directory as an array of output lines"
     ],
     "ftp_rename": [
-        "bool ftp_rename(resource stream, string src, string dest)",
+        "bool ftp_rename(resources stream, string src, string dest)",
         "Renames the given file to a new path"
     ],
     "ftp_rmdir": [
-        "bool ftp_rmdir(resource stream, string directory)",
+        "bool ftp_rmdir(resources stream, string directory)",
         "Removes a directory"
     ],
     "ftp_set_option": [
-        "bool ftp_set_option(resource stream, int option, mixed value)",
+        "bool ftp_set_option(resources stream, int option, mixed value)",
         "Sets an FTP option"
     ],
     "ftp_site": [
-        "bool ftp_site(resource stream, string cmd)",
+        "bool ftp_site(resources stream, string cmd)",
         "Sends a SITE command to the server"
     ],
     "ftp_size": [
-        "int ftp_size(resource stream, string filename)",
+        "int ftp_size(resources stream, string filename)",
         "Returns the size of the file, or -1 on error"
     ],
     "ftp_ssl_connect": [
-        "resource ftp_ssl_connect(string host [, int port [, int timeout]])",
+        "resources ftp_ssl_connect(string host [, int port [, int timeout]])",
         "Opens a FTP-SSL stream"
     ],
     "ftp_systype": [
-        "string ftp_systype(resource stream)",
+        "string ftp_systype(resources stream)",
         "Returns the system type identifier"
     ],
     "ftruncate": [
-        "bool ftruncate(resource fp, int size)",
+        "bool ftruncate(resources fp, int size)",
         "Truncate file to 'size' length"
     ],
     "func_get_arg": [
@@ -4227,7 +4227,7 @@ var functionMap = {
         "Checks if the function exists"
     ],
     "fwrite": [
-        "int fwrite(resource fp, string str [, int length])",
+        "int fwrite(resources fp, string str [, int length])",
         "Binary-safe file write"
     ],
     "gc_collect_cycles": [
@@ -4363,8 +4363,8 @@ var functionMap = {
         "Retrieves the parent class name for object or class or current scope."
     ],
     "get_resource_type": [
-        "string get_resource_type(resource res)",
-        "Get the resource type name for a given resource"
+        "string get_resource_type(resources res)",
+        "Get the resources type name for a given resources"
     ],
     "getallheaders": [
         "array getallheaders(void)",
@@ -4475,163 +4475,163 @@ var functionMap = {
         "Get UNIX timestamp for a GMT date"
     ],
     "gmp_abs": [
-        "resource gmp_abs(resource a)",
+        "resources gmp_abs(resources a)",
         "Calculates absolute value"
     ],
     "gmp_add": [
-        "resource gmp_add(resource a, resource b)",
+        "resources gmp_add(resources a, resources b)",
         "Add a and b"
     ],
     "gmp_and": [
-        "resource gmp_and(resource a, resource b)",
+        "resources gmp_and(resources a, resources b)",
         "Calculates logical AND of a and b"
     ],
     "gmp_clrbit": [
-        "void gmp_clrbit(resource &a, int index)",
+        "void gmp_clrbit(resources &a, int index)",
         "Clears bit in a"
     ],
     "gmp_cmp": [
-        "int gmp_cmp(resource a, resource b)",
+        "int gmp_cmp(resources a, resources b)",
         "Compares two numbers"
     ],
     "gmp_com": [
-        "resource gmp_com(resource a)",
+        "resources gmp_com(resources a)",
         "Calculates one's complement of a"
     ],
     "gmp_div_q": [
-        "resource gmp_div_q(resource a, resource b [, int round])",
+        "resources gmp_div_q(resources a, resources b [, int round])",
         "Divide a by b, returns quotient only"
     ],
     "gmp_div_qr": [
-        "array gmp_div_qr(resource a, resource b [, int round])",
+        "array gmp_div_qr(resources a, resources b [, int round])",
         "Divide a by b, returns quotient and reminder"
     ],
     "gmp_div_r": [
-        "resource gmp_div_r(resource a, resource b [, int round])",
+        "resources gmp_div_r(resources a, resources b [, int round])",
         "Divide a by b, returns reminder only"
     ],
     "gmp_divexact": [
-        "resource gmp_divexact(resource a, resource b)",
+        "resources gmp_divexact(resources a, resources b)",
         "Divide a by b using exact division algorithm"
     ],
     "gmp_fact": [
-        "resource gmp_fact(int a)",
+        "resources gmp_fact(int a)",
         "Calculates factorial function"
     ],
     "gmp_gcd": [
-        "resource gmp_gcd(resource a, resource b)",
+        "resources gmp_gcd(resources a, resources b)",
         "Computes greatest common denominator (gcd) of a and b"
     ],
     "gmp_gcdext": [
-        "array gmp_gcdext(resource a, resource b)",
+        "array gmp_gcdext(resources a, resources b)",
         "Computes G, S, and T, such that AS + BT = G = `gcd' (A, B)"
     ],
     "gmp_hamdist": [
-        "int gmp_hamdist(resource a, resource b)",
+        "int gmp_hamdist(resources a, resources b)",
         "Calculates hamming distance between a and b"
     ],
     "gmp_init": [
-        "resource gmp_init(mixed number [, int base])",
+        "resources gmp_init(mixed number [, int base])",
         "Initializes GMP number"
     ],
     "gmp_intval": [
-        "int gmp_intval(resource gmpnumber)",
+        "int gmp_intval(resources gmpnumber)",
         "Gets signed long value of GMP number"
     ],
     "gmp_invert": [
-        "resource gmp_invert(resource a, resource b)",
+        "resources gmp_invert(resources a, resources b)",
         "Computes the inverse of a modulo b"
     ],
     "gmp_jacobi": [
-        "int gmp_jacobi(resource a, resource b)",
+        "int gmp_jacobi(resources a, resources b)",
         "Computes Jacobi symbol"
     ],
     "gmp_legendre": [
-        "int gmp_legendre(resource a, resource b)",
+        "int gmp_legendre(resources a, resources b)",
         "Computes Legendre symbol"
     ],
     "gmp_mod": [
-        "resource gmp_mod(resource a, resource b)",
+        "resources gmp_mod(resources a, resources b)",
         "Computes a modulo b"
     ],
     "gmp_mul": [
-        "resource gmp_mul(resource a, resource b)",
+        "resources gmp_mul(resources a, resources b)",
         "Multiply a and b"
     ],
     "gmp_neg": [
-        "resource gmp_neg(resource a)",
+        "resources gmp_neg(resources a)",
         "Negates a number"
     ],
     "gmp_nextprime": [
-        "resource gmp_nextprime(resource a)",
+        "resources gmp_nextprime(resources a)",
         "Finds next prime of a"
     ],
     "gmp_or": [
-        "resource gmp_or(resource a, resource b)",
+        "resources gmp_or(resources a, resources b)",
         "Calculates logical OR of a and b"
     ],
     "gmp_perfect_square": [
-        "bool gmp_perfect_square(resource a)",
+        "bool gmp_perfect_square(resources a)",
         "Checks if a is an exact square"
     ],
     "gmp_popcount": [
-        "int gmp_popcount(resource a)",
+        "int gmp_popcount(resources a)",
         "Calculates the population count of a"
     ],
     "gmp_pow": [
-        "resource gmp_pow(resource base, int exp)",
+        "resources gmp_pow(resources base, int exp)",
         "Raise base to power exp"
     ],
     "gmp_powm": [
-        "resource gmp_powm(resource base, resource exp, resource mod)",
+        "resources gmp_powm(resources base, resources exp, resources mod)",
         "Raise base to power exp and take result modulo mod"
     ],
     "gmp_prob_prime": [
-        "int gmp_prob_prime(resource a[, int reps])",
+        "int gmp_prob_prime(resources a[, int reps])",
         "Checks if a is \"probably prime\""
     ],
     "gmp_random": [
-        "resource gmp_random([int limiter])",
+        "resources gmp_random([int limiter])",
         "Gets random number"
     ],
     "gmp_scan0": [
-        "int gmp_scan0(resource a, int start)",
+        "int gmp_scan0(resources a, int start)",
         "Finds first zero bit"
     ],
     "gmp_scan1": [
-        "int gmp_scan1(resource a, int start)",
+        "int gmp_scan1(resources a, int start)",
         "Finds first non-zero bit"
     ],
     "gmp_setbit": [
-        "void gmp_setbit(resource &a, int index[, bool set_clear])",
+        "void gmp_setbit(resources &a, int index[, bool set_clear])",
         "Sets or clear bit in a"
     ],
     "gmp_sign": [
-        "int gmp_sign(resource a)",
+        "int gmp_sign(resources a)",
         "Gets the sign of the number"
     ],
     "gmp_sqrt": [
-        "resource gmp_sqrt(resource a)",
+        "resources gmp_sqrt(resources a)",
         "Takes integer part of square root of a"
     ],
     "gmp_sqrtrem": [
-        "array gmp_sqrtrem(resource a)",
+        "array gmp_sqrtrem(resources a)",
         "Square root with remainder"
     ],
     "gmp_strval": [
-        "string gmp_strval(resource gmpnumber [, int base])",
+        "string gmp_strval(resources gmpnumber [, int base])",
         "Gets string representation of GMP number"
     ],
     "gmp_sub": [
-        "resource gmp_sub(resource a, resource b)",
+        "resources gmp_sub(resources a, resources b)",
         "Subtract b from a"
     ],
     "gmp_testbit": [
-        "bool gmp_testbit(resource a, int index)",
+        "bool gmp_testbit(resources a, int index)",
         "Tests if bit is set in a"
     ],
     "gmp_xor": [
-        "resource gmp_xor(resource a, resource b)",
+        "resources gmp_xor(resources a, resources b)",
         "Calculates logical exclusive OR of a and b"
     ],
     "gmstrftime": [
@@ -4699,7 +4699,7 @@ var functionMap = {
         "Unzip a gzip-compressed string"
     ],
     "gzopen": [
-        "resource gzopen(string filename, string mode [, int use_include_path])",
+        "resources gzopen(string filename, string mode [, int use_include_path])",
         "Open a .gz-file and return a .gz-file pointer"
     ],
     "gzuncompress": [
@@ -4715,15 +4715,15 @@ var functionMap = {
         "Return a list of registered hashing algorithms"
     ],
     "hash_copy": [
-        "resource hash_copy(resource context)",
-        "Copy hash resource"
+        "resources hash_copy(resources context)",
+        "Copy hash resources"
     ],
     "hash_file": [
         "string hash_file(string algo, string filename[, bool raw_output = false])",
         "Generate a hash of a given file Returns lowercase hexits by default"
     ],
     "hash_final": [
-        "string hash_final(resource context[, bool raw_output=false])",
+        "string hash_final(resources context[, bool raw_output=false])",
         "Output resulting digest"
     ],
     "hash_hmac": [
@@ -4735,19 +4735,19 @@ var functionMap = {
         "Generate a hash of a given file with a key using HMAC Returns lowercase hexits by default"
     ],
     "hash_init": [
-        "resource hash_init(string algo[, int options, string key])",
+        "resources hash_init(string algo[, int options, string key])",
         "Initialize a hashing context"
     ],
     "hash_update": [
-        "bool hash_update(resource context, string data)",
+        "bool hash_update(resources context, string data)",
         "Pump data into the hashing algorithm"
     ],
     "hash_update_file": [
-        "bool hash_update_file(resource context, string filename[, resource context])",
+        "bool hash_update_file(resources context, string filename[, resources context])",
         "Pump data into the hashing algorithm from a file"
     ],
     "hash_update_stream": [
-        "int hash_update_stream(resource context, resource handle[, integer length])",
+        "int hash_update_stream(resources context, resources handle[, integer length])",
         "Pump data into the hashing algorithm from an open stream"
     ],
     "header": [
@@ -4811,79 +4811,79 @@ var functionMap = {
         "Returns sqrt(num1*num1 + num2*num2)"
     ],
     "ibase_add_user": [
-        "bool ibase_add_user(resource service_handle, string user_name, string password [, string first_name [, string middle_name [, string last_name]]])",
+        "bool ibase_add_user(resources service_handle, string user_name, string password [, string first_name [, string middle_name [, string last_name]]])",
         "Add a user to security database"
     ],
     "ibase_affected_rows": [
-        "int ibase_affected_rows( [ resource link_identifier ] )",
+        "int ibase_affected_rows( [ resources link_identifier ] )",
         "Returns the number of rows affected by the previous INSERT, UPDATE or DELETE statement"
     ],
     "ibase_backup": [
-        "mixed ibase_backup(resource service_handle, string source_db, string dest_file [, int options [, bool verbose]])",
+        "mixed ibase_backup(resources service_handle, string source_db, string dest_file [, int options [, bool verbose]])",
         "Initiates a backup task in the service manager and returns immediately"
     ],
     "ibase_blob_add": [
-        "bool ibase_blob_add(resource blob_handle, string data)",
+        "bool ibase_blob_add(resources blob_handle, string data)",
         "Add data into created blob"
     ],
     "ibase_blob_cancel": [
-        "bool ibase_blob_cancel(resource blob_handle)",
+        "bool ibase_blob_cancel(resources blob_handle)",
         "Cancel creating blob"
     ],
     "ibase_blob_close": [
-        "string ibase_blob_close(resource blob_handle)",
+        "string ibase_blob_close(resources blob_handle)",
         "Close blob"
     ],
     "ibase_blob_create": [
-        "resource ibase_blob_create([resource link_identifier])",
+        "resources ibase_blob_create([resources link_identifier])",
         "Create blob for adding data"
     ],
     "ibase_blob_echo": [
-        "bool ibase_blob_echo([ resource link_identifier, ] string blob_id)",
+        "bool ibase_blob_echo([ resources link_identifier, ] string blob_id)",
         "Output blob contents to browser"
     ],
     "ibase_blob_get": [
-        "string ibase_blob_get(resource blob_handle, int len)",
+        "string ibase_blob_get(resources blob_handle, int len)",
         "Get len bytes data from open blob"
     ],
     "ibase_blob_import": [
-        "string ibase_blob_import([ resource link_identifier, ] resource file)",
+        "string ibase_blob_import([ resources link_identifier, ] resources file)",
         "Create blob, copy file in it, and close it"
     ],
     "ibase_blob_info": [
-        "array ibase_blob_info([ resource link_identifier, ] string blob_id)",
+        "array ibase_blob_info([ resources link_identifier, ] string blob_id)",
         "Return blob length and other useful info"
     ],
     "ibase_blob_open": [
-        "resource ibase_blob_open([ resource link_identifier, ] string blob_id)",
+        "resources ibase_blob_open([ resources link_identifier, ] string blob_id)",
         "Open blob for retrieving data parts"
     ],
     "ibase_close": [
-        "bool ibase_close([resource link_identifier])",
+        "bool ibase_close([resources link_identifier])",
         "Close an InterBase connection"
     ],
     "ibase_commit": [
-        "bool ibase_commit( resource link_identifier )",
+        "bool ibase_commit( resources link_identifier )",
         "Commit transaction"
     ],
     "ibase_commit_ret": [
-        "bool ibase_commit_ret( resource link_identifier )",
+        "bool ibase_commit_ret( resources link_identifier )",
         "Commit transaction and retain the transaction context"
     ],
     "ibase_connect": [
-        "resource ibase_connect(string database [, string username [, string password [, string charset [, int buffers [, int dialect [, string role]]]]]])",
+        "resources ibase_connect(string database [, string username [, string password [, string charset [, int buffers [, int dialect [, string role]]]]]])",
         "Open a connection to an InterBase database"
     ],
     "ibase_db_info": [
-        "string ibase_db_info(resource service_handle, string db, int action [, int argument])",
+        "string ibase_db_info(resources service_handle, string db, int action [, int argument])",
         "Request statistics about.htm a database"
     ],
     "ibase_delete_user": [
-        "bool ibase_delete_user(resource service_handle, string user_name, string password [, string first_name [, string middle_name [, string last_name]]])",
+        "bool ibase_delete_user(resources service_handle, string user_name, string password [, string first_name [, string middle_name [, string last_name]]])",
         "Delete a user from security database"
     ],
     "ibase_drop_db": [
-        "bool ibase_drop_db([resource link_identifier])",
+        "bool ibase_drop_db([resources link_identifier])",
         "Drop an InterBase database"
     ],
     "ibase_errcode": [
@@ -4895,115 +4895,115 @@ var functionMap = {
         "Return error message"
     ],
     "ibase_execute": [
-        "mixed ibase_execute(resource query [, mixed bind_arg [, mixed bind_arg [, ...]]])",
+        "mixed ibase_execute(resources query [, mixed bind_arg [, mixed bind_arg [, ...]]])",
         "Execute a previously prepared query"
     ],
     "ibase_fetch_assoc": [
-        "array ibase_fetch_assoc(resource result [, int fetch_flags])",
+        "array ibase_fetch_assoc(resources result [, int fetch_flags])",
         "Fetch a row  from the results of a query"
     ],
     "ibase_fetch_object": [
-        "object ibase_fetch_object(resource result [, int fetch_flags])",
+        "object ibase_fetch_object(resources result [, int fetch_flags])",
         "Fetch a object from the results of a query"
     ],
     "ibase_fetch_row": [
-        "array ibase_fetch_row(resource result [, int fetch_flags])",
+        "array ibase_fetch_row(resources result [, int fetch_flags])",
         "Fetch a row  from the results of a query"
     ],
     "ibase_field_info": [
-        "array ibase_field_info(resource query_result, int field_number)",
+        "array ibase_field_info(resources query_result, int field_number)",
         "Get information about.htm a field"
     ],
     "ibase_free_event_handler": [
-        "bool ibase_free_event_handler(resource event)",
+        "bool ibase_free_event_handler(resources event)",
         "Frees the event handler set by ibase_set_event_handler()"
     ],
     "ibase_free_query": [
-        "bool ibase_free_query(resource query)",
+        "bool ibase_free_query(resources query)",
         "Free memory used by a query"
     ],
     "ibase_free_result": [
-        "bool ibase_free_result(resource result)",
+        "bool ibase_free_result(resources result)",
         "Free the memory used by a result"
     ],
     "ibase_gen_id": [
-        "int ibase_gen_id(string generator [, int increment [, resource link_identifier ]])",
+        "int ibase_gen_id(string generator [, int increment [, resources link_identifier ]])",
         "Increments the named generator and returns its new value"
     ],
     "ibase_maintain_db": [
-        "bool ibase_maintain_db(resource service_handle, string db, int action [, int argument])",
+        "bool ibase_maintain_db(resources service_handle, string db, int action [, int argument])",
         "Execute a maintenance command on the database server"
     ],
     "ibase_modify_user": [
-        "bool ibase_modify_user(resource service_handle, string user_name, string password [, string first_name [, string middle_name [, string last_name]]])",
+        "bool ibase_modify_user(resources service_handle, string user_name, string password [, string first_name [, string middle_name [, string last_name]]])",
         "Modify a user in security database"
     ],
     "ibase_name_result": [
-        "bool ibase_name_result(resource result, string name)",
+        "bool ibase_name_result(resources result, string name)",
         "Assign a name to a result for use with ... WHERE CURRENT OF <name> statements"
     ],
     "ibase_num_fields": [
-        "int ibase_num_fields(resource query_result)",
+        "int ibase_num_fields(resources query_result)",
         "Get the number of fields in result"
     ],
     "ibase_num_params": [
-        "int ibase_num_params(resource query)",
+        "int ibase_num_params(resources query)",
         "Get the number of params in a prepared query"
     ],
     "ibase_num_rows": [
-        "int ibase_num_rows( resource result_identifier )",
+        "int ibase_num_rows( resources result_identifier )",
         "Return the number of rows that are available in a result"
     ],
     "ibase_param_info": [
-        "array ibase_param_info(resource query, int field_number)",
+        "array ibase_param_info(resources query, int field_number)",
         "Get information about.htm a parameter"
     ],
     "ibase_pconnect": [
-        "resource ibase_pconnect(string database [, string username [, string password [, string charset [, int buffers [, int dialect [, string role]]]]]])",
+        "resources ibase_pconnect(string database [, string username [, string password [, string charset [, int buffers [, int dialect [, string role]]]]]])",
         "Open a persistent connection to an InterBase database"
     ],
     "ibase_prepare": [
-        "resource ibase_prepare(resource link_identifier[, string query [, resource trans_identifier ]])",
+        "resources ibase_prepare(resources link_identifier[, string query [, resources trans_identifier ]])",
         "Prepare a query for later execution"
     ],
     "ibase_query": [
-        "mixed ibase_query([resource link_identifier, [ resource link_identifier, ]] string query [, mixed bind_arg [, mixed bind_arg [, ...]]])",
+        "mixed ibase_query([resources link_identifier, [ resources link_identifier, ]] string query [, mixed bind_arg [, mixed bind_arg [, ...]]])",
         "Execute a query"
     ],
     "ibase_restore": [
-        "mixed ibase_restore(resource service_handle, string source_file, string dest_db [, int options [, bool verbose]])",
+        "mixed ibase_restore(resources service_handle, string source_file, string dest_db [, int options [, bool verbose]])",
         "Initiates a restore task in the service manager and returns immediately"
     ],
     "ibase_rollback": [
-        "bool ibase_rollback( resource link_identifier )",
+        "bool ibase_rollback( resources link_identifier )",
         "Rollback transaction"
     ],
     "ibase_rollback_ret": [
-        "bool ibase_rollback_ret( resource link_identifier )",
+        "bool ibase_rollback_ret( resources link_identifier )",
         "Rollback transaction and retain the transaction context"
     ],
     "ibase_server_info": [
-        "string ibase_server_info(resource service_handle, int action)",
+        "string ibase_server_info(resources service_handle, int action)",
         "Request information about.htm a database server"
     ],
     "ibase_service_attach": [
-        "resource ibase_service_attach(string host, string dba_username, string dba_password)",
+        "resources ibase_service_attach(string host, string dba_username, string dba_password)",
         "Connect to the service manager"
     ],
     "ibase_service_detach": [
-        "bool ibase_service_detach(resource service_handle)",
+        "bool ibase_service_detach(resources service_handle)",
         "Disconnect from the service manager"
     ],
     "ibase_set_event_handler": [
-        "resource ibase_set_event_handler([resource link_identifier,] callback handler, string event [, string event [, ...]])",
+        "resources ibase_set_event_handler([resources link_identifier,] callback handler, string event [, string event [, ...]])",
         "Register the callback for handling each of the named events"
     ],
     "ibase_trans": [
-        "resource ibase_trans([int trans_args [, resource link_identifier [, ... ], int trans_args [, resource link_identifier [, ... ]] [, ...]]])",
+        "resources ibase_trans([int trans_args [, resources link_identifier [, ... ], int trans_args [, resources link_identifier [, ... ]] [, ...]]])",
         "Start a transaction over one or several databases"
     ],
     "ibase_wait_event": [
-        "string ibase_wait_event([resource link_identifier,] string event [, string event [, ...]])",
+        "string ibase_wait_event([resources link_identifier,] string event [, string event [, ...]])",
         "Waits for any one of the passed Interbase events to be posted by the database, and returns its name"
     ],
     "iconv": [
@@ -5063,7 +5063,7 @@ var functionMap = {
         "Set whether we want to ignore a user abort event or not"
     ],
     "image2wbmp": [
-        "bool image2wbmp(resource im [, string filename [, int threshold]])",
+        "bool image2wbmp(resources im [, string filename [, int threshold]])",
         "Output WBMP image to browser or file"
     ],
     "image_type_to_extension": [
@@ -5075,199 +5075,199 @@ var functionMap = {
         "Get Mime-Type for image-type returned by getimagesize, exif_read_data, exif_thumbnail, exif_imagetype"
     ],
     "imagealphablending": [
-        "bool imagealphablending(resource im, bool on)",
+        "bool imagealphablending(resources im, bool on)",
         "Turn alpha blending mode on or off for the given image"
     ],
     "imageantialias": [
-        "bool imageantialias(resource im, bool on)",
+        "bool imageantialias(resources im, bool on)",
         "Should antialiased functions used or not"
     ],
     "imagearc": [
-        "bool imagearc(resource im, int cx, int cy, int w, int h, int s, int e, int col)",
+        "bool imagearc(resources im, int cx, int cy, int w, int h, int s, int e, int col)",
         "Draw a partial ellipse"
     ],
     "imagechar": [
-        "bool imagechar(resource im, int font, int x, int y, string c, int col)",
+        "bool imagechar(resources im, int font, int x, int y, string c, int col)",
         "Draw a character"
     ],
     "imagecharup": [
-        "bool imagecharup(resource im, int font, int x, int y, string c, int col)",
+        "bool imagecharup(resources im, int font, int x, int y, string c, int col)",
         "Draw a character rotated 90 degrees counter-clockwise"
     ],
     "imagecolorallocate": [
-        "int imagecolorallocate(resource im, int red, int green, int blue)",
+        "int imagecolorallocate(resources im, int red, int green, int blue)",
         "Allocate a color for an image"
     ],
     "imagecolorallocatealpha": [
-        "int imagecolorallocatealpha(resource im, int red, int green, int blue, int alpha)",
+        "int imagecolorallocatealpha(resources im, int red, int green, int blue, int alpha)",
         "Allocate a color with an alpha level.  Works for true color and palette based images"
     ],
     "imagecolorat": [
-        "int imagecolorat(resource im, int x, int y)",
+        "int imagecolorat(resources im, int x, int y)",
         "Get the index of the color of a pixel"
     ],
     "imagecolorclosest": [
-        "int imagecolorclosest(resource im, int red, int green, int blue)",
+        "int imagecolorclosest(resources im, int red, int green, int blue)",
         "Get the index of the closest color to the specified color"
     ],
     "imagecolorclosestalpha": [
-        "int imagecolorclosestalpha(resource im, int red, int green, int blue, int alpha)",
+        "int imagecolorclosestalpha(resources im, int red, int green, int blue, int alpha)",
         "Find the closest matching colour with alpha transparency"
     ],
     "imagecolorclosesthwb": [
-        "int imagecolorclosesthwb(resource im, int red, int green, int blue)",
+        "int imagecolorclosesthwb(resources im, int red, int green, int blue)",
         "Get the index of the color which has the hue, white and blackness nearest to the given color"
     ],
     "imagecolordeallocate": [
-        "bool imagecolordeallocate(resource im, int index)",
+        "bool imagecolordeallocate(resources im, int index)",
         "De-allocate a color for an image"
     ],
     "imagecolorexact": [
-        "int imagecolorexact(resource im, int red, int green, int blue)",
+        "int imagecolorexact(resources im, int red, int green, int blue)",
         "Get the index of the specified color"
     ],
     "imagecolorexactalpha": [
-        "int imagecolorexactalpha(resource im, int red, int green, int blue, int alpha)",
+        "int imagecolorexactalpha(resources im, int red, int green, int blue, int alpha)",
         "Find exact match for colour with transparency"
     ],
     "imagecolormatch": [
-        "bool imagecolormatch(resource im1, resource im2)",
+        "bool imagecolormatch(resources im1, resources im2)",
         "Makes the colors of the palette version of an image more closely match the true color version"
     ],
     "imagecolorresolve": [
-        "int imagecolorresolve(resource im, int red, int green, int blue)",
+        "int imagecolorresolve(resources im, int red, int green, int blue)",
         "Get the index of the specified color or its closest possible alternative"
     ],
     "imagecolorresolvealpha": [
-        "int imagecolorresolvealpha(resource im, int red, int green, int blue, int alpha)",
+        "int imagecolorresolvealpha(resources im, int red, int green, int blue, int alpha)",
         "Resolve\/Allocate a colour with an alpha level.  Works for true colour and palette based images"
     ],
     "imagecolorset": [
-        "void imagecolorset(resource im, int col, int red, int green, int blue)",
+        "void imagecolorset(resources im, int col, int red, int green, int blue)",
         "Set the color for the specified palette index"
     ],
     "imagecolorsforindex": [
-        "array imagecolorsforindex(resource im, int col)",
+        "array imagecolorsforindex(resources im, int col)",
         "Get the colors for an index"
     ],
     "imagecolorstotal": [
-        "int imagecolorstotal(resource im)",
+        "int imagecolorstotal(resources im)",
         "Find out the number of colors in an image's palette"
     ],
     "imagecolortransparent": [
-        "int imagecolortransparent(resource im [, int col])",
+        "int imagecolortransparent(resources im [, int col])",
         "Define a color as transparent"
     ],
     "imageconvolution": [
-        "resource imageconvolution(resource src_im, array matrix3x3, double div, double offset)",
+        "resources imageconvolution(resources src_im, array matrix3x3, double div, double offset)",
         "Apply a 3x3 convolution matrix, using coefficient div and offset"
     ],
     "imagecopy": [
-        "bool imagecopy(resource dst_im, resource src_im, int dst_x, int dst_y, int src_x, int src_y, int src_w, int src_h)",
+        "bool imagecopy(resources dst_im, resources src_im, int dst_x, int dst_y, int src_x, int src_y, int src_w, int src_h)",
         "Copy part of an image"
     ],
     "imagecopymerge": [
-        "bool imagecopymerge(resource src_im, resource dst_im, int dst_x, int dst_y, int src_x, int src_y, int src_w, int src_h, int pct)",
+        "bool imagecopymerge(resources src_im, resources dst_im, int dst_x, int dst_y, int src_x, int src_y, int src_w, int src_h, int pct)",
         "Merge one part of an image with another"
     ],
     "imagecopymergegray": [
-        "bool imagecopymergegray(resource src_im, resource dst_im, int dst_x, int dst_y, int src_x, int src_y, int src_w, int src_h, int pct)",
+        "bool imagecopymergegray(resources src_im, resources dst_im, int dst_x, int dst_y, int src_x, int src_y, int src_w, int src_h, int pct)",
         "Merge one part of an image with another"
     ],
     "imagecopyresampled": [
-        "bool imagecopyresampled(resource dst_im, resource src_im, int dst_x, int dst_y, int src_x, int src_y, int dst_w, int dst_h, int src_w, int src_h)",
+        "bool imagecopyresampled(resources dst_im, resources src_im, int dst_x, int dst_y, int src_x, int src_y, int dst_w, int dst_h, int src_w, int src_h)",
         "Copy and resize part of an image using resampling to help ensure clarity"
     ],
     "imagecopyresized": [
-        "bool imagecopyresized(resource dst_im, resource src_im, int dst_x, int dst_y, int src_x, int src_y, int dst_w, int dst_h, int src_w, int src_h)",
+        "bool imagecopyresized(resources dst_im, resources src_im, int dst_x, int dst_y, int src_x, int src_y, int dst_w, int dst_h, int src_w, int src_h)",
         "Copy and resize part of an image"
     ],
     "imagecreate": [
-        "resource imagecreate(int x_size, int y_size)",
+        "resources imagecreate(int x_size, int y_size)",
         "Create a new image"
     ],
     "imagecreatefromgd": [
-        "resource imagecreatefromgd(string filename)",
+        "resources imagecreatefromgd(string filename)",
         "Create a new image from GD file or URL"
     ],
     "imagecreatefromgd2": [
-        "resource imagecreatefromgd2(string filename)",
+        "resources imagecreatefromgd2(string filename)",
         "Create a new image from GD2 file or URL"
     ],
     "imagecreatefromgd2part": [
-        "resource imagecreatefromgd2part(string filename, int srcX, int srcY, int width, int height)",
+        "resources imagecreatefromgd2part(string filename, int srcX, int srcY, int width, int height)",
         "Create a new image from a given part of GD2 file or URL"
     ],
     "imagecreatefromgif": [
-        "resource imagecreatefromgif(string filename)",
+        "resources imagecreatefromgif(string filename)",
         "Create a new image from GIF file or URL"
     ],
     "imagecreatefromjpeg": [
-        "resource imagecreatefromjpeg(string filename)",
+        "resources imagecreatefromjpeg(string filename)",
         "Create a new image from JPEG file or URL"
     ],
     "imagecreatefrompng": [
-        "resource imagecreatefrompng(string filename)",
+        "resources imagecreatefrompng(string filename)",
         "Create a new image from PNG file or URL"
     ],
     "imagecreatefromstring": [
-        "resource imagecreatefromstring(string image)",
+        "resources imagecreatefromstring(string image)",
         "Create a new image from the image stream in the string"
     ],
     "imagecreatefromwbmp": [
-        "resource imagecreatefromwbmp(string filename)",
+        "resources imagecreatefromwbmp(string filename)",
         "Create a new image from WBMP file or URL"
     ],
     "imagecreatefromxbm": [
-        "resource imagecreatefromxbm(string filename)",
+        "resources imagecreatefromxbm(string filename)",
         "Create a new image from XBM file or URL"
     ],
     "imagecreatefromxpm": [
-        "resource imagecreatefromxpm(string filename)",
+        "resources imagecreatefromxpm(string filename)",
         "Create a new image from XPM file or URL"
     ],
     "imagecreatetruecolor": [
-        "resource imagecreatetruecolor(int x_size, int y_size)",
+        "resources imagecreatetruecolor(int x_size, int y_size)",
         "Create a new true color image"
     ],
     "imagedashedline": [
-        "bool imagedashedline(resource im, int x1, int y1, int x2, int y2, int col)",
+        "bool imagedashedline(resources im, int x1, int y1, int x2, int y2, int col)",
         "Draw a dashed line"
     ],
     "imagedestroy": [
-        "bool imagedestroy(resource im)",
+        "bool imagedestroy(resources im)",
         "Destroy an image"
     ],
     "imageellipse": [
-        "bool imageellipse(resource im, int cx, int cy, int w, int h, int color)",
+        "bool imageellipse(resources im, int cx, int cy, int w, int h, int color)",
         "Draw an ellipse"
     ],
     "imagefill": [
-        "bool imagefill(resource im, int x, int y, int col)",
+        "bool imagefill(resources im, int x, int y, int col)",
         "Flood fill"
     ],
     "imagefilledarc": [
-        "bool imagefilledarc(resource im, int cx, int cy, int w, int h, int s, int e, int col, int style)",
+        "bool imagefilledarc(resources im, int cx, int cy, int w, int h, int s, int e, int col, int style)",
         "Draw a filled partial ellipse"
     ],
     "imagefilledellipse": [
-        "bool imagefilledellipse(resource im, int cx, int cy, int w, int h, int color)",
+        "bool imagefilledellipse(resources im, int cx, int cy, int w, int h, int color)",
         "Draw an ellipse"
     ],
     "imagefilledpolygon": [
-        "bool imagefilledpolygon(resource im, array point, int num_points, int col)",
+        "bool imagefilledpolygon(resources im, array point, int num_points, int col)",
         "Draw a filled polygon"
     ],
     "imagefilledrectangle": [
-        "bool imagefilledrectangle(resource im, int x1, int y1, int x2, int y2, int col)",
+        "bool imagefilledrectangle(resources im, int x1, int y1, int x2, int y2, int col)",
         "Draw a filled rectangle"
     ],
     "imagefilltoborder": [
-        "bool imagefilltoborder(resource im, int x, int y, int border, int col)",
+        "bool imagefilltoborder(resources im, int x, int y, int border, int col)",
         "Flood fill to specific color"
     ],
     "imagefilter": [
-        "bool imagefilter(resource src_im, int filtertype, [args] )",
+        "bool imagefilter(resources src_im, int filtertype, [args] )",
         "Applies Filter an image using a custom angle"
     ],
     "imagefontheight": [
@@ -5283,51 +5283,51 @@ var functionMap = {
         "Give the bounding box of a text using fonts via freetype2"
     ],
     "imagefttext": [
-        "array imagefttext(resource im, float size, float angle, int x, int y, int col, string font_file, string text [, array extrainfo])",
+        "array imagefttext(resources im, float size, float angle, int x, int y, int col, string font_file, string text [, array extrainfo])",
         "Write text to the image using fonts via freetype2"
     ],
     "imagegammacorrect": [
-        "bool imagegammacorrect(resource im, float inputgamma, float outputgamma)",
+        "bool imagegammacorrect(resources im, float inputgamma, float outputgamma)",
         "Apply a gamma correction to a GD image"
     ],
     "imagegd": [
-        "bool imagegd(resource im [, string filename])",
+        "bool imagegd(resources im [, string filename])",
         "Output GD image to browser or file"
     ],
     "imagegd2": [
-        "bool imagegd2(resource im [, string filename, [, int chunk_size, [, int type]]])",
+        "bool imagegd2(resources im [, string filename, [, int chunk_size, [, int type]]])",
         "Output GD2 image to browser or file"
     ],
     "imagegif": [
-        "bool imagegif(resource im [, string filename])",
+        "bool imagegif(resources im [, string filename])",
         "Output GIF image to browser or file"
     ],
     "imagegrabscreen": [
-        "resource imagegrabscreen()",
+        "resources imagegrabscreen()",
         "Grab a screenshot"
     ],
     "imagegrabwindow": [
-        "resource imagegrabwindow(int window_handle [, int client_area])",
+        "resources imagegrabwindow(int window_handle [, int client_area])",
         "Grab a window or its client area using a windows handle (HWND property in COM instance)"
     ],
     "imageinterlace": [
-        "int imageinterlace(resource im [, int interlace])",
+        "int imageinterlace(resources im [, int interlace])",
         "Enable or disable interlace"
     ],
     "imageistruecolor": [
-        "bool imageistruecolor(resource im)",
+        "bool imageistruecolor(resources im)",
         "return true if the image uses truecolor"
     ],
     "imagejpeg": [
-        "bool imagejpeg(resource im [, string filename [, int quality]])",
+        "bool imagejpeg(resources im [, string filename [, int quality]])",
         "Output JPEG image to browser or file"
     ],
     "imagelayereffect": [
-        "bool imagelayereffect(resource im, int effect)",
+        "bool imagelayereffect(resources im, int effect)",
         "Set the alpha blending flag to use the bundled libgd layering effects"
     ],
     "imageline": [
-        "bool imageline(resource im, int x1, int y1, int x2, int y2, int col)",
+        "bool imageline(resources im, int x1, int y1, int x2, int y2, int col)",
         "Draw a line"
     ],
     "imageloadfont": [
@@ -5335,19 +5335,19 @@ var functionMap = {
         "Load a new font"
     ],
     "imagepalettecopy": [
-        "void imagepalettecopy(resource dst, resource src)",
+        "void imagepalettecopy(resources dst, resources src)",
         "Copy the palette from the src image onto the dst image"
     ],
     "imagepng": [
-        "bool imagepng(resource im [, string filename])",
+        "bool imagepng(resources im [, string filename])",
         "Output PNG image to browser or file"
     ],
     "imagepolygon": [
-        "bool imagepolygon(resource im, array point, int num_points, int col)",
+        "bool imagepolygon(resources im, array point, int num_points, int col)",
         "Draw a polygon"
     ],
     "imagepsbbox": [
-        "array imagepsbbox(string text, resource font, int size [, int space, int tightness, float angle])",
+        "array imagepsbbox(string text, resources font, int size [, int space, int tightness, float angle])",
         "Return the bounding box needed by a string if rasterized"
     ],
     "imagepscopyfont": [
@@ -5355,79 +5355,79 @@ var functionMap = {
         "Make a copy of a font for purposes like extending or reenconding"
     ],
     "imagepsencodefont": [
-        "bool imagepsencodefont(resource font_index, string filename)",
+        "bool imagepsencodefont(resources font_index, string filename)",
         "To change a fonts character encoding vector"
     ],
     "imagepsextendfont": [
-        "bool imagepsextendfont(resource font_index, float extend)",
+        "bool imagepsextendfont(resources font_index, float extend)",
         "Extend or or condense (if extend < 1) a font"
     ],
     "imagepsfreefont": [
-        "bool imagepsfreefont(resource font_index)",
+        "bool imagepsfreefont(resources font_index)",
         "Free memory used by a font"
     ],
     "imagepsloadfont": [
-        "resource imagepsloadfont(string pathname)",
+        "resources imagepsloadfont(string pathname)",
         "Load a new font from specified file"
     ],
     "imagepsslantfont": [
-        "bool imagepsslantfont(resource font_index, float slant)",
+        "bool imagepsslantfont(resources font_index, float slant)",
         "Slant a font"
     ],
     "imagepstext": [
-        "array imagepstext(resource image, string text, resource font, int size, int foreground, int background, int xcoord, int ycoord [, int space [, int tightness [, float angle [, int antialias])",
+        "array imagepstext(resources image, string text, resources font, int size, int foreground, int background, int xcoord, int ycoord [, int space [, int tightness [, float angle [, int antialias])",
         "Rasterize a string over an image"
     ],
     "imagerectangle": [
-        "bool imagerectangle(resource im, int x1, int y1, int x2, int y2, int col)",
+        "bool imagerectangle(resources im, int x1, int y1, int x2, int y2, int col)",
         "Draw a rectangle"
     ],
     "imagerotate": [
-        "resource imagerotate(resource src_im, float angle, int bgdcolor [, int ignoretransparent])",
+        "resources imagerotate(resources src_im, float angle, int bgdcolor [, int ignoretransparent])",
         "Rotate an image using a custom angle"
     ],
     "imagesavealpha": [
-        "bool imagesavealpha(resource im, bool on)",
+        "bool imagesavealpha(resources im, bool on)",
         "Include alpha channel to a saved image"
     ],
     "imagesetbrush": [
-        "bool imagesetbrush(resource image, resource brush)",
+        "bool imagesetbrush(resources image, resources brush)",
         "Set the brush image to $brush when filling $image with the \"IMG_COLOR_BRUSHED\" color"
     ],
     "imagesetpixel": [
-        "bool imagesetpixel(resource im, int x, int y, int col)",
+        "bool imagesetpixel(resources im, int x, int y, int col)",
         "Set a single pixel"
     ],
     "imagesetstyle": [
-        "bool imagesetstyle(resource im, array styles)",
+        "bool imagesetstyle(resources im, array styles)",
         "Set the line drawing styles for use with imageline and IMG_COLOR_STYLED."
     ],
     "imagesetthickness": [
-        "bool imagesetthickness(resource im, int thickness)",
+        "bool imagesetthickness(resources im, int thickness)",
         "Set line thickness for drawing lines, ellipses, rectangles, polygons etc."
     ],
     "imagesettile": [
-        "bool imagesettile(resource image, resource tile)",
+        "bool imagesettile(resources image, resources tile)",
         "Set the tile image to $tile when filling $image with the \"IMG_COLOR_TILED\" color"
     ],
     "imagestring": [
-        "bool imagestring(resource im, int font, int x, int y, string str, int col)",
+        "bool imagestring(resources im, int font, int x, int y, string str, int col)",
         "Draw a string horizontally"
     ],
     "imagestringup": [
-        "bool imagestringup(resource im, int font, int x, int y, string str, int col)",
+        "bool imagestringup(resources im, int font, int x, int y, string str, int col)",
         "Draw a string vertically - rotated 90 degrees counter-clockwise"
     ],
     "imagesx": [
-        "int imagesx(resource im)",
+        "int imagesx(resources im)",
         "Get image width"
     ],
     "imagesy": [
-        "int imagesy(resource im)",
+        "int imagesy(resources im)",
         "Get image height"
     ],
     "imagetruecolortopalette": [
-        "void imagetruecolortopalette(resource im, bool ditherFlag, int colorsWanted)",
+        "void imagetruecolortopalette(resources im, bool ditherFlag, int colorsWanted)",
         "Convert a true colour image to a palette based image with a number of colours, optionally using dithering."
     ],
     "imagettfbbox": [
@@ -5435,7 +5435,7 @@ var functionMap = {
         "Give the bounding box of a text using TrueType fonts"
     ],
     "imagettftext": [
-        "array imagettftext(resource im, float size, float angle, int x, int y, int col, string font_file, string text)",
+        "array imagettftext(resources im, float size, float angle, int x, int y, int col, string font_file, string text)",
         "Write text to the image using a TrueType font"
     ],
     "imagetypes": [
@@ -5443,7 +5443,7 @@ var functionMap = {
         "Return the types of images supported in a bitfield - 1=GIF, 2=JPEG, 4=PNG, 8=WBMP, 16=XPM"
     ],
     "imagewbmp": [
-        "bool imagewbmp(resource im [, string filename, [, int foreground]])",
+        "bool imagewbmp(resources im [, string filename, [, int foreground]])",
         "Output WBMP image to browser or file"
     ],
     "imagexbm": [
@@ -5459,7 +5459,7 @@ var functionMap = {
         "Returns an array of all IMAP alerts that have been generated since the last page load or since the last imap_alerts() call, whichever came last. The alert stack is cleared after imap_alerts() is called."
     ],
     "imap_append": [
-        "bool imap_append(resource stream_id, string folder, string message [, string options [, string internal_date]])",
+        "bool imap_append(resources stream_id, string folder, string message [, string options [, string internal_date]])",
         "Append a new message to a specified mailbox"
     ],
     "imap_base64": [
@@ -5471,35 +5471,35 @@ var functionMap = {
         "Convert an 8bit string to a base64 string"
     ],
     "imap_body": [
-        "string imap_body(resource stream_id, int msg_no [, int options])",
+        "string imap_body(resources stream_id, int msg_no [, int options])",
         "Read the message body"
     ],
     "imap_bodystruct": [
-        "object imap_bodystruct(resource stream_id, int msg_no, string section)",
+        "object imap_bodystruct(resources stream_id, int msg_no, string section)",
         "Read the structure of a specified body section of a specific message"
     ],
     "imap_check": [
-        "object imap_check(resource stream_id)",
+        "object imap_check(resources stream_id)",
         "Get mailbox properties"
     ],
     "imap_clearflag_full": [
-        "bool imap_clearflag_full(resource stream_id, string sequence, string flag [, int options])",
+        "bool imap_clearflag_full(resources stream_id, string sequence, string flag [, int options])",
         "Clears flags on messages"
     ],
     "imap_close": [
-        "bool imap_close(resource stream_id [, int options])",
+        "bool imap_close(resources stream_id [, int options])",
         "Close an IMAP stream"
     ],
     "imap_createmailbox": [
-        "bool imap_createmailbox(resource stream_id, string mailbox)",
+        "bool imap_createmailbox(resources stream_id, string mailbox)",
         "Create a new mailbox"
     ],
     "imap_delete": [
-        "bool imap_delete(resource stream_id, int msg_no [, int options])",
+        "bool imap_delete(resources stream_id, int msg_no [, int options])",
         "Mark a message for deletion"
     ],
     "imap_deletemailbox": [
-        "bool imap_deletemailbox(resource stream_id, string mailbox)",
+        "bool imap_deletemailbox(resources stream_id, string mailbox)",
         "Delete a mailbox"
     ],
     "imap_errors": [
@@ -5507,55 +5507,55 @@ var functionMap = {
         "Returns an array of all IMAP errors generated since the last page load, or since the last imap_errors() call, whichever came last. The error stack is cleared after imap_errors() is called."
     ],
     "imap_expunge": [
-        "bool imap_expunge(resource stream_id)",
+        "bool imap_expunge(resources stream_id)",
         "Permanently delete all messages marked for deletion"
     ],
     "imap_fetch_overview": [
-        "array imap_fetch_overview(resource stream_id, string sequence [, int options])",
+        "array imap_fetch_overview(resources stream_id, string sequence [, int options])",
         "Read an overview of the information in the headers of the given message sequence"
     ],
     "imap_fetchbody": [
-        "string imap_fetchbody(resource stream_id, int msg_no, string section [, int options])",
+        "string imap_fetchbody(resources stream_id, int msg_no, string section [, int options])",
         "Get a specific body section"
     ],
     "imap_fetchheader": [
-        "string imap_fetchheader(resource stream_id, int msg_no [, int options])",
+        "string imap_fetchheader(resources stream_id, int msg_no [, int options])",
         "Get the full unfiltered header for a message"
     ],
     "imap_fetchstructure": [
-        "object imap_fetchstructure(resource stream_id, int msg_no [, int options])",
+        "object imap_fetchstructure(resources stream_id, int msg_no [, int options])",
         "Read the full structure of a message"
     ],
     "imap_gc": [
-        "bool imap_gc(resource stream_id, int flags)",
+        "bool imap_gc(resources stream_id, int flags)",
         "This function garbage collects (purges) the cache of entries of a specific type."
     ],
     "imap_get_quota": [
-        "array imap_get_quota(resource stream_id, string qroot)",
+        "array imap_get_quota(resources stream_id, string qroot)",
         "Returns the quota set to the mailbox account qroot"
     ],
     "imap_get_quotaroot": [
-        "array imap_get_quotaroot(resource stream_id, string mbox)",
+        "array imap_get_quotaroot(resources stream_id, string mbox)",
         "Returns the quota set to the mailbox account mbox"
     ],
     "imap_getacl": [
-        "array imap_getacl(resource stream_id, string mailbox)",
+        "array imap_getacl(resources stream_id, string mailbox)",
         "Gets the ACL for a given mailbox"
     ],
     "imap_getmailboxes": [
-        "array imap_getmailboxes(resource stream_id, string ref, string pattern)",
+        "array imap_getmailboxes(resources stream_id, string ref, string pattern)",
         "Reads the list of mailboxes and returns a full array of objects containing name, attributes, and delimiter"
     ],
     "imap_getsubscribed": [
-        "array imap_getsubscribed(resource stream_id, string ref, string pattern)",
+        "array imap_getsubscribed(resources stream_id, string ref, string pattern)",
         "Return a list of subscribed mailboxes, in the same format as imap_getmailboxes()"
     ],
     "imap_headerinfo": [
-        "object imap_headerinfo(resource stream_id, int msg_no [, int from_length [, int subject_length [, string default_host]]])",
+        "object imap_headerinfo(resources stream_id, int msg_no [, int from_length [, int subject_length [, string default_host]]])",
         "Read the headers of the message"
     ],
     "imap_headers": [
-        "array imap_headers(resource stream_id)",
+        "array imap_headers(resources stream_id)",
         "Returns headers for all messages in a mailbox"
     ],
     "imap_last_error": [
@@ -5563,15 +5563,15 @@ var functionMap = {
         "Returns the last error that was generated by an IMAP function. The error stack is NOT cleared after this call."
     ],
     "imap_list": [
-        "array imap_list(resource stream_id, string ref, string pattern)",
+        "array imap_list(resources stream_id, string ref, string pattern)",
         "Read the list of mailboxes"
     ],
     "imap_listscan": [
-        "array imap_listscan(resource stream_id, string ref, string pattern, string content)",
+        "array imap_listscan(resources stream_id, string ref, string pattern, string content)",
         "Read list of mailboxes containing a certain string"
     ],
     "imap_lsub": [
-        "array imap_lsub(resource stream_id, string ref, string pattern)",
+        "array imap_lsub(resources stream_id, string ref, string pattern)",
         "Return a list of subscribed mailboxes"
     ],
     "imap_mail": [
@@ -5583,15 +5583,15 @@ var functionMap = {
         "Create a MIME message based on given envelope and body sections"
     ],
     "imap_mail_copy": [
-        "bool imap_mail_copy(resource stream_id, string msglist, string mailbox [, int options])",
+        "bool imap_mail_copy(resources stream_id, string msglist, string mailbox [, int options])",
         "Copy specified message to a mailbox"
     ],
     "imap_mail_move": [
-        "bool imap_mail_move(resource stream_id, string sequence, string mailbox [, int options])",
+        "bool imap_mail_move(resources stream_id, string sequence, string mailbox [, int options])",
         "Move specified message to a mailbox"
     ],
     "imap_mailboxmsginfo": [
-        "object imap_mailboxmsginfo(resource stream_id)",
+        "object imap_mailboxmsginfo(resources stream_id)",
         "Returns info about.htm the current mailbox"
     ],
     "imap_mime_header_decode": [
@@ -5599,7 +5599,7 @@ var functionMap = {
         "Decode mime header element in accordance with RFC 2047 and return array of objects containing 'charset' encoding and decoded 'text'"
     ],
     "imap_msgno": [
-        "int imap_msgno(resource stream_id, int unique_msg_id)",
+        "int imap_msgno(resources stream_id, int unique_msg_id)",
         "Get the sequence number associated with a UID"
     ],
     "imap_mutf7_to_utf8": [
@@ -5607,19 +5607,19 @@ var functionMap = {
         "Decode a modified UTF-7 string to UTF-8"
     ],
     "imap_num_msg": [
-        "int imap_num_msg(resource stream_id)",
+        "int imap_num_msg(resources stream_id)",
         "Gives the number of messages in the current mailbox"
     ],
     "imap_num_recent": [
-        "int imap_num_recent(resource stream_id)",
+        "int imap_num_recent(resources stream_id)",
         "Gives the number of recent messages in current mailbox"
     ],
     "imap_open": [
-        "resource imap_open(string mailbox, string user, string password [, int options [, int n_retries]])",
+        "resources imap_open(string mailbox, string user, string password [, int options [, int n_retries]])",
         "Open an IMAP stream to a mailbox"
     ],
     "imap_ping": [
-        "bool imap_ping(resource stream_id)",
+        "bool imap_ping(resources stream_id)",
         "Check if the IMAP stream is still active"
     ],
     "imap_qprint": [
@@ -5627,11 +5627,11 @@ var functionMap = {
         "Convert a quoted-printable string to an 8-bit string"
     ],
     "imap_renamemailbox": [
-        "bool imap_renamemailbox(resource stream_id, string old_name, string new_name)",
+        "bool imap_renamemailbox(resources stream_id, string old_name, string new_name)",
         "Rename a mailbox"
     ],
     "imap_reopen": [
-        "bool imap_reopen(resource stream_id, string mailbox [, int options [, int n_retries]])",
+        "bool imap_reopen(resources stream_id, string mailbox [, int options [, int n_retries]])",
         "Reopen an IMAP stream to a new mailbox"
     ],
     "imap_rfc822_parse_adrlist": [
@@ -5647,39 +5647,39 @@ var functionMap = {
         "Returns a properly formatted email address given the mailbox, host, and personal info"
     ],
     "imap_savebody": [
-        "bool imap_savebody(resource stream_id, string|resource file, int msg_no[, string section = \"\"[, int options = 0]])",
+        "bool imap_savebody(resources stream_id, string|resources file, int msg_no[, string section = \"\"[, int options = 0]])",
         "Save a specific body section to a file"
     ],
     "imap_search": [
-        "array imap_search(resource stream_id, string criteria [, int options [, string charset]])",
+        "array imap_search(resources stream_id, string criteria [, int options [, string charset]])",
         "Return a list of messages matching the given criteria"
     ],
     "imap_set_quota": [
-        "bool imap_set_quota(resource stream_id, string qroot, int mailbox_size)",
+        "bool imap_set_quota(resources stream_id, string qroot, int mailbox_size)",
         "Will set the quota for qroot mailbox"
     ],
     "imap_setacl": [
-        "bool imap_setacl(resource stream_id, string mailbox, string id, string rights)",
+        "bool imap_setacl(resources stream_id, string mailbox, string id, string rights)",
         "Sets the ACL for a given mailbox"
     ],
     "imap_setflag_full": [
-        "bool imap_setflag_full(resource stream_id, string sequence, string flag [, int options])",
+        "bool imap_setflag_full(resources stream_id, string sequence, string flag [, int options])",
         "Sets flags on messages"
     ],
     "imap_sort": [
-        "array imap_sort(resource stream_id, int criteria, int reverse [, int options [, string search_criteria [, string charset]]])",
+        "array imap_sort(resources stream_id, int criteria, int reverse [, int options [, string search_criteria [, string charset]]])",
         "Sort an array of message headers, optionally including only messages that meet specified criteria."
     ],
     "imap_status": [
-        "object imap_status(resource stream_id, string mailbox, int options)",
+        "object imap_status(resources stream_id, string mailbox, int options)",
         "Get status info from a mailbox"
     ],
     "imap_subscribe": [
-        "bool imap_subscribe(resource stream_id, string mailbox)",
+        "bool imap_subscribe(resources stream_id, string mailbox)",
         "Subscribe to a mailbox"
     ],
     "imap_thread": [
-        "array imap_thread(resource stream_id [, int options])",
+        "array imap_thread(resources stream_id [, int options])",
         "Return threaded by REFERENCES tree"
     ],
     "imap_timeout": [
@@ -5687,15 +5687,15 @@ var functionMap = {
         "Set or fetch imap timeout"
     ],
     "imap_uid": [
-        "int imap_uid(resource stream_id, int msg_no)",
+        "int imap_uid(resources stream_id, int msg_no)",
         "Get the unique message id associated with a standard sequential message number"
     ],
     "imap_undelete": [
-        "bool imap_undelete(resource stream_id, int msg_no [, int flags])",
+        "bool imap_undelete(resources stream_id, int msg_no [, int flags])",
         "Remove the delete flag from a message"
     ],
     "imap_unsubscribe": [
-        "bool imap_unsubscribe(resource stream_id, string mailbox)",
+        "bool imap_unsubscribe(resources stream_id, string mailbox)",
         "Unsubscribe from a mailbox"
     ],
     "imap_utf7_decode": [
@@ -5864,7 +5864,7 @@ var functionMap = {
     ],
     "is_resource": [
         "bool is_resource(mixed var)",
-        "Returns true if variable is a resource"
+        "Returns true if variable is a resources"
     ],
     "is_scalar": [
         "bool is_scalar(mixed value)",
@@ -5987,27 +5987,27 @@ var functionMap = {
         "Translate 8859 characters to t61 characters"
     ],
     "ldap_add": [
-        "bool ldap_add(resource link, string dn, array entry)",
+        "bool ldap_add(resources link, string dn, array entry)",
         "Add entries to LDAP directory"
     ],
     "ldap_bind": [
-        "bool ldap_bind(resource link [, string dn [, string password]])",
+        "bool ldap_bind(resources link [, string dn [, string password]])",
         "Bind to LDAP directory"
     ],
     "ldap_compare": [
-        "bool ldap_compare(resource link, string dn, string attr, string value)",
+        "bool ldap_compare(resources link, string dn, string attr, string value)",
         "Determine if an entry has a specific value for one of its attributes"
     ],
     "ldap_connect": [
-        "resource ldap_connect([string host [, int port [, string wallet [, string wallet_passwd [, int authmode]]]]])",
+        "resources ldap_connect([string host [, int port [, string wallet [, string wallet_passwd [, int authmode]]]]])",
         "Connect to an LDAP server"
     ],
     "ldap_count_entries": [
-        "int ldap_count_entries(resource link, resource result)",
+        "int ldap_count_entries(resources link, resources result)",
         "Count the number of entries in a search result"
     ],
     "ldap_delete": [
-        "bool ldap_delete(resource link, string dn)",
+        "bool ldap_delete(resources link, string dn)",
         "Delete an entry from a directory"
     ],
     "ldap_dn2ufn": [
@@ -6019,11 +6019,11 @@ var functionMap = {
         "Convert error number to error string"
     ],
     "ldap_errno": [
-        "int ldap_errno(resource link)",
+        "int ldap_errno(resources link)",
         "Get the current ldap error number"
     ],
     "ldap_error": [
-        "string ldap_error(resource link)",
+        "string ldap_error(resources link)",
         "Get the current ldap error string"
     ],
     "ldap_explode_dn": [
@@ -6031,107 +6031,107 @@ var functionMap = {
         "Splits DN into its component parts"
     ],
     "ldap_first_attribute": [
-        "string ldap_first_attribute(resource link, resource result_entry)",
+        "string ldap_first_attribute(resources link, resources result_entry)",
         "Return first attribute"
     ],
     "ldap_first_entry": [
-        "resource ldap_first_entry(resource link, resource result)",
+        "resources ldap_first_entry(resources link, resources result)",
         "Return first result id"
     ],
     "ldap_first_reference": [
-        "resource ldap_first_reference(resource link, resource result)",
+        "resources ldap_first_reference(resources link, resources result)",
         "Return first reference"
     ],
     "ldap_free_result": [
-        "bool ldap_free_result(resource result)",
+        "bool ldap_free_result(resources result)",
         "Free result memory"
     ],
     "ldap_get_attributes": [
-        "array ldap_get_attributes(resource link, resource result_entry)",
+        "array ldap_get_attributes(resources link, resources result_entry)",
         "Get attributes from a search result entry"
     ],
     "ldap_get_dn": [
-        "string ldap_get_dn(resource link, resource result_entry)",
+        "string ldap_get_dn(resources link, resources result_entry)",
         "Get the DN of a result entry"
     ],
     "ldap_get_entries": [
-        "array ldap_get_entries(resource link, resource result)",
+        "array ldap_get_entries(resources link, resources result)",
         "Get all result entries"
     ],
     "ldap_get_option": [
-        "bool ldap_get_option(resource link, int option, mixed retval)",
+        "bool ldap_get_option(resources link, int option, mixed retval)",
         "Get the current value of various session-wide parameters"
     ],
     "ldap_get_values_len": [
-        "array ldap_get_values_len(resource link, resource result_entry, string attribute)",
+        "array ldap_get_values_len(resources link, resources result_entry, string attribute)",
         "Get all values with lengths from a result entry"
     ],
     "ldap_list": [
-        "resource ldap_list(resource|array link, string base_dn, string filter [, array attrs [, int attrsonly [, int sizelimit [, int timelimit [, int deref]]]]])",
+        "resources ldap_list(resources|array link, string base_dn, string filter [, array attrs [, int attrsonly [, int sizelimit [, int timelimit [, int deref]]]]])",
         "Single-level search"
     ],
     "ldap_mod_add": [
-        "bool ldap_mod_add(resource link, string dn, array entry)",
+        "bool ldap_mod_add(resources link, string dn, array entry)",
         "Add attribute values to current"
     ],
     "ldap_mod_del": [
-        "bool ldap_mod_del(resource link, string dn, array entry)",
+        "bool ldap_mod_del(resources link, string dn, array entry)",
         "Delete attribute values"
     ],
     "ldap_mod_replace": [
-        "bool ldap_mod_replace(resource link, string dn, array entry)",
+        "bool ldap_mod_replace(resources link, string dn, array entry)",
         "Replace attribute values with new ones"
     ],
     "ldap_next_attribute": [
-        "string ldap_next_attribute(resource link, resource result_entry)",
+        "string ldap_next_attribute(resources link, resources result_entry)",
         "Get the next attribute in result"
     ],
     "ldap_next_entry": [
-        "resource ldap_next_entry(resource link, resource result_entry)",
+        "resources ldap_next_entry(resources link, resources result_entry)",
         "Get next result entry"
     ],
     "ldap_next_reference": [
-        "resource ldap_next_reference(resource link, resource reference_entry)",
+        "resources ldap_next_reference(resources link, resources reference_entry)",
         "Get next reference"
     ],
     "ldap_parse_reference": [
-        "bool ldap_parse_reference(resource link, resource reference_entry, array referrals)",
+        "bool ldap_parse_reference(resources link, resources reference_entry, array referrals)",
         "Extract information from reference entry"
     ],
     "ldap_parse_result": [
-        "bool ldap_parse_result(resource link, resource result, int errcode, string matcheddn, string errmsg, array referrals)",
+        "bool ldap_parse_result(resources link, resources result, int errcode, string matcheddn, string errmsg, array referrals)",
         "Extract information from result"
     ],
     "ldap_read": [
-        "resource ldap_read(resource|array link, string base_dn, string filter [, array attrs [, int attrsonly [, int sizelimit [, int timelimit [, int deref]]]]])",
+        "resources ldap_read(resources|array link, string base_dn, string filter [, array attrs [, int attrsonly [, int sizelimit [, int timelimit [, int deref]]]]])",
         "Read an entry"
     ],
     "ldap_rename": [
-        "bool ldap_rename(resource link, string dn, string newrdn, string newparent, bool deleteoldrdn);",
+        "bool ldap_rename(resources link, string dn, string newrdn, string newparent, bool deleteoldrdn);",
         "Modify the name of an entry"
     ],
     "ldap_sasl_bind": [
-        "bool ldap_sasl_bind(resource link [, string binddn [, string password [, string sasl_mech [, string sasl_realm [, string sasl_authc_id [, string sasl_authz_id [, string props]]]]]]])",
+        "bool ldap_sasl_bind(resources link [, string binddn [, string password [, string sasl_mech [, string sasl_realm [, string sasl_authc_id [, string sasl_authz_id [, string props]]]]]]])",
         "Bind to LDAP directory using SASL"
     ],
     "ldap_search": [
-        "resource ldap_search(resource|array link, string base_dn, string filter [, array attrs [, int attrsonly [, int sizelimit [, int timelimit [, int deref]]]]])",
+        "resources ldap_search(resources|array link, string base_dn, string filter [, array attrs [, int attrsonly [, int sizelimit [, int timelimit [, int deref]]]]])",
         "Search LDAP tree under base_dn"
     ],
     "ldap_set_option": [
-        "bool ldap_set_option(resource link, int option, mixed newval)",
+        "bool ldap_set_option(resources link, int option, mixed newval)",
         "Set the value of various session-wide parameters"
     ],
     "ldap_set_rebind_proc": [
-        "bool ldap_set_rebind_proc(resource link, string callback)",
+        "bool ldap_set_rebind_proc(resources link, string callback)",
         "Set a callback function to do re-binds on referral chasing."
     ],
     "ldap_sort": [
-        "bool ldap_sort(resource link, resource result, string sortfilter)",
+        "bool ldap_sort(resources link, resources result, string sortfilter)",
         "Sort LDAP result entries"
     ],
     "ldap_start_tls": [
-        "bool ldap_start_tls(resource link)",
+        "bool ldap_start_tls(resources link)",
         "Start TLS"
     ],
     "ldap_t61_to_8859": [
@@ -6139,7 +6139,7 @@ var functionMap = {
         "Translate t61 characters to 8859 characters"
     ],
     "ldap_unbind": [
-        "bool ldap_unbind(resource link)",
+        "bool ldap_unbind(resources link)",
         "Unbind from LDAP directory"
     ],
     "leak": [
@@ -6167,7 +6167,7 @@ var functionMap = {
         "Retrieve last error from libxml"
     ],
     "libxml_set_streams_context": [
-        "void libxml_set_streams_context(resource streams_context)",
+        "void libxml_set_streams_context(resources streams_context)",
         "Set the streams context for the next libxml document load or write"
     ],
     "libxml_use_internal_errors": [
@@ -6292,7 +6292,7 @@ var functionMap = {
     ],
     "mb_convert_variables": [
         "string mb_convert_variables(string to-encoding, mixed from-encoding, mixed vars [, ...])",
-        "Converts the string resource in variables to desired encoding"
+        "Converts the string resources in variables to desired encoding"
     ],
     "mb_decode_mimeheader": [
         "string mb_decode_mimeheader(string string)",
@@ -6511,43 +6511,43 @@ var functionMap = {
         "ECB crypt\/decrypt data using key key with cipher cipher starting with iv"
     ],
     "mcrypt_enc_get_algorithms_name": [
-        "string mcrypt_enc_get_algorithms_name(resource td)",
+        "string mcrypt_enc_get_algorithms_name(resources td)",
         "Returns the name of the algorithm specified by the descriptor td"
     ],
     "mcrypt_enc_get_block_size": [
-        "int mcrypt_enc_get_block_size(resource td)",
+        "int mcrypt_enc_get_block_size(resources td)",
         "Returns the block size of the cipher specified by the descriptor td"
     ],
     "mcrypt_enc_get_iv_size": [
-        "int mcrypt_enc_get_iv_size(resource td)",
+        "int mcrypt_enc_get_iv_size(resources td)",
         "Returns the size of the IV in bytes of the algorithm specified by the descriptor td"
     ],
     "mcrypt_enc_get_key_size": [
-        "int mcrypt_enc_get_key_size(resource td)",
+        "int mcrypt_enc_get_key_size(resources td)",
         "Returns the maximum supported key size in bytes of the algorithm specified by the descriptor td"
     ],
     "mcrypt_enc_get_modes_name": [
-        "string mcrypt_enc_get_modes_name(resource td)",
+        "string mcrypt_enc_get_modes_name(resources td)",
         "Returns the name of the mode specified by the descriptor td"
     ],
     "mcrypt_enc_get_supported_key_sizes": [
-        "array mcrypt_enc_get_supported_key_sizes(resource td)",
+        "array mcrypt_enc_get_supported_key_sizes(resources td)",
         "This function decrypts the crypttext"
     ],
     "mcrypt_enc_is_block_algorithm": [
-        "bool mcrypt_enc_is_block_algorithm(resource td)",
+        "bool mcrypt_enc_is_block_algorithm(resources td)",
         "Returns TRUE if the alrogithm is a block algorithms"
     ],
     "mcrypt_enc_is_block_algorithm_mode": [
-        "bool mcrypt_enc_is_block_algorithm_mode(resource td)",
+        "bool mcrypt_enc_is_block_algorithm_mode(resources td)",
         "Returns TRUE if the mode is for use with block algorithms"
     ],
     "mcrypt_enc_is_block_mode": [
-        "bool mcrypt_enc_is_block_mode(resource td)",
+        "bool mcrypt_enc_is_block_mode(resources td)",
         "Returns TRUE if the mode outputs blocks"
     ],
     "mcrypt_enc_self_test": [
-        "int mcrypt_enc_self_test(resource td)",
+        "int mcrypt_enc_self_test(resources td)",
         "This function runs the self test on the algorithm specified by the descriptor td"
     ],
     "mcrypt_encrypt": [
@@ -6555,15 +6555,15 @@ var functionMap = {
         "OFB crypt\/decrypt data using key key with cipher cipher starting with iv"
     ],
     "mcrypt_generic": [
-        "string mcrypt_generic(resource td, string data)",
+        "string mcrypt_generic(resources td, string data)",
         "This function encrypts the plaintext"
     ],
     "mcrypt_generic_deinit": [
-        "bool mcrypt_generic_deinit(resource td)",
+        "bool mcrypt_generic_deinit(resources td)",
         "This function terminates encrypt specified by the descriptor td"
     ],
     "mcrypt_generic_init": [
-        "int mcrypt_generic_init(resource td, string key, string iv)",
+        "int mcrypt_generic_init(resources td, string key, string iv)",
         "This function initializes all buffers for the specific module"
     ],
     "mcrypt_get_block_size": [
@@ -6591,7 +6591,7 @@ var functionMap = {
         "List all modes \"module_dir\""
     ],
     "mcrypt_module_close": [
-        "bool mcrypt_module_close(resource td)",
+        "bool mcrypt_module_close(resources td)",
         "Free the descriptor td"
     ],
     "mcrypt_module_get_algo_block_size": [
@@ -6619,7 +6619,7 @@ var functionMap = {
         "Returns TRUE if the mode outputs blocks of bytes"
     ],
     "mcrypt_module_open": [
-        "resource mcrypt_module_open(string cipher, string cipher_directory, string mode, string mode_directory)",
+        "resources mcrypt_module_open(string cipher, string cipher_directory, string mode, string mode_directory)",
         "Opens the module of the algorithm and the mode to be used"
     ],
     "mcrypt_module_self_test": [
@@ -6639,7 +6639,7 @@ var functionMap = {
         "Calculate the md5 hash of given filename"
     ],
     "mdecrypt_generic": [
-        "string mdecrypt_generic(resource td, string data)",
+        "string mdecrypt_generic(resources td, string data)",
         "This function decrypts the plaintext"
     ],
     "memory_get_peak_usage": [
@@ -6683,7 +6683,7 @@ var functionMap = {
         "Returns either a string or a float containing the current time in seconds and microseconds"
     ],
     "mime_content_type": [
-        "string mime_content_type(string filename|resource stream)",
+        "string mime_content_type(string filename|resources stream)",
         "Return content-type for file"
     ],
     "min": [
@@ -6691,7 +6691,7 @@ var functionMap = {
         "Return the lowest value in an array or a series of arguments"
     ],
     "mkdir": [
-        "bool mkdir(string pathname [, int mode [, bool recursive [, resource context]]])",
+        "bool mkdir(string pathname [, int mode [, bool recursive [, resources context]]])",
         "Create a directory"
     ],
     "mktime": [
@@ -6707,7 +6707,7 @@ var functionMap = {
         "Move a file if and only if it was created by an upload"
     ],
     "msg_get_queue": [
-        "resource msg_get_queue(int key [, int perms])",
+        "resources msg_get_queue(int key [, int perms])",
         "Attach to a message queue"
     ],
     "msg_queue_exists": [
@@ -6715,23 +6715,23 @@ var functionMap = {
         "Check wether a message queue exists"
     ],
     "msg_receive": [
-        "mixed msg_receive(resource queue, int desiredmsgtype, int &msgtype, int maxsize, mixed message [, bool unserialize=true [, int flags=0 [, int errorcode]]])",
+        "mixed msg_receive(resources queue, int desiredmsgtype, int &msgtype, int maxsize, mixed message [, bool unserialize=true [, int flags=0 [, int errorcode]]])",
         "Send a message of type msgtype (must be > 0) to a message queue"
     ],
     "msg_remove_queue": [
-        "bool msg_remove_queue(resource queue)",
+        "bool msg_remove_queue(resources queue)",
         "Destroy the queue"
     ],
     "msg_send": [
-        "bool msg_send(resource queue, int msgtype, mixed message [, bool serialize=true [, bool blocking=true [, int errorcode]]])",
+        "bool msg_send(resources queue, int msgtype, mixed message [, bool serialize=true [, bool blocking=true [, int errorcode]]])",
         "Send a message of type msgtype (must be > 0) to a message queue"
     ],
     "msg_set_queue": [
-        "bool msg_set_queue(resource queue, array data)",
+        "bool msg_set_queue(resources queue, array data)",
         "Set information for a message queue"
     ],
     "msg_stat_queue": [
-        "array msg_stat_queue(resource queue)",
+        "array msg_stat_queue(resources queue)",
         "Returns information about.htm a message queue"
     ],
     "msgfmt_create": [
@@ -6771,11 +6771,11 @@ var functionMap = {
         "* Set formatter pattern."
     ],
     "mssql_bind": [
-        "bool mssql_bind(resource stmt, string param_name, mixed var, int type [, bool is_output [, bool is_null [, int maxlen]]])",
+        "bool mssql_bind(resources stmt, string param_name, mixed var, int type [, bool is_output [, bool is_null [, int maxlen]]])",
         "Adds a parameter to a stored procedure or a remote stored procedure"
     ],
     "mssql_close": [
-        "bool mssql_close([resource conn_id])",
+        "bool mssql_close([resources conn_id])",
         "Closes a connection to a MS-SQL server"
     ],
     "mssql_connect": [
@@ -6783,59 +6783,59 @@ var functionMap = {
         "Establishes a connection to a MS-SQL server"
     ],
     "mssql_data_seek": [
-        "bool mssql_data_seek(resource result_id, int offset)",
+        "bool mssql_data_seek(resources result_id, int offset)",
         "Moves the internal row pointer of the MS-SQL result associated with the specified result identifier to pointer to the specified row number"
     ],
     "mssql_execute": [
-        "mixed mssql_execute(resource stmt [, bool skip_results = false])",
+        "mixed mssql_execute(resources stmt [, bool skip_results = false])",
         "Executes a stored procedure on a MS-SQL server database"
     ],
     "mssql_fetch_array": [
-        "array mssql_fetch_array(resource result_id [, int result_type])",
+        "array mssql_fetch_array(resources result_id [, int result_type])",
         "Returns an associative array of the current row in the result set specified by result_id"
     ],
     "mssql_fetch_assoc": [
-        "array mssql_fetch_assoc(resource result_id)",
+        "array mssql_fetch_assoc(resources result_id)",
         "Returns an associative array of the current row in the result set specified by result_id"
     ],
     "mssql_fetch_batch": [
-        "int mssql_fetch_batch(resource result_index)",
+        "int mssql_fetch_batch(resources result_index)",
         "Returns the next batch of records"
     ],
     "mssql_fetch_field": [
-        "object mssql_fetch_field(resource result_id [, int offset])",
+        "object mssql_fetch_field(resources result_id [, int offset])",
         "Gets information about.htm certain fields in a query result"
     ],
     "mssql_fetch_object": [
-        "object mssql_fetch_object(resource result_id)",
+        "object mssql_fetch_object(resources result_id)",
         "Returns a pseudo-object of the current row in the result set specified by result_id"
     ],
     "mssql_fetch_row": [
-        "array mssql_fetch_row(resource result_id)",
+        "array mssql_fetch_row(resources result_id)",
         "Returns an array of the current row in the result set specified by result_id"
     ],
     "mssql_field_length": [
-        "int mssql_field_length(resource result_id [, int offset])",
+        "int mssql_field_length(resources result_id [, int offset])",
         "Get the length of a MS-SQL field"
     ],
     "mssql_field_name": [
-        "string mssql_field_name(resource result_id [, int offset])",
+        "string mssql_field_name(resources result_id [, int offset])",
         "Returns the name of the field given by offset in the result set given by result_id"
     ],
     "mssql_field_seek": [
-        "bool mssql_field_seek(resource result_id, int offset)",
+        "bool mssql_field_seek(resources result_id, int offset)",
         "Seeks to the specified field offset"
     ],
     "mssql_field_type": [
-        "string mssql_field_type(resource result_id [, int offset])",
+        "string mssql_field_type(resources result_id [, int offset])",
         "Returns the type of a field"
     ],
     "mssql_free_result": [
-        "bool mssql_free_result(resource result_index)",
+        "bool mssql_free_result(resources result_index)",
         "Free a MS-SQL result index"
     ],
     "mssql_free_statement": [
-        "bool mssql_free_statement(resource result_index)",
+        "bool mssql_free_statement(resources result_index)",
         "Free a MS-SQL statement index"
     ],
     "mssql_get_last_message": [
@@ -6847,7 +6847,7 @@ var functionMap = {
         "Converts a 16 byte binary GUID to a string"
     ],
     "mssql_init": [
-        "int mssql_init(string sp_name [, resource conn_id])",
+        "int mssql_init(string sp_name [, resources conn_id])",
         "Initializes a stored procedure or a remote stored procedure"
     ],
     "mssql_min_error_severity": [
@@ -6859,15 +6859,15 @@ var functionMap = {
         "Sets the lower message severity"
     ],
     "mssql_next_result": [
-        "bool mssql_next_result(resource result_id)",
+        "bool mssql_next_result(resources result_id)",
         "Move the internal result pointer to the next result"
     ],
     "mssql_num_fields": [
-        "int mssql_num_fields(resource mssql_result_index)",
+        "int mssql_num_fields(resources mssql_result_index)",
         "Returns the number of fields fetched in from the result id specified"
     ],
     "mssql_num_rows": [
-        "int mssql_num_rows(resource mssql_result_index)",
+        "int mssql_num_rows(resources mssql_result_index)",
         "Returns the number of rows fetched in from the result id specified"
     ],
     "mssql_pconnect": [
@@ -6875,19 +6875,19 @@ var functionMap = {
         "Establishes a persistent connection to a MS-SQL server"
     ],
     "mssql_query": [
-        "resource mssql_query(string query [, resource conn_id [, int batch_size]])",
+        "resources mssql_query(string query [, resources conn_id [, int batch_size]])",
         "Perform an SQL query on a MS-SQL server database"
     ],
     "mssql_result": [
-        "string mssql_result(resource result_id, int row, mixed field)",
+        "string mssql_result(resources result_id, int row, mixed field)",
         "Returns the contents of one cell from a MS-SQL result set"
     ],
     "mssql_rows_affected": [
-        "int mssql_rows_affected(resource conn_id)",
+        "int mssql_rows_affected(resources conn_id)",
         "Returns the number of records affected by the query"
     ],
     "mssql_select_db": [
-        "bool mssql_select_db(string database_name [, resource conn_id])",
+        "bool mssql_select_db(string database_name [, resources conn_id])",
         "Select a MS-SQL database"
     ],
     "mt_getrandmax": [
@@ -6915,7 +6915,7 @@ var functionMap = {
         "Close a MySQL connection"
     ],
     "mysql_connect": [
-        "resource mysql_connect([string hostname[:port][:\/path\/to\/socket] [, string username [, string password [, bool new [, int flags]]]]])",
+        "resources mysql_connect([string hostname[:port][:\/path\/to\/socket] [, string username [, string password [, bool new [, int flags]]]]])",
         "Opens a connection to a MySQL Server"
     ],
     "mysql_create_db": [
@@ -6923,11 +6923,11 @@ var functionMap = {
         "Create a MySQL database"
     ],
     "mysql_data_seek": [
-        "bool mysql_data_seek(resource result, int row_number)",
+        "bool mysql_data_seek(resources result, int row_number)",
         "Move internal result pointer"
     ],
     "mysql_db_query": [
-        "resource mysql_db_query(string database_name, string query [, int link_identifier])",
+        "resources mysql_db_query(string database_name, string query [, int link_identifier])",
         "Sends an SQL query to MySQL"
     ],
     "mysql_drop_db": [
@@ -6947,55 +6947,55 @@ var functionMap = {
         "Escape string for mysql query"
     ],
     "mysql_fetch_array": [
-        "array mysql_fetch_array(resource result [, int result_type])",
+        "array mysql_fetch_array(resources result [, int result_type])",
         "Fetch a result row as an array (associative, numeric or both)"
     ],
     "mysql_fetch_assoc": [
-        "array mysql_fetch_assoc(resource result)",
+        "array mysql_fetch_assoc(resources result)",
         "Fetch a result row as an associative array"
     ],
     "mysql_fetch_field": [
-        "object mysql_fetch_field(resource result [, int field_offset])",
+        "object mysql_fetch_field(resources result [, int field_offset])",
         "Gets column information from a result and return as an object"
     ],
     "mysql_fetch_lengths": [
-        "array mysql_fetch_lengths(resource result)",
+        "array mysql_fetch_lengths(resources result)",
         "Gets max data size of each column in a result"
     ],
     "mysql_fetch_object": [
-        "object mysql_fetch_object(resource result [, string class_name [, NULL|array ctor_params]])",
+        "object mysql_fetch_object(resources result [, string class_name [, NULL|array ctor_params]])",
         "Fetch a result row as an object"
     ],
     "mysql_fetch_row": [
-        "array mysql_fetch_row(resource result)",
+        "array mysql_fetch_row(resources result)",
         "Gets a result row as an enumerated array"
     ],
     "mysql_field_flags": [
-        "string mysql_field_flags(resource result, int field_offset)",
+        "string mysql_field_flags(resources result, int field_offset)",
         "Gets the flags associated with the specified field in a result"
     ],
     "mysql_field_len": [
-        "int mysql_field_len(resource result, int field_offset)",
+        "int mysql_field_len(resources result, int field_offset)",
         "Returns the length of the specified field"
     ],
     "mysql_field_name": [
-        "string mysql_field_name(resource result, int field_index)",
+        "string mysql_field_name(resources result, int field_index)",
         "Gets the name of the specified field in a result"
     ],
     "mysql_field_seek": [
-        "bool mysql_field_seek(resource result, int field_offset)",
+        "bool mysql_field_seek(resources result, int field_offset)",
         "Sets result pointer to a specific field offset"
     ],
     "mysql_field_table": [
-        "string mysql_field_table(resource result, int field_offset)",
+        "string mysql_field_table(resources result, int field_offset)",
         "Gets name of the table the specified field is in"
     ],
     "mysql_field_type": [
-        "string mysql_field_type(resource result, int field_offset)",
+        "string mysql_field_type(resources result, int field_offset)",
         "Gets the type of the specified field in a result"
     ],
     "mysql_free_result": [
-        "bool mysql_free_result(resource result)",
+        "bool mysql_free_result(resources result)",
         "Free result memory"
     ],
     "mysql_get_client_info": [
@@ -7023,31 +7023,31 @@ var functionMap = {
         "Gets the ID generated from the previous INSERT operation"
     ],
     "mysql_list_dbs": [
-        "resource mysql_list_dbs([int link_identifier])",
+        "resources mysql_list_dbs([int link_identifier])",
         "List databases available on a MySQL server"
     ],
     "mysql_list_fields": [
-        "resource mysql_list_fields(string database_name, string table_name [, int link_identifier])",
+        "resources mysql_list_fields(string database_name, string table_name [, int link_identifier])",
         "List MySQL result fields"
     ],
     "mysql_list_processes": [
-        "resource mysql_list_processes([int link_identifier])",
+        "resources mysql_list_processes([int link_identifier])",
         "Returns a result set describing the current server threads"
     ],
     "mysql_list_tables": [
-        "resource mysql_list_tables(string database_name [, int link_identifier])",
+        "resources mysql_list_tables(string database_name [, int link_identifier])",
         "List tables in a MySQL database"
     ],
     "mysql_num_fields": [
-        "int mysql_num_fields(resource result)",
+        "int mysql_num_fields(resources result)",
         "Gets number of fields in a result"
     ],
     "mysql_num_rows": [
-        "int mysql_num_rows(resource result)",
+        "int mysql_num_rows(resources result)",
         "Gets number of rows in a result"
     ],
     "mysql_pconnect": [
-        "resource mysql_pconnect([string hostname[:port][:\/path\/to\/socket] [, string username [, string password [, int flags]]]])",
+        "resources mysql_pconnect([string hostname[:port][:\/path\/to\/socket] [, string username [, string password [, int flags]]]])",
         "Opens a persistent connection to a MySQL Server"
     ],
     "mysql_ping": [
@@ -7055,7 +7055,7 @@ var functionMap = {
         "Ping a server connection. If no connection then reconnect."
     ],
     "mysql_query": [
-        "resource mysql_query(string query [, int link_identifier])",
+        "resources mysql_query(string query [, int link_identifier])",
         "Sends an SQL query to MySQL"
     ],
     "mysql_real_escape_string": [
@@ -7063,7 +7063,7 @@ var functionMap = {
         "Escape special characters in a string for use in a SQL statement, taking into account the current charset of the connection"
     ],
     "mysql_result": [
-        "mixed mysql_result(resource result, int row [, mixed field])",
+        "mixed mysql_result(resources result, int row [, mixed field])",
         "Gets result data"
     ],
     "mysql_select_db": [
@@ -7083,7 +7083,7 @@ var functionMap = {
         "Returns the thread id of current connection"
     ],
     "mysql_unbuffered_query": [
-        "resource mysql_unbuffered_query(string query [, int link_identifier])",
+        "resources mysql_unbuffered_query(string query [, int link_identifier])",
         "Sends an SQL query to MySQL, without fetching and buffering the result rows"
     ],
     "mysqli_affected_rows": [
@@ -7251,8 +7251,8 @@ var functionMap = {
         "Get information about.htm the most recent query"
     ],
     "mysqli_init": [
-        "resource mysqli_init(void)",
-        "Initialize mysqli and return a resource for use with mysql_real_connect"
+        "resources mysqli_init(void)",
+        "Initialize mysqli and return a resources for use with mysql_real_connect"
     ],
     "mysqli_insert_id": [
         "mixed mysqli_insert_id(object link)",
@@ -7663,19 +7663,19 @@ var functionMap = {
         "Turn on Output Buffering (specifying an optional output handler)."
     ],
     "oci_bind_array_by_name": [
-        "bool oci_bind_array_by_name(resource stmt, string name, array &var, int max_table_length [, int max_item_length [, int type ]])",
+        "bool oci_bind_array_by_name(resources stmt, string name, array &var, int max_table_length [, int max_item_length [, int type ]])",
         "Bind a PHP array to an Oracle PL\/SQL type by name"
     ],
     "oci_bind_by_name": [
-        "bool oci_bind_by_name(resource stmt, string name, mixed &var, [, int maxlength [, int type]])",
+        "bool oci_bind_by_name(resources stmt, string name, mixed &var, [, int maxlength [, int type]])",
         "Bind a PHP variable to an Oracle placeholder by name"
     ],
     "oci_cancel": [
-        "bool oci_cancel(resource stmt)",
+        "bool oci_cancel(resources stmt)",
         "Cancel reading from a cursor"
     ],
     "oci_close": [
-        "bool oci_close(resource connection)",
+        "bool oci_close(resources connection)",
         "Disconnect from database"
     ],
     "oci_collection_append": [
@@ -7707,75 +7707,75 @@ var functionMap = {
         "Trim num elements from the end of a collection"
     ],
     "oci_commit": [
-        "bool oci_commit(resource connection)",
+        "bool oci_commit(resources connection)",
         "Commit the current context"
     ],
     "oci_connect": [
-        "resource oci_connect(string user, string pass [, string db [, string charset [, int session_mode ]])",
+        "resources oci_connect(string user, string pass [, string db [, string charset [, int session_mode ]])",
         "Connect to an Oracle database and log on. Returns a new session."
     ],
     "oci_define_by_name": [
-        "bool oci_define_by_name(resource stmt, string name, mixed &var [, int type])",
+        "bool oci_define_by_name(resources stmt, string name, mixed &var [, int type])",
         "Define a PHP variable to an Oracle column by name"
     ],
     "oci_error": [
-        "array oci_error([resource stmt|connection|global])",
+        "array oci_error([resources stmt|connection|global])",
         "Return the last error of stmt|connection|global. If no error happened returns false."
     ],
     "oci_execute": [
-        "bool oci_execute(resource stmt [, int mode])",
+        "bool oci_execute(resources stmt [, int mode])",
         "Execute a parsed statement"
     ],
     "oci_fetch": [
-        "bool oci_fetch(resource stmt)",
+        "bool oci_fetch(resources stmt)",
         "Prepare a new row of data for reading"
     ],
     "oci_fetch_all": [
-        "int oci_fetch_all(resource stmt, array &output[, int skip[, int maxrows[, int flags]]])",
+        "int oci_fetch_all(resources stmt, array &output[, int skip[, int maxrows[, int flags]]])",
         "Fetch all rows of result data into an array"
     ],
     "oci_fetch_array": [
-        "array oci_fetch_array( resource stmt [, int mode ])",
+        "array oci_fetch_array( resources stmt [, int mode ])",
         "Fetch a result row as an array"
     ],
     "oci_fetch_assoc": [
-        "array oci_fetch_assoc( resource stmt )",
+        "array oci_fetch_assoc( resources stmt )",
         "Fetch a result row as an associative array"
     ],
     "oci_fetch_object": [
-        "object oci_fetch_object( resource stmt )",
+        "object oci_fetch_object( resources stmt )",
         "Fetch a result row as an object"
     ],
     "oci_fetch_row": [
-        "array oci_fetch_row( resource stmt )",
+        "array oci_fetch_row( resources stmt )",
         "Fetch a result row as an enumerated array"
     ],
     "oci_field_is_null": [
-        "bool oci_field_is_null(resource stmt, int col)",
+        "bool oci_field_is_null(resources stmt, int col)",
         "Tell whether a column is NULL"
     ],
     "oci_field_name": [
-        "string oci_field_name(resource stmt, int col)",
+        "string oci_field_name(resources stmt, int col)",
         "Tell the name of a column"
     ],
     "oci_field_precision": [
-        "int oci_field_precision(resource stmt, int col)",
+        "int oci_field_precision(resources stmt, int col)",
         "Tell the precision of a column"
     ],
     "oci_field_scale": [
-        "int oci_field_scale(resource stmt, int col)",
+        "int oci_field_scale(resources stmt, int col)",
         "Tell the scale of a column"
     ],
     "oci_field_size": [
-        "int oci_field_size(resource stmt, int col)",
+        "int oci_field_size(resources stmt, int col)",
         "Tell the maximum data size of a column"
     ],
     "oci_field_type": [
-        "mixed oci_field_type(resource stmt, int col)",
+        "mixed oci_field_type(resources stmt, int col)",
         "Tell the data type of a column"
     ],
     "oci_field_type_raw": [
-        "int oci_field_type_raw(resource stmt, int col)",
+        "int oci_field_type_raw(resources stmt, int col)",
         "Tell the raw oracle data type of a column"
     ],
     "oci_free_collection": [
@@ -7787,7 +7787,7 @@ var functionMap = {
         "Deletes large object description"
     ],
     "oci_free_statement": [
-        "bool oci_free_statement(resource stmt)",
+        "bool oci_free_statement(resources stmt)",
         "Free all resources associated with a statement"
     ],
     "oci_internal_debug": [
@@ -7871,63 +7871,63 @@ var functionMap = {
         "Writes temporary blob"
     ],
     "oci_new_collection": [
-        "object oci_new_collection(resource connection, string tdo [, string schema])",
+        "object oci_new_collection(resources connection, string tdo [, string schema])",
         "Initialize a new collection"
     ],
     "oci_new_connect": [
-        "resource oci_new_connect(string user, string pass [, string db])",
+        "resources oci_new_connect(string user, string pass [, string db])",
         "Connect to an Oracle database and log on. Returns a new session."
     ],
     "oci_new_cursor": [
-        "resource oci_new_cursor(resource connection)",
+        "resources oci_new_cursor(resources connection)",
         "Return a new cursor (Statement-Handle) - use this to bind ref-cursors!"
     ],
     "oci_new_descriptor": [
-        "object oci_new_descriptor(resource connection [, int type])",
+        "object oci_new_descriptor(resources connection [, int type])",
         "Initialize a new empty descriptor LOB\/FILE (LOB is default)"
     ],
     "oci_num_fields": [
-        "int oci_num_fields(resource stmt)",
+        "int oci_num_fields(resources stmt)",
         "Return the number of result columns in a statement"
     ],
     "oci_num_rows": [
-        "int oci_num_rows(resource stmt)",
+        "int oci_num_rows(resources stmt)",
         "Return the row count of an OCI statement"
     ],
     "oci_parse": [
-        "resource oci_parse(resource connection, string query)",
+        "resources oci_parse(resources connection, string query)",
         "Parse a query and return a statement"
     ],
     "oci_password_change": [
-        "bool oci_password_change(resource connection, string username, string old_password, string new_password)",
+        "bool oci_password_change(resources connection, string username, string old_password, string new_password)",
         "Changes the password of an account"
     ],
     "oci_pconnect": [
-        "resource oci_pconnect(string user, string pass [, string db [, string charset ]])",
+        "resources oci_pconnect(string user, string pass [, string db [, string charset ]])",
         "Connect to an Oracle database using a persistent connection and log on. Returns a new session."
     ],
     "oci_result": [
-        "string oci_result(resource stmt, mixed column)",
+        "string oci_result(resources stmt, mixed column)",
         "Return a single column of result data"
     ],
     "oci_rollback": [
-        "bool oci_rollback(resource connection)",
+        "bool oci_rollback(resources connection)",
         "Rollback the current context"
     ],
     "oci_server_version": [
-        "string oci_server_version(resource connection)",
+        "string oci_server_version(resources connection)",
         "Return a string containing server version information"
     ],
     "oci_set_action": [
-        "bool oci_set_action(resource connection, string value)",
+        "bool oci_set_action(resources connection, string value)",
         "Sets the action attribute on the connection"
     ],
     "oci_set_client_identifier": [
-        "bool oci_set_client_identifier(resource connection, string value)",
+        "bool oci_set_client_identifier(resources connection, string value)",
         "Sets the client identifier attribute on the connection"
     ],
     "oci_set_client_info": [
-        "bool oci_set_client_info(resource connection, string value)",
+        "bool oci_set_client_info(resources connection, string value)",
         "Sets the client info attribute on the connection"
     ],
     "oci_set_edition": [
@@ -7935,19 +7935,19 @@ var functionMap = {
         "Sets the edition attribute for all subsequent connections created"
     ],
     "oci_set_module_name": [
-        "bool oci_set_module_name(resource connection, string value)",
+        "bool oci_set_module_name(resources connection, string value)",
         "Sets the module attribute on the connection"
     ],
     "oci_set_prefetch": [
-        "bool oci_set_prefetch(resource stmt, int prefetch_rows)",
+        "bool oci_set_prefetch(resources stmt, int prefetch_rows)",
         "Sets the number of rows to be prefetched on execute to prefetch_rows for stmt"
     ],
     "oci_statement_type": [
-        "string oci_statement_type(resource stmt)",
+        "string oci_statement_type(resources stmt)",
         "Return the query type of an OCI statement"
     ],
     "ocifetchinto": [
-        "int ocifetchinto(resource stmt, array &output [, int mode])",
+        "int ocifetchinto(resources stmt, array &output [, int mode])",
         "Fetch a row of result data into an array"
     ],
     "ocigetbufferinglob": [
@@ -7963,7 +7963,7 @@ var functionMap = {
         "Returns the decimal equivalent of an octal string"
     ],
     "odbc_autocommit": [
-        "mixed odbc_autocommit(resource connection_id [, int OnOff])",
+        "mixed odbc_autocommit(resources connection_id [, int OnOff])",
         "Toggle autocommit mode or get status"
     ],
     "odbc_binmode": [
@@ -7971,7 +7971,7 @@ var functionMap = {
         "Handle binary column data"
     ],
     "odbc_close": [
-        "void odbc_close(resource connection_id)",
+        "void odbc_close(resources connection_id)",
         "Close an ODBC connection"
     ],
     "odbc_close_all": [
@@ -7979,43 +7979,43 @@ var functionMap = {
         "Close all ODBC connections"
     ],
     "odbc_columnprivileges": [
-        "resource odbc_columnprivileges(resource connection_id, string catalog, string schema, string table, string column)",
+        "resources odbc_columnprivileges(resources connection_id, string catalog, string schema, string table, string column)",
         "Returns a result identifier that can be used to fetch a list of columns and associated privileges for the specified table"
     ],
     "odbc_columns": [
-        "resource odbc_columns(resource connection_id [, string qualifier [, string owner [, string table_name [, string column_name]]]])",
+        "resources odbc_columns(resources connection_id [, string qualifier [, string owner [, string table_name [, string column_name]]]])",
         "Returns a result identifier that can be used to fetch a list of column names in specified tables"
     ],
     "odbc_commit": [
-        "bool odbc_commit(resource connection_id)",
+        "bool odbc_commit(resources connection_id)",
         "Commit an ODBC transaction"
     ],
     "odbc_connect": [
-        "resource odbc_connect(string DSN, string user, string password [, int cursor_option])",
+        "resources odbc_connect(string DSN, string user, string password [, int cursor_option])",
         "Connect to a datasource"
     ],
     "odbc_cursor": [
-        "string odbc_cursor(resource result_id)",
+        "string odbc_cursor(resources result_id)",
         "Get cursor name"
     ],
     "odbc_data_source": [
-        "array odbc_data_source(resource connection_id, int fetch_type)",
+        "array odbc_data_source(resources connection_id, int fetch_type)",
         "Return information about.htm the currently connected data source"
     ],
     "odbc_error": [
-        "string odbc_error([resource connection_id])",
+        "string odbc_error([resources connection_id])",
         "Get the last error code"
     ],
     "odbc_errormsg": [
-        "string odbc_errormsg([resource connection_id])",
+        "string odbc_errormsg([resources connection_id])",
         "Get the last error message"
     ],
     "odbc_exec": [
-        "resource odbc_exec(resource connection_id, string query [, int flags])",
+        "resources odbc_exec(resources connection_id, string query [, int flags])",
         "Prepare and execute an SQL statement"
     ],
     "odbc_execute": [
-        "bool odbc_execute(resource result_id [, array parameters_array])",
+        "bool odbc_execute(resources result_id [, array parameters_array])",
         "Execute a prepared statement"
     ],
     "odbc_fetch_array": [
@@ -8023,7 +8023,7 @@ var functionMap = {
         "Fetch a result row as an associative array"
     ],
     "odbc_fetch_into": [
-        "int odbc_fetch_into(resource result_id, array &result_array, [, int rownumber])",
+        "int odbc_fetch_into(resources result_id, array &result_array, [, int rownumber])",
         "Fetch one result row into an array"
     ],
     "odbc_fetch_object": [
@@ -8031,39 +8031,39 @@ var functionMap = {
         "Fetch a result row as an object"
     ],
     "odbc_fetch_row": [
-        "bool odbc_fetch_row(resource result_id [, int row_number])",
+        "bool odbc_fetch_row(resources result_id [, int row_number])",
         "Fetch a row"
     ],
     "odbc_field_len": [
-        "int odbc_field_len(resource result_id, int field_number)",
+        "int odbc_field_len(resources result_id, int field_number)",
         "Get the length (precision) of a column"
     ],
     "odbc_field_name": [
-        "string odbc_field_name(resource result_id, int field_number)",
+        "string odbc_field_name(resources result_id, int field_number)",
         "Get a column name"
     ],
     "odbc_field_num": [
-        "int odbc_field_num(resource result_id, string field_name)",
+        "int odbc_field_num(resources result_id, string field_name)",
         "Return column number"
     ],
     "odbc_field_scale": [
-        "int odbc_field_scale(resource result_id, int field_number)",
+        "int odbc_field_scale(resources result_id, int field_number)",
         "Get the scale of a column"
     ],
     "odbc_field_type": [
-        "string odbc_field_type(resource result_id, int field_number)",
+        "string odbc_field_type(resources result_id, int field_number)",
         "Get the datatype of a column"
     ],
     "odbc_foreignkeys": [
-        "resource odbc_foreignkeys(resource connection_id, string pk_qualifier, string pk_owner, string pk_table, string fk_qualifier, string fk_owner, string fk_table)",
+        "resources odbc_foreignkeys(resources connection_id, string pk_qualifier, string pk_owner, string pk_table, string fk_qualifier, string fk_owner, string fk_table)",
         "Returns a result identifier to either a list of foreign keys in the specified table or a list of foreign keys in other tables that refer to the primary key in the specified table"
     ],
     "odbc_free_result": [
-        "bool odbc_free_result(resource result_id)",
+        "bool odbc_free_result(resources result_id)",
         "Free resources associated with a result"
     ],
     "odbc_gettypeinfo": [
-        "resource odbc_gettypeinfo(resource connection_id [, int data_type])",
+        "resources odbc_gettypeinfo(resources connection_id [, int data_type])",
         "Returns a result identifier containing information about.htm data types supported by the data source"
     ],
     "odbc_longreadlen": [
@@ -8071,71 +8071,71 @@ var functionMap = {
         "Handle LONG columns"
     ],
     "odbc_next_result": [
-        "bool odbc_next_result(resource result_id)",
+        "bool odbc_next_result(resources result_id)",
         "Checks if multiple results are avaiable"
     ],
     "odbc_num_fields": [
-        "int odbc_num_fields(resource result_id)",
+        "int odbc_num_fields(resources result_id)",
         "Get number of columns in a result"
     ],
     "odbc_num_rows": [
-        "int odbc_num_rows(resource result_id)",
+        "int odbc_num_rows(resources result_id)",
         "Get number of rows in a result"
     ],
     "odbc_pconnect": [
-        "resource odbc_pconnect(string DSN, string user, string password [, int cursor_option])",
+        "resources odbc_pconnect(string DSN, string user, string password [, int cursor_option])",
         "Establish a persistent connection to a datasource"
     ],
     "odbc_prepare": [
-        "resource odbc_prepare(resource connection_id, string query)",
+        "resources odbc_prepare(resources connection_id, string query)",
         "Prepares a statement for execution"
     ],
     "odbc_primarykeys": [
-        "resource odbc_primarykeys(resource connection_id, string qualifier, string owner, string table)",
+        "resources odbc_primarykeys(resources connection_id, string qualifier, string owner, string table)",
         "Returns a result identifier listing the column names that comprise the primary key for a table"
     ],
     "odbc_procedurecolumns": [
-        "resource odbc_procedurecolumns(resource connection_id [, string qualifier, string owner, string proc, string column])",
+        "resources odbc_procedurecolumns(resources connection_id [, string qualifier, string owner, string proc, string column])",
         "Returns a result identifier containing the list of input and output parameters, as well as the columns that make up the result set for the specified procedures"
     ],
     "odbc_procedures": [
-        "resource odbc_procedures(resource connection_id [, string qualifier, string owner, string name])",
+        "resources odbc_procedures(resources connection_id [, string qualifier, string owner, string name])",
         "Returns a result identifier containg the list of procedure names in a datasource"
     ],
     "odbc_result": [
-        "mixed odbc_result(resource result_id, mixed field)",
+        "mixed odbc_result(resources result_id, mixed field)",
         "Get result data"
     ],
     "odbc_result_all": [
-        "int odbc_result_all(resource result_id [, string format])",
+        "int odbc_result_all(resources result_id [, string format])",
         "Print result as HTML table"
     ],
     "odbc_rollback": [
-        "bool odbc_rollback(resource connection_id)",
+        "bool odbc_rollback(resources connection_id)",
         "Rollback a transaction"
     ],
     "odbc_setoption": [
-        "bool odbc_setoption(resource conn_id|result_id, int which, int option, int value)",
+        "bool odbc_setoption(resources conn_id|result_id, int which, int option, int value)",
         "Sets connection or statement options"
     ],
     "odbc_specialcolumns": [
-        "resource odbc_specialcolumns(resource connection_id, int type, string qualifier, string owner, string table, int scope, int nullable)",
+        "resources odbc_specialcolumns(resources connection_id, int type, string qualifier, string owner, string table, int scope, int nullable)",
         "Returns a result identifier containing either the optimal set of columns that uniquely identifies a row in the table or columns that are automatically updated when any value in the row is updated by a transaction"
     ],
     "odbc_statistics": [
-        "resource odbc_statistics(resource connection_id, string qualifier, string owner, string name, int unique, int accuracy)",
+        "resources odbc_statistics(resources connection_id, string qualifier, string owner, string name, int unique, int accuracy)",
         "Returns a result identifier that contains statistics about.htm a single table and the indexes associated with the table"
     ],
     "odbc_tableprivileges": [
-        "resource odbc_tableprivileges(resource connection_id, string qualifier, string owner, string name)",
+        "resources odbc_tableprivileges(resources connection_id, string qualifier, string owner, string name)",
         "Returns a result identifier containing a list of tables and the privileges associated with each table"
     ],
     "odbc_tables": [
-        "resource odbc_tables(resource connection_id [, string qualifier [, string owner [, string name [, string table_types]]]])",
+        "resources odbc_tables(resources connection_id [, string qualifier [, string owner [, string name [, string table_types]]]])",
         "Call the SQLTables function"
     ],
     "opendir": [
-        "mixed opendir(string path[, resource context])",
+        "mixed opendir(string path[, resources context])",
         "Open a directory and return a dir_handle"
     ],
     "openlog": [
@@ -8143,11 +8143,11 @@ var functionMap = {
         "Open connection to system logger"
     ],
     "openssl_csr_export": [
-        "bool openssl_csr_export(resource csr, string &out [, bool notext=true])",
+        "bool openssl_csr_export(resources csr, string &out [, bool notext=true])",
         "Exports a CSR to file or a var"
     ],
     "openssl_csr_export_to_file": [
-        "bool openssl_csr_export_to_file(resource csr, string outfilename [, bool notext=true])",
+        "bool openssl_csr_export_to_file(resources csr, string outfilename [, bool notext=true])",
         "Exports a CSR to file"
     ],
     "openssl_csr_get_public_key": [
@@ -8159,11 +8159,11 @@ var functionMap = {
         "Returns the subject of a CERT or FALSE on error"
     ],
     "openssl_csr_new": [
-        "bool openssl_csr_new(array dn, resource &privkey [, array configargs [, array extraattribs]])",
+        "bool openssl_csr_new(array dn, resources &privkey [, array configargs [, array extraattribs]])",
         "Generates a privkey and CSR"
     ],
     "openssl_csr_sign": [
-        "resource openssl_csr_sign(mixed csr, mixed x509, mixed priv_key, long days [, array config_args [, long serial]])",
+        "resources openssl_csr_sign(mixed csr, mixed x509, mixed priv_key, long days [, array config_args [, long serial]])",
         "Signs a cert with another CERT"
     ],
     "openssl_decrypt": [
@@ -8171,7 +8171,7 @@ var functionMap = {
         "Takes raw or base64 encoded string and dectupt it using given method and key"
     ],
     "openssl_dh_compute_key": [
-        "string openssl_dh_compute_key(string pub_key, resource dh_key)",
+        "string openssl_dh_compute_key(string pub_key, resources dh_key)",
         "Computes shared sicret for public value of remote DH key and local DH key"
     ],
     "openssl_digest": [
@@ -8239,7 +8239,7 @@ var functionMap = {
         "Frees a key"
     ],
     "openssl_pkey_get_details": [
-        "resource openssl_pkey_get_details(resource key)",
+        "resources openssl_pkey_get_details(resources key)",
         "returns an array with the key details (bits, pkey, type)"
     ],
     "openssl_pkey_get_private": [
@@ -8251,7 +8251,7 @@ var functionMap = {
         "Gets public key from X.509 certificate"
     ],
     "openssl_pkey_new": [
-        "resource openssl_pkey_new([array configargs])",
+        "resources openssl_pkey_new([array configargs])",
         "Generates a new private key"
     ],
     "openssl_private_decrypt": [
@@ -8263,7 +8263,7 @@ var functionMap = {
         "Encrypts data with private key"
     ],
     "openssl_public_decrypt": [
-        "bool openssl_public_decrypt(string data, string &crypted, resource key [, int padding])",
+        "bool openssl_public_decrypt(string data, string &crypted, resources key [, int padding])",
         "Decrypts data with public key"
     ],
     "openssl_public_encrypt": [
@@ -8303,7 +8303,7 @@ var functionMap = {
         "Exports a CERT to file or a var"
     ],
     "openssl_x509_free": [
-        "void openssl_x509_free(resource x509)",
+        "void openssl_x509_free(resources x509)",
         "Frees X.509 certificates"
     ],
     "openssl_x509_parse": [
@@ -8311,7 +8311,7 @@ var functionMap = {
         "Returns an array of the fields\/values of the CERT"
     ],
     "openssl_x509_read": [
-        "resource openssl_x509_read(mixed cert)",
+        "resources openssl_x509_read(mixed cert)",
         "Reads X.509 certificates"
     ],
     "ord": [
@@ -8359,7 +8359,7 @@ var functionMap = {
         "Returns information about.htm a certain string"
     ],
     "pclose": [
-        "int pclose(resource fp)",
+        "int pclose(resources fp)",
         "Close a file pointer opened by popen()"
     ],
     "pcnlt_sigwaitinfo": [
@@ -8439,319 +8439,319 @@ var functionMap = {
         "Return array of available PDO drivers"
     ],
     "pfsockopen": [
-        "resource pfsockopen(string hostname, int port [, int errno [, string errstr [, float timeout]]])",
+        "resources pfsockopen(string hostname, int port [, int errno [, string errstr [, float timeout]]])",
         "Open persistent Internet or Unix domain socket connection"
     ],
     "pg_affected_rows": [
-        "int pg_affected_rows(resource result)",
+        "int pg_affected_rows(resources result)",
         "Returns the number of affected tuples"
     ],
     "pg_cancel_query": [
-        "bool pg_cancel_query(resource connection)",
+        "bool pg_cancel_query(resources connection)",
         "Cancel request"
     ],
     "pg_client_encoding": [
-        "string pg_client_encoding([resource connection])",
+        "string pg_client_encoding([resources connection])",
         "Get the current client encoding"
     ],
     "pg_close": [
-        "bool pg_close([resource connection])",
+        "bool pg_close([resources connection])",
         "Close a PostgreSQL connection"
     ],
     "pg_connect": [
-        "resource pg_connect(string connection_string[, int connect_type] | [string host, string port [, string options [, string tty,]]] string database)",
+        "resources pg_connect(string connection_string[, int connect_type] | [string host, string port [, string options [, string tty,]]] string database)",
         "Open a PostgreSQL connection"
     ],
     "pg_connection_busy": [
-        "bool pg_connection_busy(resource connection)",
+        "bool pg_connection_busy(resources connection)",
         "Get connection is busy or not"
     ],
     "pg_connection_reset": [
-        "bool pg_connection_reset(resource connection)",
+        "bool pg_connection_reset(resources connection)",
         "Reset connection (reconnect)"
     ],
     "pg_connection_status": [
-        "int pg_connection_status(resource connnection)",
+        "int pg_connection_status(resources connnection)",
         "Get connection status"
     ],
     "pg_convert": [
-        "array pg_convert(resource db, string table, array values[, int options])",
+        "array pg_convert(resources db, string table, array values[, int options])",
         "Check and convert values for PostgreSQL SQL statement"
     ],
     "pg_copy_from": [
-        "bool pg_copy_from(resource connection, string table_name , array rows [, string delimiter [, string null_as]])",
+        "bool pg_copy_from(resources connection, string table_name , array rows [, string delimiter [, string null_as]])",
         "Copy table from array"
     ],
     "pg_copy_to": [
-        "array pg_copy_to(resource connection, string table_name [, string delimiter [, string null_as]])",
+        "array pg_copy_to(resources connection, string table_name [, string delimiter [, string null_as]])",
         "Copy table to array"
     ],
     "pg_dbname": [
-        "string pg_dbname([resource connection])",
+        "string pg_dbname([resources connection])",
         "Get the database name"
     ],
     "pg_delete": [
-        "mixed pg_delete(resource db, string table, array ids[, int options])",
+        "mixed pg_delete(resources db, string table, array ids[, int options])",
         "Delete records has ids (id=>value)"
     ],
     "pg_end_copy": [
-        "bool pg_end_copy([resource connection])",
+        "bool pg_end_copy([resources connection])",
         "Sync with backend. Completes the Copy command"
     ],
     "pg_escape_bytea": [
-        "string pg_escape_bytea([resource connection,] string data)",
+        "string pg_escape_bytea([resources connection,] string data)",
         "Escape binary for bytea type"
     ],
     "pg_escape_string": [
-        "string pg_escape_string([resource connection,] string data)",
+        "string pg_escape_string([resources connection,] string data)",
         "Escape string for text\/char type"
     ],
     "pg_execute": [
-        "resource pg_execute([resource connection,] string stmtname, array params)",
+        "resources pg_execute([resources connection,] string stmtname, array params)",
         "Execute a prepared query"
     ],
     "pg_fetch_all": [
-        "array pg_fetch_all(resource result)",
+        "array pg_fetch_all(resources result)",
         "Fetch all rows into array"
     ],
     "pg_fetch_all_columns": [
-        "array pg_fetch_all_columns(resource result [, int column_number])",
+        "array pg_fetch_all_columns(resources result [, int column_number])",
         "Fetch all rows into array"
     ],
     "pg_fetch_array": [
-        "array pg_fetch_array(resource result [, int row [, int result_type]])",
+        "array pg_fetch_array(resources result [, int row [, int result_type]])",
         "Fetch a row as an array"
     ],
     "pg_fetch_assoc": [
-        "array pg_fetch_assoc(resource result [, int row])",
+        "array pg_fetch_assoc(resources result [, int row])",
         "Fetch a row as an assoc array"
     ],
     "pg_fetch_object": [
-        "object pg_fetch_object(resource result [, int row [, string class_name [, NULL|array ctor_params]]])",
+        "object pg_fetch_object(resources result [, int row [, string class_name [, NULL|array ctor_params]]])",
         "Fetch a row as an object"
     ],
     "pg_fetch_result": [
-        "mixed pg_fetch_result(resource result, [int row_number,] mixed field_name)",
+        "mixed pg_fetch_result(resources result, [int row_number,] mixed field_name)",
         "Returns values from a result identifier"
     ],
     "pg_fetch_row": [
-        "array pg_fetch_row(resource result [, int row [, int result_type]])",
+        "array pg_fetch_row(resources result [, int row [, int result_type]])",
         "Get a row as an enumerated array"
     ],
     "pg_field_is_null": [
-        "int pg_field_is_null(resource result, [int row,] mixed field_name_or_number)",
+        "int pg_field_is_null(resources result, [int row,] mixed field_name_or_number)",
         "Test if a field is NULL"
     ],
     "pg_field_name": [
-        "string pg_field_name(resource result, int field_number)",
+        "string pg_field_name(resources result, int field_number)",
         "Returns the name of the field"
     ],
     "pg_field_num": [
-        "int pg_field_num(resource result, string field_name)",
+        "int pg_field_num(resources result, string field_name)",
         "Returns the field number of the named field"
     ],
     "pg_field_prtlen": [
-        "int pg_field_prtlen(resource result, [int row,] mixed field_name_or_number)",
+        "int pg_field_prtlen(resources result, [int row,] mixed field_name_or_number)",
         "Returns the printed length"
     ],
     "pg_field_size": [
-        "int pg_field_size(resource result, int field_number)",
+        "int pg_field_size(resources result, int field_number)",
         "Returns the internal size of the field"
     ],
     "pg_field_table": [
-        "mixed pg_field_table(resource result, int field_number[, bool oid_only])",
+        "mixed pg_field_table(resources result, int field_number[, bool oid_only])",
         "Returns the name of the table field belongs to, or table's oid if oid_only is true"
     ],
     "pg_field_type": [
-        "string pg_field_type(resource result, int field_number)",
+        "string pg_field_type(resources result, int field_number)",
         "Returns the type name for the given field"
     ],
     "pg_field_type_oid": [
-        "string pg_field_type_oid(resource result, int field_number)",
+        "string pg_field_type_oid(resources result, int field_number)",
         "Returns the type oid for the given field"
     ],
     "pg_free_result": [
-        "bool pg_free_result(resource result)",
+        "bool pg_free_result(resources result)",
         "Free result memory"
     ],
     "pg_get_notify": [
-        "array pg_get_notify([resource connection[, result_type]])",
+        "array pg_get_notify([resources connection[, result_type]])",
         "Get asynchronous notification"
     ],
     "pg_get_pid": [
-        "int pg_get_pid([resource connection)",
+        "int pg_get_pid([resources connection)",
         "Get backend(server) pid"
     ],
     "pg_get_result": [
-        "resource pg_get_result(resource connection)",
+        "resources pg_get_result(resources connection)",
         "Get asynchronous query result"
     ],
     "pg_host": [
-        "string pg_host([resource connection])",
+        "string pg_host([resources connection])",
         "Returns the host name associated with the connection"
     ],
     "pg_insert": [
-        "mixed pg_insert(resource db, string table, array values[, int options])",
+        "mixed pg_insert(resources db, string table, array values[, int options])",
         "Insert values (filed=>value) to table"
     ],
     "pg_last_error": [
-        "string pg_last_error([resource connection])",
+        "string pg_last_error([resources connection])",
         "Get the error message string"
     ],
     "pg_last_notice": [
-        "string pg_last_notice(resource connection)",
+        "string pg_last_notice(resources connection)",
         "Returns the last notice set by the backend"
     ],
     "pg_last_oid": [
-        "string pg_last_oid(resource result)",
+        "string pg_last_oid(resources result)",
         "Returns the last object identifier"
     ],
     "pg_lo_close": [
-        "bool pg_lo_close(resource large_object)",
+        "bool pg_lo_close(resources large_object)",
         "Close a large object"
     ],
     "pg_lo_create": [
-        "mixed pg_lo_create([resource connection],[mixed large_object_oid])",
+        "mixed pg_lo_create([resources connection],[mixed large_object_oid])",
         "Create a large object"
     ],
     "pg_lo_export": [
-        "bool pg_lo_export([resource connection, ] int objoid, string filename)",
+        "bool pg_lo_export([resources connection, ] int objoid, string filename)",
         "Export large object direct to filesystem"
     ],
     "pg_lo_import": [
-        "int pg_lo_import([resource connection, ] string filename [, mixed oid])",
+        "int pg_lo_import([resources connection, ] string filename [, mixed oid])",
         "Import large object direct from filesystem"
     ],
     "pg_lo_open": [
-        "resource pg_lo_open([resource connection,] int large_object_oid, string mode)",
+        "resources pg_lo_open([resources connection,] int large_object_oid, string mode)",
         "Open a large object and return fd"
     ],
     "pg_lo_read": [
-        "string pg_lo_read(resource large_object [, int len])",
+        "string pg_lo_read(resources large_object [, int len])",
         "Read a large object"
     ],
     "pg_lo_read_all": [
-        "int pg_lo_read_all(resource large_object)",
+        "int pg_lo_read_all(resources large_object)",
         "Read a large object and send straight to browser"
     ],
     "pg_lo_seek": [
-        "bool pg_lo_seek(resource large_object, int offset [, int whence])",
+        "bool pg_lo_seek(resources large_object, int offset [, int whence])",
         "Seeks position of large object"
     ],
     "pg_lo_tell": [
-        "int pg_lo_tell(resource large_object)",
+        "int pg_lo_tell(resources large_object)",
         "Returns current position of large object"
     ],
     "pg_lo_unlink": [
-        "bool pg_lo_unlink([resource connection,] string large_object_oid)",
+        "bool pg_lo_unlink([resources connection,] string large_object_oid)",
         "Delete a large object"
     ],
     "pg_lo_write": [
-        "int pg_lo_write(resource large_object, string buf [, int len])",
+        "int pg_lo_write(resources large_object, string buf [, int len])",
         "Write a large object"
     ],
     "pg_meta_data": [
-        "array pg_meta_data(resource db, string table)",
+        "array pg_meta_data(resources db, string table)",
         "Get meta_data"
     ],
     "pg_num_fields": [
-        "int pg_num_fields(resource result)",
+        "int pg_num_fields(resources result)",
         "Return the number of fields in the result"
     ],
     "pg_num_rows": [
-        "int pg_num_rows(resource result)",
+        "int pg_num_rows(resources result)",
         "Return the number of rows in the result"
     ],
     "pg_options": [
-        "string pg_options([resource connection])",
+        "string pg_options([resources connection])",
         "Get the options associated with the connection"
     ],
     "pg_parameter_status": [
-        "string|false pg_parameter_status([resource connection,] string param_name)",
+        "string|false pg_parameter_status([resources connection,] string param_name)",
         "Returns the value of a server parameter"
     ],
     "pg_pconnect": [
-        "resource pg_pconnect(string connection_string | [string host, string port [, string options [, string tty,]]] string database)",
+        "resources pg_pconnect(string connection_string | [string host, string port [, string options [, string tty,]]] string database)",
         "Open a persistent PostgreSQL connection"
     ],
     "pg_ping": [
-        "bool pg_ping([resource connection])",
+        "bool pg_ping([resources connection])",
         "Ping database. If connection is bad, try to reconnect."
     ],
     "pg_port": [
-        "int pg_port([resource connection])",
+        "int pg_port([resources connection])",
         "Return the port number associated with the connection"
     ],
     "pg_prepare": [
-        "resource pg_prepare([resource connection,] string stmtname, string query)",
+        "resources pg_prepare([resources connection,] string stmtname, string query)",
         "Prepare a query for future execution"
     ],
     "pg_put_line": [
-        "bool pg_put_line([resource connection,] string query)",
+        "bool pg_put_line([resources connection,] string query)",
         "Send null-terminated string to backend server"
     ],
     "pg_query": [
-        "resource pg_query([resource connection,] string query)",
+        "resources pg_query([resources connection,] string query)",
         "Execute a query"
     ],
     "pg_query_params": [
-        "resource pg_query_params([resource connection,] string query, array params)",
+        "resources pg_query_params([resources connection,] string query, array params)",
         "Execute a query"
     ],
     "pg_result_error": [
-        "string pg_result_error(resource result)",
+        "string pg_result_error(resources result)",
         "Get error message associated with result"
     ],
     "pg_result_error_field": [
-        "string pg_result_error_field(resource result, int fieldcode)",
+        "string pg_result_error_field(resources result, int fieldcode)",
         "Get error message field associated with result"
     ],
     "pg_result_seek": [
-        "bool pg_result_seek(resource result, int offset)",
+        "bool pg_result_seek(resources result, int offset)",
         "Set internal row offset"
     ],
     "pg_result_status": [
-        "mixed pg_result_status(resource result[, long result_type])",
+        "mixed pg_result_status(resources result[, long result_type])",
         "Get status of query result"
     ],
     "pg_select": [
-        "mixed pg_select(resource db, string table, array ids[, int options])",
+        "mixed pg_select(resources db, string table, array ids[, int options])",
         "Select records that has ids (id=>value)"
     ],
     "pg_send_execute": [
-        "bool pg_send_execute(resource connection, string stmtname, array params)",
+        "bool pg_send_execute(resources connection, string stmtname, array params)",
         "Executes prevriously prepared stmtname asynchronously"
     ],
     "pg_send_prepare": [
-        "bool pg_send_prepare(resource connection, string stmtname, string query)",
+        "bool pg_send_prepare(resources connection, string stmtname, string query)",
         "Asynchronously prepare a query for future execution"
     ],
     "pg_send_query": [
-        "bool pg_send_query(resource connection, string query)",
+        "bool pg_send_query(resources connection, string query)",
         "Send asynchronous query"
     ],
     "pg_send_query_params": [
-        "bool pg_send_query_params(resource connection, string query, array params)",
+        "bool pg_send_query_params(resources connection, string query, array params)",
         "Send asynchronous parameterized query"
     ],
     "pg_set_client_encoding": [
-        "int pg_set_client_encoding([resource connection,] string encoding)",
+        "int pg_set_client_encoding([resources connection,] string encoding)",
         "Set client encoding"
     ],
     "pg_set_error_verbosity": [
-        "int pg_set_error_verbosity([resource connection,] int verbosity)",
+        "int pg_set_error_verbosity([resources connection,] int verbosity)",
         "Set error verbosity"
     ],
     "pg_trace": [
-        "bool pg_trace(string filename [, string mode [, resource connection]])",
+        "bool pg_trace(string filename [, string mode [, resources connection]])",
         "Enable tracing a PostgreSQL connection"
     ],
     "pg_transaction_status": [
-        "int pg_transaction_status(resource connnection)",
+        "int pg_transaction_status(resources connnection)",
         "Get transaction status"
     ],
     "pg_tty": [
-        "string pg_tty([resource connection])",
+        "string pg_tty([resources connection])",
         "Return the tty name associated with the connection"
     ],
     "pg_unescape_bytea": [
@@ -8759,15 +8759,15 @@ var functionMap = {
         "Unescape binary for bytea type"
     ],
     "pg_untrace": [
-        "bool pg_untrace([resource connection])",
+        "bool pg_untrace([resources connection])",
         "Disable tracing of a PostgreSQL connection"
     ],
     "pg_update": [
-        "mixed pg_update(resource db, string table, array fields, array ids[, int options])",
+        "mixed pg_update(resources db, string table, array fields, array ids[, int options])",
         "Update table using values (field=>value) and ids (id=>value)"
     ],
     "pg_version": [
-        "array pg_version([resource connection])",
+        "array pg_version([resources connection])",
         "Returns an array with client, protocol and server version (when available)"
     ],
     "php_egg_logo_guid": [
@@ -8827,7 +8827,7 @@ var functionMap = {
         "Convert PNG image to WBMP image"
     ],
     "popen": [
-        "resource popen(string command, string mode)",
+        "resources popen(string command, string mode)",
         "Execute a command and open either a read or a write pipe to it"
     ],
     "posix_access": [
@@ -8900,7 +8900,7 @@ var functionMap = {
     ],
     "posix_getrlimit": [
         "array posix_getrlimit(void)",
-        "Get system resource consumption limits (This is not a POSIX function, but a BSDism and a SVR4ism. We compile conditionally)"
+        "Get system resources consumption limits (This is not a POSIX function, but a BSDism and a SVR4ism. We compile conditionally)"
     ],
     "posix_getsid": [
         "int posix_getsid(void)",
@@ -9027,11 +9027,11 @@ var functionMap = {
         "Output a formatted string"
     ],
     "proc_close": [
-        "int proc_close(resource process)",
+        "int proc_close(resources process)",
         "close a process opened by proc_open"
     ],
     "proc_get_status": [
-        "array proc_get_status(resource process)",
+        "array proc_get_status(resources process)",
         "get information about.htm a process opened by proc_open"
     ],
     "proc_nice": [
@@ -9039,11 +9039,11 @@ var functionMap = {
         "Change the priority of the current process"
     ],
     "proc_open": [
-        "resource proc_open(string command, array descriptorspec, array &pipes [, string cwd [, array env [, array other_options]]])",
+        "resources proc_open(string command, array descriptorspec, array &pipes [, string cwd [, array env [, array other_options]]])",
         "Run a process with more control over it's file descriptors"
     ],
     "proc_terminate": [
-        "bool proc_terminate(resource process [, long signal])",
+        "bool proc_terminate(resources process [, long signal])",
         "kill a process opened by proc_open"
     ],
     "property_exists": [
@@ -9163,11 +9163,11 @@ var functionMap = {
         "URL-encodes string"
     ],
     "readdir": [
-        "string readdir([resource dir_handle])",
+        "string readdir([resources dir_handle])",
         "Read directory entry from dir_handle"
     ],
     "readfile": [
-        "int readfile(string filename [, bool use_include_path[, resource context]])",
+        "int readfile(string filename [, bool use_include_path[, resources context]])",
         "Output a file or a URL"
     ],
     "readgzfile": [
@@ -9243,7 +9243,7 @@ var functionMap = {
         "Get current size of realpath cache"
     ],
     "recode_file": [
-        "bool recode_file(string request, resource input, resource output)",
+        "bool recode_file(string request, resources input, resources output)",
         "Recode file input into file output according to request"
     ],
     "recode_string": [
@@ -9259,7 +9259,7 @@ var functionMap = {
         "Registers a tick callback function"
     ],
     "rename": [
-        "bool rename(string old_name, string new_name[, resource context])",
+        "bool rename(string old_name, string new_name[, resources context])",
         "Rename a file"
     ],
     "require": [
@@ -9287,15 +9287,15 @@ var functionMap = {
         "Restore the value of the include_path configuration option"
     ],
     "rewind": [
-        "bool rewind(resource fp)",
+        "bool rewind(resources fp)",
         "Rewind the position of a file pointer"
     ],
     "rewinddir": [
-        "void rewinddir([resource dir_handle])",
+        "void rewinddir([resources dir_handle])",
         "Rewind dir_handle back to the start"
     ],
     "rmdir": [
-        "bool rmdir(string dirname[, resource context])",
+        "bool rmdir(string dirname[, resources context])",
         "Remove a directory"
     ],
     "round": [
@@ -9311,23 +9311,23 @@ var functionMap = {
         "Removes trailing whitespace"
     ],
     "scandir": [
-        "array scandir(string dir [, int sorting_order [, resource context]])",
+        "array scandir(string dir [, int sorting_order [, resources context]])",
         "List files & directories inside the specified path"
     ],
     "sem_acquire": [
-        "bool sem_acquire(resource id)",
+        "bool sem_acquire(resources id)",
         "Acquires the semaphore with the given id, blocking if necessary"
     ],
     "sem_get": [
-        "resource sem_get(int key [, int max_acquire [, int perm [, int auto_release]])",
+        "resources sem_get(int key [, int max_acquire [, int perm [, int auto_release]])",
         "Return an id for the semaphore with the given key, and allow max_acquire (default 1) processes to acquire it simultaneously"
     ],
     "sem_release": [
-        "bool sem_release(resource id)",
+        "bool sem_release(resources id)",
         "Releases the semaphore with the given id"
     ],
     "sem_remove": [
-        "bool sem_remove(resource id)",
+        "bool sem_remove(resources id)",
         "Removes semaphore from Unix systems"
     ],
     "serialize": [
@@ -9463,27 +9463,27 @@ var functionMap = {
         "Creates or open a shared memory segment"
     ],
     "shm_detach": [
-        "bool shm_detach(resource shm_identifier)",
+        "bool shm_detach(resources shm_identifier)",
         "Disconnects from shared memory segment"
     ],
     "shm_get_var": [
-        "mixed shm_get_var(resource id, int variable_key)",
+        "mixed shm_get_var(resources id, int variable_key)",
         "Returns a variable from shared memory"
     ],
     "shm_has_var": [
-        "bool shm_has_var(resource id, int variable_key)",
+        "bool shm_has_var(resources id, int variable_key)",
         "Checks whether a specific entry exists"
     ],
     "shm_put_var": [
-        "bool shm_put_var(resource shm_identifier, int variable_key, mixed variable)",
+        "bool shm_put_var(resources shm_identifier, int variable_key, mixed variable)",
         "Inserts or updates a variable in shared memory"
     ],
     "shm_remove": [
-        "bool shm_remove(resource shm_identifier)",
+        "bool shm_remove(resources shm_identifier)",
         "Removes shared memory from Unix systems"
     ],
     "shm_remove_var": [
-        "bool shm_remove_var(resource id, int variable_key)",
+        "bool shm_remove_var(resources id, int variable_key)",
         "Removes variable from shared memory"
     ],
     "shmop_close": [
@@ -9667,31 +9667,31 @@ var functionMap = {
         "Return all objects under the specified object id"
     ],
     "socket_accept": [
-        "resource socket_accept(resource socket)",
+        "resources socket_accept(resources socket)",
         "Accepts a connection on the listening socket fd"
     ],
     "socket_bind": [
-        "bool socket_bind(resource socket, string addr [, int port])",
+        "bool socket_bind(resources socket, string addr [, int port])",
         "Binds an open socket to a listening port, port is only specified in AF_INET family."
     ],
     "socket_clear_error": [
-        "void socket_clear_error([resource socket])",
+        "void socket_clear_error([resources socket])",
         "Clears the error on the socket or the last error code."
     ],
     "socket_close": [
-        "void socket_close(resource socket)",
+        "void socket_close(resources socket)",
         "Closes a file descriptor"
     ],
     "socket_connect": [
-        "bool socket_connect(resource socket, string addr [, int port])",
+        "bool socket_connect(resources socket, string addr [, int port])",
         "Opens a connection to addr:port on the socket specified by socket"
     ],
     "socket_create": [
-        "resource socket_create(int domain, int type, int protocol)",
+        "resources socket_create(int domain, int type, int protocol)",
         "Creates an endpoint for communication in the domain specified by domain, of type specified by type"
     ],
     "socket_create_listen": [
-        "resource socket_create_listen(int port[, int backlog])",
+        "resources socket_create_listen(int port[, int backlog])",
         "Opens a socket on port to accept connections"
     ],
     "socket_create_pair": [
@@ -9699,35 +9699,35 @@ var functionMap = {
         "Creates a pair of indistinguishable sockets and stores them in fds."
     ],
     "socket_get_option": [
-        "mixed socket_get_option(resource socket, int level, int optname)",
+        "mixed socket_get_option(resources socket, int level, int optname)",
         "Gets socket options for the socket"
     ],
     "socket_getpeername": [
-        "bool socket_getpeername(resource socket, string &addr[, int &port])",
+        "bool socket_getpeername(resources socket, string &addr[, int &port])",
         "Queries the remote side of the given socket which may either result in host\/port or in a UNIX filesystem path, dependent on its type."
     ],
     "socket_getsockname": [
-        "bool socket_getsockname(resource socket, string &addr[, int &port])",
+        "bool socket_getsockname(resources socket, string &addr[, int &port])",
         "Queries the remote side of the given socket which may either result in host\/port or in a UNIX filesystem path, dependent on its type."
     ],
     "socket_last_error": [
-        "int socket_last_error([resource socket])",
-        "Returns the last socket error (either the last used or the provided socket resource)"
+        "int socket_last_error([resources socket])",
+        "Returns the last socket error (either the last used or the provided socket resources)"
     ],
     "socket_listen": [
-        "bool socket_listen(resource socket[, int backlog])",
+        "bool socket_listen(resources socket[, int backlog])",
         "Sets the maximum number of connections allowed to be waited for on the socket specified by fd"
     ],
     "socket_read": [
-        "string socket_read(resource socket, int length [, int type])",
+        "string socket_read(resources socket, int length [, int type])",
         "Reads a maximum of length bytes from socket"
     ],
     "socket_recv": [
-        "int socket_recv(resource socket, string &buf, int len, int flags)",
+        "int socket_recv(resources socket, string &buf, int len, int flags)",
         "Receives data from a connected socket"
     ],
     "socket_recvfrom": [
-        "int socket_recvfrom(resource socket, string &buf, int len, int flags, string &name [, int &port])",
+        "int socket_recvfrom(resources socket, string &buf, int len, int flags, string &name [, int &port])",
         "Receives data from a socket, connected or not"
     ],
     "socket_select": [
@@ -9735,27 +9735,27 @@ var functionMap = {
         "Runs the select() system call on the sets mentioned with a timeout specified by tv_sec and tv_usec"
     ],
     "socket_send": [
-        "int socket_send(resource socket, string buf, int len, int flags)",
+        "int socket_send(resources socket, string buf, int len, int flags)",
         "Sends data to a connected socket"
     ],
     "socket_sendto": [
-        "int socket_sendto(resource socket, string buf, int len, int flags, string addr [, int port])",
+        "int socket_sendto(resources socket, string buf, int len, int flags, string addr [, int port])",
         "Sends a message to a socket, whether it is connected or not"
     ],
     "socket_set_block": [
-        "bool socket_set_block(resource socket)",
-        "Sets blocking mode on a socket resource"
+        "bool socket_set_block(resources socket)",
+        "Sets blocking mode on a socket resources"
     ],
     "socket_set_nonblock": [
-        "bool socket_set_nonblock(resource socket)",
-        "Sets nonblocking mode on a socket resource"
+        "bool socket_set_nonblock(resources socket)",
+        "Sets nonblocking mode on a socket resources"
     ],
     "socket_set_option": [
-        "bool socket_set_option(resource socket, int level, int optname, int|array optval)",
+        "bool socket_set_option(resources socket, int level, int optname, int|array optval)",
         "Sets socket options for the socket"
     ],
     "socket_shutdown": [
-        "bool socket_shutdown(resource socket[, int how])",
+        "bool socket_shutdown(resources socket[, int how])",
         "Shuts down a socket for receiving, sending, or both."
     ],
     "socket_strerror": [
@@ -9763,11 +9763,11 @@ var functionMap = {
         "Returns a string describing an error"
     ],
     "socket_write": [
-        "int socket_write(resource socket, string buf[, int length])",
-        "Writes the buffer to the socket resource, length is optional"
+        "int socket_write(resources socket, string buf[, int length])",
+        "Writes the buffer to the socket resources, length is optional"
     ],
     "solid_fetch_prev": [
-        "bool solid_fetch_prev(resource result_id)",
+        "bool solid_fetch_prev(resources result_id)",
         ""
     ],
     "sort": [
@@ -9827,35 +9827,35 @@ var functionMap = {
         "Make regular expression for case insensitive match"
     ],
     "sqlite_array_query": [
-        "array sqlite_array_query(resource db, string query [ , int result_type [, bool decode_binary]])",
+        "array sqlite_array_query(resources db, string query [ , int result_type [, bool decode_binary]])",
         "Executes a query against a given database and returns an array of arrays."
     ],
     "sqlite_busy_timeout": [
-        "void sqlite_busy_timeout(resource db, int ms)",
+        "void sqlite_busy_timeout(resources db, int ms)",
         "Set busy timeout duration. If ms <= 0, all busy handlers are disabled."
     ],
     "sqlite_changes": [
-        "int sqlite_changes(resource db)",
+        "int sqlite_changes(resources db)",
         "Returns the number of rows that were changed by the most recent SQL statement."
     ],
     "sqlite_close": [
-        "void sqlite_close(resource db)",
+        "void sqlite_close(resources db)",
         "Closes an open sqlite database."
     ],
     "sqlite_column": [
-        "mixed sqlite_column(resource result, mixed index_or_name [, bool decode_binary])",
+        "mixed sqlite_column(resources result, mixed index_or_name [, bool decode_binary])",
         "Fetches a column from the current row of a result set."
     ],
     "sqlite_create_aggregate": [
-        "bool sqlite_create_aggregate(resource db, string funcname, mixed step_func, mixed finalize_func[, long num_args])",
+        "bool sqlite_create_aggregate(resources db, string funcname, mixed step_func, mixed finalize_func[, long num_args])",
         "Registers an aggregate function for queries."
     ],
     "sqlite_create_function": [
-        "bool sqlite_create_function(resource db, string funcname, mixed callback[, long num_args])",
+        "bool sqlite_create_function(resources db, string funcname, mixed callback[, long num_args])",
         "Registers a \"regular\" function for queries."
     ],
     "sqlite_current": [
-        "array sqlite_current(resource result [, int result_type [, bool decode_binary]])",
+        "array sqlite_current(resources result [, int result_type [, bool decode_binary]])",
         "Fetches the current row from a result set as an array."
     ],
     "sqlite_error_string": [
@@ -9867,7 +9867,7 @@ var functionMap = {
         "Escapes a string for use as a query parameter."
     ],
     "sqlite_exec": [
-        "boolean sqlite_exec(string query, resource db[, string &error_message])",
+        "boolean sqlite_exec(string query, resources db[, string &error_message])",
         "Executes a result-less query against a given database"
     ],
     "sqlite_factory": [
@@ -9875,43 +9875,43 @@ var functionMap = {
         "Opens a SQLite database and creates an object for it. Will create the database if it does not exist."
     ],
     "sqlite_fetch_all": [
-        "array sqlite_fetch_all(resource result [, int result_type [, bool decode_binary]])",
+        "array sqlite_fetch_all(resources result [, int result_type [, bool decode_binary]])",
         "Fetches all rows from a result set as an array of arrays."
     ],
     "sqlite_fetch_array": [
-        "array sqlite_fetch_array(resource result [, int result_type [, bool decode_binary]])",
+        "array sqlite_fetch_array(resources result [, int result_type [, bool decode_binary]])",
         "Fetches the next row from a result set as an array."
     ],
     "sqlite_fetch_column_types": [
-        "resource sqlite_fetch_column_types(string table_name, resource db [, int result_type])",
+        "resources sqlite_fetch_column_types(string table_name, resources db [, int result_type])",
         "Return an array of column types from a particular table."
     ],
     "sqlite_fetch_object": [
-        "object sqlite_fetch_object(resource result [, string class_name [, NULL|array ctor_params [, bool decode_binary]]])",
+        "object sqlite_fetch_object(resources result [, string class_name [, NULL|array ctor_params [, bool decode_binary]]])",
         "Fetches the next row from a result set as an object."
     ],
     "sqlite_fetch_single": [
-        "string sqlite_fetch_single(resource result [, bool decode_binary])",
+        "string sqlite_fetch_single(resources result [, bool decode_binary])",
         "Fetches the first column of a result set as a string."
     ],
     "sqlite_field_name": [
-        "string sqlite_field_name(resource result, int field_index)",
+        "string sqlite_field_name(resources result, int field_index)",
         "Returns the name of a particular field of a result set."
     ],
     "sqlite_has_prev": [
-        "bool sqlite_has_prev(resource result)",
+        "bool sqlite_has_prev(resources result)",
         "* Returns whether a previous row is available."
     ],
     "sqlite_key": [
-        "int sqlite_key(resource result)",
+        "int sqlite_key(resources result)",
         "Return the current row index of a buffered result."
     ],
     "sqlite_last_error": [
-        "int sqlite_last_error(resource db)",
+        "int sqlite_last_error(resources db)",
         "Returns the error code of the last error for a database."
     ],
     "sqlite_last_insert_rowid": [
-        "int sqlite_last_insert_rowid(resource db)",
+        "int sqlite_last_insert_rowid(resources db)",
         "Returns the rowid of the most recently inserted row."
     ],
     "sqlite_libencoding": [
@@ -9923,43 +9923,43 @@ var functionMap = {
         "Returns the version of the linked SQLite library."
     ],
     "sqlite_next": [
-        "bool sqlite_next(resource result)",
+        "bool sqlite_next(resources result)",
         "Seek to the next row number of a result set."
     ],
     "sqlite_num_fields": [
-        "int sqlite_num_fields(resource result)",
+        "int sqlite_num_fields(resources result)",
         "Returns the number of fields in a result set."
     ],
     "sqlite_num_rows": [
-        "int sqlite_num_rows(resource result)",
+        "int sqlite_num_rows(resources result)",
         "Returns the number of rows in a buffered result set."
     ],
     "sqlite_open": [
-        "resource sqlite_open(string filename [, int mode [, string &error_message]])",
+        "resources sqlite_open(string filename [, int mode [, string &error_message]])",
         "Opens a SQLite database. Will create the database if it does not exist."
     ],
     "sqlite_popen": [
-        "resource sqlite_popen(string filename [, int mode [, string &error_message]])",
+        "resources sqlite_popen(string filename [, int mode [, string &error_message]])",
         "Opens a persistent handle to a SQLite database. Will create the database if it does not exist."
     ],
     "sqlite_prev": [
-        "bool sqlite_prev(resource result)",
+        "bool sqlite_prev(resources result)",
         "* Seek to the previous row number of a result set."
     ],
     "sqlite_query": [
-        "resource sqlite_query(string query, resource db [, int result_type [, string &error_message]])",
+        "resources sqlite_query(string query, resources db [, int result_type [, string &error_message]])",
         "Executes a query against a given database and returns a result handle."
     ],
     "sqlite_rewind": [
-        "bool sqlite_rewind(resource result)",
+        "bool sqlite_rewind(resources result)",
         "Seek to the first row number of a buffered result set."
     ],
     "sqlite_seek": [
-        "bool sqlite_seek(resource result, int row)",
+        "bool sqlite_seek(resources result, int row)",
         "Seek to a particular row number of a buffered result set."
     ],
     "sqlite_single_query": [
-        "array sqlite_single_query(resource db, string query [, bool first_row_only [, bool decode_binary]])",
+        "array sqlite_single_query(resources db, string query [, bool first_row_only [, bool decode_binary]])",
         "Executes a query and returns either an array for one single column or the value of the first row."
     ],
     "sqlite_udf_decode_binary": [
@@ -9971,11 +9971,11 @@ var functionMap = {
         "Apply binary encoding (if required) to a string to return from an UDF."
     ],
     "sqlite_unbuffered_query": [
-        "resource sqlite_unbuffered_query(string query, resource db [ , int result_type [, string &error_message]])",
+        "resources sqlite_unbuffered_query(string query, resources db [ , int result_type [, string &error_message]])",
         "Executes a query that does not prefetch and buffer all data."
     ],
     "sqlite_valid": [
-        "bool sqlite_valid(resource result)",
+        "bool sqlite_valid(resources result)",
         "Returns whether more rows are available."
     ],
     "sqrt": [
@@ -10051,59 +10051,59 @@ var functionMap = {
         "Finds length of initial segment consisting entirely of characters not found in mask. If start or\/and length is provide works like strcspn(substr($s,$start,$len),$bad_chars)"
     ],
     "stream_bucket_append": [
-        "void stream_bucket_append(resource brigade, resource bucket)",
+        "void stream_bucket_append(resources brigade, resources bucket)",
         "Append bucket to brigade"
     ],
     "stream_bucket_make_writeable": [
-        "object stream_bucket_make_writeable(resource brigade)",
+        "object stream_bucket_make_writeable(resources brigade)",
         "Return a bucket object from the brigade for operating on"
     ],
     "stream_bucket_new": [
-        "resource stream_bucket_new(resource stream, string buffer)",
+        "resources stream_bucket_new(resources stream, string buffer)",
         "Create a new bucket for use on the current stream"
     ],
     "stream_bucket_prepend": [
-        "void stream_bucket_prepend(resource brigade, resource bucket)",
+        "void stream_bucket_prepend(resources brigade, resources bucket)",
         "Prepend bucket to brigade"
     ],
     "stream_context_create": [
-        "resource stream_context_create([array options[, array params]])",
+        "resources stream_context_create([array options[, array params]])",
         "Create a file context and optionally set parameters"
     ],
     "stream_context_get_default": [
-        "resource stream_context_get_default([array options])",
+        "resources stream_context_get_default([array options])",
         "Get a handle on the default file\/stream context and optionally set parameters"
     ],
     "stream_context_get_options": [
-        "array stream_context_get_options(resource context|resource stream)",
+        "array stream_context_get_options(resources context|resources stream)",
         "Retrieve options for a stream\/wrapper\/context"
     ],
     "stream_context_get_params": [
-        "array stream_context_get_params(resource context|resource stream)",
+        "array stream_context_get_params(resources context|resources stream)",
         "Get parameters of a file context"
     ],
     "stream_context_set_default": [
-        "resource stream_context_set_default(array options)",
-        "Set default file\/stream context, returns the context as a resource"
+        "resources stream_context_set_default(array options)",
+        "Set default file\/stream context, returns the context as a resources"
     ],
     "stream_context_set_option": [
-        "bool stream_context_set_option(resource context|resource stream, string wrappername, string optionname, mixed value)",
+        "bool stream_context_set_option(resources context|resources stream, string wrappername, string optionname, mixed value)",
         "Set an option for a wrapper"
     ],
     "stream_context_set_params": [
-        "bool stream_context_set_params(resource context|resource stream, array options)",
+        "bool stream_context_set_params(resources context|resources stream, array options)",
         "Set parameters for a file context"
     ],
     "stream_copy_to_stream": [
-        "long stream_copy_to_stream(resource source, resource dest [, long maxlen [, long pos]])",
+        "long stream_copy_to_stream(resources source, resources dest [, long maxlen [, long pos]])",
         "Reads up to maxlen bytes from source stream and writes them to dest stream."
     ],
     "stream_filter_append": [
-        "resource stream_filter_append(resource stream, string filtername[, int read_write[, string filterparams]])",
+        "resources stream_filter_append(resources stream, string filtername[, int read_write[, string filterparams]])",
         "Append a filter to a stream"
     ],
     "stream_filter_prepend": [
-        "resource stream_filter_prepend(resource stream, string filtername[, int read_write[, string filterparams]])",
+        "resources stream_filter_prepend(resources stream, string filtername[, int read_write[, string filterparams]])",
         "Prepend a filter to a stream"
     ],
     "stream_filter_register": [
@@ -10111,11 +10111,11 @@ var functionMap = {
         "Registers a custom filter handler class"
     ],
     "stream_filter_remove": [
-        "bool stream_filter_remove(resource stream_filter)",
-        "Flushes any data in the filter's internal buffer, removes it from the chain, and frees the resource"
+        "bool stream_filter_remove(resources stream_filter)",
+        "Flushes any data in the filter's internal buffer, removes it from the chain, and frees the resources"
     ],
     "stream_get_contents": [
-        "string stream_get_contents(resource source [, long maxlen [, long offset]])",
+        "string stream_get_contents(resources source [, long maxlen [, long offset]])",
         "Reads all remaining bytes (or up to maxlen bytes) from a stream and returns them as a string."
     ],
     "stream_get_filters": [
@@ -10123,11 +10123,11 @@ var functionMap = {
         "Returns a list of registered filters"
     ],
     "stream_get_line": [
-        "string stream_get_line(resource stream, int maxlen [, string ending])",
+        "string stream_get_line(resources stream, int maxlen [, string ending])",
         "Read up to maxlen bytes from a stream or until the ending string is found"
     ],
     "stream_get_meta_data": [
-        "array stream_get_meta_data(resource fp)",
+        "array stream_get_meta_data(resources fp)",
         "Retrieves header\/meta data from streams\/file pointers"
     ],
     "stream_get_transports": [
@@ -10139,7 +10139,7 @@ var functionMap = {
         "Retrieves list of registered stream wrappers"
     ],
     "stream_is_local": [
-        "bool stream_is_local(resource stream|string url)",
+        "bool stream_is_local(resources stream|string url)",
         ""
     ],
     "stream_resolve_include_path": [
@@ -10151,31 +10151,31 @@ var functionMap = {
         "Runs the select() system call on the sets of streams with a timeout specified by tv_sec and tv_usec"
     ],
     "stream_set_blocking": [
-        "bool stream_set_blocking(resource socket, int mode)",
+        "bool stream_set_blocking(resources socket, int mode)",
         "Set blocking\/non-blocking mode on a socket or stream"
     ],
     "stream_set_timeout": [
-        "bool stream_set_timeout(resource stream, int seconds [, int microseconds])",
+        "bool stream_set_timeout(resources stream, int seconds [, int microseconds])",
         "Set timeout on stream read to seconds + microseonds"
     ],
     "stream_set_write_buffer": [
-        "int stream_set_write_buffer(resource fp, int buffer)",
+        "int stream_set_write_buffer(resources fp, int buffer)",
         "Set file write buffer"
     ],
     "stream_socket_accept": [
-        "resource stream_socket_accept(resource serverstream, [ double timeout [, string &peername ]])",
+        "resources stream_socket_accept(resources serverstream, [ double timeout [, string &peername ]])",
         "Accept a client connection from a server socket"
     ],
     "stream_socket_client": [
-        "resource stream_socket_client(string remoteaddress [, long &errcode [, string &errstring [, double timeout [, long flags [, resource context]]]]])",
+        "resources stream_socket_client(string remoteaddress [, long &errcode [, string &errstring [, double timeout [, long flags [, resources context]]]]])",
         "Open a client connection to a remote address"
     ],
     "stream_socket_enable_crypto": [
-        "int stream_socket_enable_crypto(resource stream, bool enable [, int cryptokind [, resource sessionstream]])",
+        "int stream_socket_enable_crypto(resources stream, bool enable [, int cryptokind [, resources sessionstream]])",
         "Enable or disable a specific kind of crypto on the stream"
     ],
     "stream_socket_get_name": [
-        "string stream_socket_get_name(resource stream, bool want_peer)",
+        "string stream_socket_get_name(resources stream, bool want_peer)",
         "Returns either the locally bound or remote name for a socket stream"
     ],
     "stream_socket_pair": [
@@ -10183,7 +10183,7 @@ var functionMap = {
         "Creates a pair of connected, indistinguishable socket streams"
     ],
     "stream_socket_recvfrom": [
-        "string stream_socket_recvfrom(resource stream, long amount [, long flags [, string &remote_addr]])",
+        "string stream_socket_recvfrom(resources stream, long amount [, long flags [, string &remote_addr]])",
         "Receives data from a socket stream"
     ],
     "stream_socket_sendto": [
@@ -10191,15 +10191,15 @@ var functionMap = {
         "Send data to a socket stream.  If target_addr is specified it must be in dotted quad (or [ipv6]) format"
     ],
     "stream_socket_server": [
-        "resource stream_socket_server(string localaddress [, long &errcode [, string &errstring [, long flags [, resource context]]]])",
+        "resources stream_socket_server(string localaddress [, long &errcode [, string &errstring [, long flags [, resources context]]]])",
         "Create a server socket bound to localaddress"
     ],
     "stream_socket_shutdown": [
-        "int stream_socket_shutdown(resource stream, int how)",
+        "int stream_socket_shutdown(resources stream, int how)",
         "causes all or part of a full-duplex connection on the socket associated  with stream to be shut down.  If how is SHUT_RD,  further receptions will  be disallowed. If how is SHUT_WR, further transmissions will be disallowed.  If how is SHUT_RDWR,  further  receptions and transmissions will be  disallowed."
     ],
     "stream_supports_lock": [
-        "bool stream_supports_lock(resource stream)",
+        "bool stream_supports_lock(resources stream)",
         "Tells wether the stream supports locking through flock()."
     ],
     "stream_wrapper_register": [
@@ -10335,11 +10335,11 @@ var functionMap = {
         "Replaces part of a string with another string"
     ],
     "sybase_affected_rows": [
-        "int sybase_affected_rows([resource link_id])",
+        "int sybase_affected_rows([resources link_id])",
         "Get number of affected rows in last query"
     ],
     "sybase_close": [
-        "bool sybase_close([resource link_id])",
+        "bool sybase_close([resources link_id])",
         "Close Sybase connection"
     ],
     "sybase_connect": [
@@ -10347,7 +10347,7 @@ var functionMap = {
         "Open Sybase server connection"
     ],
     "sybase_data_seek": [
-        "bool sybase_data_seek(resource result, int offset)",
+        "bool sybase_data_seek(resources result, int offset)",
         "Move internal row pointer"
     ],
     "sybase_deadlock_retry_count": [
@@ -10355,31 +10355,31 @@ var functionMap = {
         "Sets deadlock retry count"
     ],
     "sybase_fetch_array": [
-        "array sybase_fetch_array(resource result)",
+        "array sybase_fetch_array(resources result)",
         "Fetch row as array"
     ],
     "sybase_fetch_assoc": [
-        "array sybase_fetch_assoc(resource result)",
+        "array sybase_fetch_assoc(resources result)",
         "Fetch row as array without numberic indices"
     ],
     "sybase_fetch_field": [
-        "object sybase_fetch_field(resource result [, int offset])",
+        "object sybase_fetch_field(resources result [, int offset])",
         "Get field information"
     ],
     "sybase_fetch_object": [
-        "object sybase_fetch_object(resource result [, mixed object])",
+        "object sybase_fetch_object(resources result [, mixed object])",
         "Fetch row as object"
     ],
     "sybase_fetch_row": [
-        "array sybase_fetch_row(resource result)",
+        "array sybase_fetch_row(resources result)",
         "Get row as enumerated array"
     ],
     "sybase_field_seek": [
-        "bool sybase_field_seek(resource result, int offset)",
+        "bool sybase_field_seek(resources result, int offset)",
         "Set field offset"
     ],
     "sybase_free_result": [
-        "bool sybase_free_result(resource result)",
+        "bool sybase_free_result(resources result)",
         "Free result memory"
     ],
     "sybase_get_last_message": [
@@ -10395,11 +10395,11 @@ var functionMap = {
         "Sets minimum server severity"
     ],
     "sybase_num_fields": [
-        "int sybase_num_fields(resource result)",
+        "int sybase_num_fields(resources result)",
         "Get number of fields in result"
     ],
     "sybase_num_rows": [
-        "int sybase_num_rows(resource result)",
+        "int sybase_num_rows(resources result)",
         "Get number of rows in result"
     ],
     "sybase_pconnect": [
@@ -10407,23 +10407,23 @@ var functionMap = {
         "Open persistent Sybase connection"
     ],
     "sybase_query": [
-        "int sybase_query(string query [, resource link_id])",
+        "int sybase_query(string query [, resources link_id])",
         "Send Sybase query"
     ],
     "sybase_result": [
-        "string sybase_result(resource result, int row, mixed field)",
+        "string sybase_result(resources result, int row, mixed field)",
         "Get result data"
     ],
     "sybase_select_db": [
-        "bool sybase_select_db(string database [, resource link_id])",
+        "bool sybase_select_db(string database [, resources link_id])",
         "Select Sybase database"
     ],
     "sybase_set_message_handler": [
-        "bool sybase_set_message_handler(mixed error_func [, resource connection])",
+        "bool sybase_set_message_handler(mixed error_func [, resources connection])",
         "Set the error handler, to be called when a server message is raised.     If error_func is NULL the handler will be deleted"
     ],
     "sybase_unbuffered_query": [
-        "int sybase_unbuffered_query(string query [, resource link_id])",
+        "int sybase_unbuffered_query(string query [, resources link_id])",
         "Send Sybase query"
     ],
     "symlink": [
@@ -10483,7 +10483,7 @@ var functionMap = {
         "Returns the Number of Tidy errors encountered for specified document."
     ],
     "tidy_get_body": [
-        "TidyNode tidy_get_body(resource tidy)",
+        "TidyNode tidy_get_body(resources tidy)",
         "Returns a TidyNode Object starting from the <BODY> tag of the tidy parse tree"
     ],
     "tidy_get_config": [
@@ -10507,7 +10507,7 @@ var functionMap = {
         "Get the Detected HTML version for the specified document."
     ],
     "tidy_get_opt_doc": [
-        "string tidy_get_opt_doc(tidy resource, string optname)",
+        "string tidy_get_opt_doc(tidy resources, string optname)",
         "Returns the documentation for the given option name"
     ],
     "tidy_get_output": [
@@ -10607,7 +10607,7 @@ var functionMap = {
         "Returns the Olson database version number."
     ],
     "tmpfile": [
-        "resource tmpfile(void)",
+        "resources tmpfile(void)",
         "Create a temporary file that will be deleted automatically after use"
     ],
     "token_get_all": [
@@ -10819,7 +10819,7 @@ var functionMap = {
         "Compares two \"PHP-standardized\" version number strings"
     ],
     "vfprintf": [
-        "int vfprintf(resource stream, string format, array args)",
+        "int vfprintf(resources stream, string format, array args)",
         "Output a formatted string into a stream"
     ],
     "virtual": [
@@ -10835,7 +10835,7 @@ var functionMap = {
         "Return a formatted string"
     ],
     "wddx_add_vars": [
-        "int wddx_add_vars(resource packet_id,  mixed var_names [, mixed ...])",
+        "int wddx_add_vars(resources packet_id,  mixed var_names [, mixed ...])",
         "Serializes given variables and adds them to packet given by packet_id"
     ],
     "wddx_deserialize": [
@@ -10843,11 +10843,11 @@ var functionMap = {
         "Deserializes given packet and returns a PHP value"
     ],
     "wddx_packet_end": [
-        "string wddx_packet_end(resource packet_id)",
+        "string wddx_packet_end(resources packet_id)",
         "Ends specified WDDX packet and returns the string containing the packet"
     ],
     "wddx_packet_start": [
-        "resource wddx_packet_start([string comment])",
+        "resources wddx_packet_start([string comment])",
         "Starts a WDDX packet with optional comment and returns the packet id"
     ],
     "wddx_serialize_value": [
@@ -10867,87 +10867,87 @@ var functionMap = {
         "Get XML parser error string"
     ],
     "xml_get_current_byte_index": [
-        "int xml_get_current_byte_index(resource parser)",
+        "int xml_get_current_byte_index(resources parser)",
         "Get current byte index for an XML parser"
     ],
     "xml_get_current_column_number": [
-        "int xml_get_current_column_number(resource parser)",
+        "int xml_get_current_column_number(resources parser)",
         "Get current column number for an XML parser"
     ],
     "xml_get_current_line_number": [
-        "int xml_get_current_line_number(resource parser)",
+        "int xml_get_current_line_number(resources parser)",
         "Get current line number for an XML parser"
     ],
     "xml_get_error_code": [
-        "int xml_get_error_code(resource parser)",
+        "int xml_get_error_code(resources parser)",
         "Get XML parser error code"
     ],
     "xml_parse": [
-        "int xml_parse(resource parser, string data [, int isFinal])",
+        "int xml_parse(resources parser, string data [, int isFinal])",
         "Start parsing an XML document"
     ],
     "xml_parse_into_struct": [
-        "int xml_parse_into_struct(resource parser, string data, array &values [, array &index ])",
+        "int xml_parse_into_struct(resources parser, string data, array &values [, array &index ])",
         "Parsing a XML document"
     ],
     "xml_parser_create": [
-        "resource xml_parser_create([string encoding])",
+        "resources xml_parser_create([string encoding])",
         "Create an XML parser"
     ],
     "xml_parser_create_ns": [
-        "resource xml_parser_create_ns([string encoding [, string sep]])",
+        "resources xml_parser_create_ns([string encoding [, string sep]])",
         "Create an XML parser"
     ],
     "xml_parser_free": [
-        "int xml_parser_free(resource parser)",
+        "int xml_parser_free(resources parser)",
         "Free an XML parser"
     ],
     "xml_parser_get_option": [
-        "int xml_parser_get_option(resource parser, int option)",
+        "int xml_parser_get_option(resources parser, int option)",
         "Get options from an XML parser"
     ],
     "xml_parser_set_option": [
-        "int xml_parser_set_option(resource parser, int option, mixed value)",
+        "int xml_parser_set_option(resources parser, int option, mixed value)",
         "Set options in an XML parser"
     ],
     "xml_set_character_data_handler": [
-        "int xml_set_character_data_handler(resource parser, string hdl)",
+        "int xml_set_character_data_handler(resources parser, string hdl)",
         "Set up character data handler"
     ],
     "xml_set_default_handler": [
-        "int xml_set_default_handler(resource parser, string hdl)",
+        "int xml_set_default_handler(resources parser, string hdl)",
         "Set up default handler"
     ],
     "xml_set_element_handler": [
-        "int xml_set_element_handler(resource parser, string shdl, string ehdl)",
+        "int xml_set_element_handler(resources parser, string shdl, string ehdl)",
         "Set up start and end element handlers"
     ],
     "xml_set_end_namespace_decl_handler": [
-        "int xml_set_end_namespace_decl_handler(resource parser, string hdl)",
+        "int xml_set_end_namespace_decl_handler(resources parser, string hdl)",
         "Set up character data handler"
     ],
     "xml_set_external_entity_ref_handler": [
-        "int xml_set_external_entity_ref_handler(resource parser, string hdl)",
+        "int xml_set_external_entity_ref_handler(resources parser, string hdl)",
         "Set up external entity reference handler"
     ],
     "xml_set_notation_decl_handler": [
-        "int xml_set_notation_decl_handler(resource parser, string hdl)",
+        "int xml_set_notation_decl_handler(resources parser, string hdl)",
         "Set up notation declaration handler"
     ],
     "xml_set_object": [
-        "int xml_set_object(resource parser, object &obj)",
+        "int xml_set_object(resources parser, object &obj)",
         "Set up object which should be used for callbacks"
     ],
     "xml_set_processing_instruction_handler": [
-        "int xml_set_processing_instruction_handler(resource parser, string hdl)",
+        "int xml_set_processing_instruction_handler(resources parser, string hdl)",
         "Set up processing instruction (PI) handler"
     ],
     "xml_set_start_namespace_decl_handler": [
-        "int xml_set_start_namespace_decl_handler(resource parser, string hdl)",
+        "int xml_set_start_namespace_decl_handler(resources parser, string hdl)",
         "Set up character data handler"
     ],
     "xml_set_unparsed_entity_decl_handler": [
-        "int xml_set_unparsed_entity_decl_handler(resource parser, string hdl)",
+        "int xml_set_unparsed_entity_decl_handler(resources parser, string hdl)",
         "Set up unparsed entity declaration handler"
     ],
     "xmlrpc_decode": [
@@ -10979,27 +10979,27 @@ var functionMap = {
         "Decodes XML into a list of method descriptions"
     ],
     "xmlrpc_server_add_introspection_data": [
-        "int xmlrpc_server_add_introspection_data(resource server, array desc)",
+        "int xmlrpc_server_add_introspection_data(resources server, array desc)",
         "Adds introspection documentation"
     ],
     "xmlrpc_server_call_method": [
-        "mixed xmlrpc_server_call_method(resource server, string xml, mixed user_data [, array output_options])",
+        "mixed xmlrpc_server_call_method(resources server, string xml, mixed user_data [, array output_options])",
         "Parses XML requests and call methods"
     ],
     "xmlrpc_server_create": [
-        "resource xmlrpc_server_create(void)",
+        "resources xmlrpc_server_create(void)",
         "Creates an xmlrpc server"
     ],
     "xmlrpc_server_destroy": [
-        "int xmlrpc_server_destroy(resource server)",
+        "int xmlrpc_server_destroy(resources server)",
         "Destroys server resources"
     ],
     "xmlrpc_server_register_introspection_callback": [
-        "bool xmlrpc_server_register_introspection_callback(resource server, string function)",
+        "bool xmlrpc_server_register_introspection_callback(resources server, string function)",
         "Register a PHP function to generate documentation"
     ],
     "xmlrpc_server_register_method": [
-        "bool xmlrpc_server_register_method(resource server, string method_name, string function)",
+        "bool xmlrpc_server_register_method(resources server, string method_name, string function)",
         "Register a PHP function to handle method matching method_name"
     ],
     "xmlrpc_set_type": [
@@ -11007,171 +11007,171 @@ var functionMap = {
         "Sets xmlrpc type, base64 or datetime, for a PHP string value"
     ],
     "xmlwriter_end_attribute": [
-        "bool xmlwriter_end_attribute(resource xmlwriter)",
+        "bool xmlwriter_end_attribute(resources xmlwriter)",
         "End attribute - returns FALSE on error"
     ],
     "xmlwriter_end_cdata": [
-        "bool xmlwriter_end_cdata(resource xmlwriter)",
+        "bool xmlwriter_end_cdata(resources xmlwriter)",
         "End current CDATA - returns FALSE on error"
     ],
     "xmlwriter_end_comment": [
-        "bool xmlwriter_end_comment(resource xmlwriter)",
+        "bool xmlwriter_end_comment(resources xmlwriter)",
         "Create end comment - returns FALSE on error"
     ],
     "xmlwriter_end_document": [
-        "bool xmlwriter_end_document(resource xmlwriter)",
+        "bool xmlwriter_end_document(resources xmlwriter)",
         "End current document - returns FALSE on error"
     ],
     "xmlwriter_end_dtd": [
-        "bool xmlwriter_end_dtd(resource xmlwriter)",
+        "bool xmlwriter_end_dtd(resources xmlwriter)",
         "End current DTD - returns FALSE on error"
     ],
     "xmlwriter_end_dtd_attlist": [
-        "bool xmlwriter_end_dtd_attlist(resource xmlwriter)",
+        "bool xmlwriter_end_dtd_attlist(resources xmlwriter)",
         "End current DTD AttList - returns FALSE on error"
     ],
     "xmlwriter_end_dtd_element": [
-        "bool xmlwriter_end_dtd_element(resource xmlwriter)",
+        "bool xmlwriter_end_dtd_element(resources xmlwriter)",
         "End current DTD element - returns FALSE on error"
     ],
     "xmlwriter_end_dtd_entity": [
-        "bool xmlwriter_end_dtd_entity(resource xmlwriter)",
+        "bool xmlwriter_end_dtd_entity(resources xmlwriter)",
         "End current DTD Entity - returns FALSE on error"
     ],
     "xmlwriter_end_element": [
-        "bool xmlwriter_end_element(resource xmlwriter)",
+        "bool xmlwriter_end_element(resources xmlwriter)",
         "End current element - returns FALSE on error"
     ],
     "xmlwriter_end_pi": [
-        "bool xmlwriter_end_pi(resource xmlwriter)",
+        "bool xmlwriter_end_pi(resources xmlwriter)",
         "End current PI - returns FALSE on error"
     ],
     "xmlwriter_flush": [
-        "mixed xmlwriter_flush(resource xmlwriter [,bool empty])",
+        "mixed xmlwriter_flush(resources xmlwriter [,bool empty])",
         "Output current buffer"
     ],
     "xmlwriter_full_end_element": [
-        "bool xmlwriter_full_end_element(resource xmlwriter)",
+        "bool xmlwriter_full_end_element(resources xmlwriter)",
         "End current element - returns FALSE on error"
     ],
     "xmlwriter_open_memory": [
-        "resource xmlwriter_open_memory()",
+        "resources xmlwriter_open_memory()",
         "Create new xmlwriter using memory for string output"
     ],
     "xmlwriter_open_uri": [
-        "resource xmlwriter_open_uri(resource xmlwriter, string source)",
+        "resources xmlwriter_open_uri(resources xmlwriter, string source)",
         "Create new xmlwriter using source uri for output"
     ],
     "xmlwriter_output_memory": [
-        "string xmlwriter_output_memory(resource xmlwriter [,bool flush])",
+        "string xmlwriter_output_memory(resources xmlwriter [,bool flush])",
         "Output current buffer as string"
     ],
     "xmlwriter_set_indent": [
-        "bool xmlwriter_set_indent(resource xmlwriter, bool indent)",
+        "bool xmlwriter_set_indent(resources xmlwriter, bool indent)",
         "Toggle indentation on\/off - returns FALSE on error"
     ],
     "xmlwriter_set_indent_string": [
-        "bool xmlwriter_set_indent_string(resource xmlwriter, string indentString)",
+        "bool xmlwriter_set_indent_string(resources xmlwriter, string indentString)",
         "Set string used for indenting - returns FALSE on error"
     ],
     "xmlwriter_start_attribute": [
-        "bool xmlwriter_start_attribute(resource xmlwriter, string name)",
+        "bool xmlwriter_start_attribute(resources xmlwriter, string name)",
         "Create start attribute - returns FALSE on error"
     ],
     "xmlwriter_start_attribute_ns": [
-        "bool xmlwriter_start_attribute_ns(resource xmlwriter, string prefix, string name, string uri)",
+        "bool xmlwriter_start_attribute_ns(resources xmlwriter, string prefix, string name, string uri)",
         "Create start namespaced attribute - returns FALSE on error"
     ],
     "xmlwriter_start_cdata": [
-        "bool xmlwriter_start_cdata(resource xmlwriter)",
+        "bool xmlwriter_start_cdata(resources xmlwriter)",
         "Create start CDATA tag - returns FALSE on error"
     ],
     "xmlwriter_start_comment": [
-        "bool xmlwriter_start_comment(resource xmlwriter)",
+        "bool xmlwriter_start_comment(resources xmlwriter)",
         "Create start comment - returns FALSE on error"
     ],
     "xmlwriter_start_document": [
-        "bool xmlwriter_start_document(resource xmlwriter, string version, string encoding, string standalone)",
+        "bool xmlwriter_start_document(resources xmlwriter, string version, string encoding, string standalone)",
         "Create document tag - returns FALSE on error"
     ],
     "xmlwriter_start_dtd": [
-        "bool xmlwriter_start_dtd(resource xmlwriter, string name, string pubid, string sysid)",
+        "bool xmlwriter_start_dtd(resources xmlwriter, string name, string pubid, string sysid)",
         "Create start DTD tag - returns FALSE on error"
     ],
     "xmlwriter_start_dtd_attlist": [
-        "bool xmlwriter_start_dtd_attlist(resource xmlwriter, string name)",
+        "bool xmlwriter_start_dtd_attlist(resources xmlwriter, string name)",
         "Create start DTD AttList - returns FALSE on error"
     ],
     "xmlwriter_start_dtd_element": [
-        "bool xmlwriter_start_dtd_element(resource xmlwriter, string name)",
+        "bool xmlwriter_start_dtd_element(resources xmlwriter, string name)",
         "Create start DTD element - returns FALSE on error"
     ],
     "xmlwriter_start_dtd_entity": [
-        "bool xmlwriter_start_dtd_entity(resource xmlwriter, string name, bool isparam)",
+        "bool xmlwriter_start_dtd_entity(resources xmlwriter, string name, bool isparam)",
         "Create start DTD Entity - returns FALSE on error"
     ],
     "xmlwriter_start_element": [
-        "bool xmlwriter_start_element(resource xmlwriter, string name)",
+        "bool xmlwriter_start_element(resources xmlwriter, string name)",
         "Create start element tag - returns FALSE on error"
     ],
     "xmlwriter_start_element_ns": [
-        "bool xmlwriter_start_element_ns(resource xmlwriter, string prefix, string name, string uri)",
+        "bool xmlwriter_start_element_ns(resources xmlwriter, string prefix, string name, string uri)",
         "Create start namespaced element tag - returns FALSE on error"
     ],
     "xmlwriter_start_pi": [
-        "bool xmlwriter_start_pi(resource xmlwriter, string target)",
+        "bool xmlwriter_start_pi(resources xmlwriter, string target)",
         "Create start PI tag - returns FALSE on error"
     ],
     "xmlwriter_text": [
-        "bool xmlwriter_text(resource xmlwriter, string content)",
+        "bool xmlwriter_text(resources xmlwriter, string content)",
         "Write text - returns FALSE on error"
     ],
     "xmlwriter_write_attribute": [
-        "bool xmlwriter_write_attribute(resource xmlwriter, string name, string content)",
+        "bool xmlwriter_write_attribute(resources xmlwriter, string name, string content)",
         "Write full attribute - returns FALSE on error"
     ],
     "xmlwriter_write_attribute_ns": [
-        "bool xmlwriter_write_attribute_ns(resource xmlwriter, string prefix, string name, string uri, string content)",
+        "bool xmlwriter_write_attribute_ns(resources xmlwriter, string prefix, string name, string uri, string content)",
         "Write full namespaced attribute - returns FALSE on error"
     ],
     "xmlwriter_write_cdata": [
-        "bool xmlwriter_write_cdata(resource xmlwriter, string content)",
+        "bool xmlwriter_write_cdata(resources xmlwriter, string content)",
         "Write full CDATA tag - returns FALSE on error"
     ],
     "xmlwriter_write_comment": [
-        "bool xmlwriter_write_comment(resource xmlwriter, string content)",
+        "bool xmlwriter_write_comment(resources xmlwriter, string content)",
         "Write full comment tag - returns FALSE on error"
     ],
     "xmlwriter_write_dtd": [
-        "bool xmlwriter_write_dtd(resource xmlwriter, string name, string pubid, string sysid, string subset)",
+        "bool xmlwriter_write_dtd(resources xmlwriter, string name, string pubid, string sysid, string subset)",
         "Write full DTD tag - returns FALSE on error"
     ],
     "xmlwriter_write_dtd_attlist": [
-        "bool xmlwriter_write_dtd_attlist(resource xmlwriter, string name, string content)",
+        "bool xmlwriter_write_dtd_attlist(resources xmlwriter, string name, string content)",
         "Write full DTD AttList tag - returns FALSE on error"
     ],
     "xmlwriter_write_dtd_element": [
-        "bool xmlwriter_write_dtd_element(resource xmlwriter, string name, string content)",
+        "bool xmlwriter_write_dtd_element(resources xmlwriter, string name, string content)",
         "Write full DTD element tag - returns FALSE on error"
     ],
     "xmlwriter_write_dtd_entity": [
-        "bool xmlwriter_write_dtd_entity(resource xmlwriter, string name, string content [, int pe [, string pubid [, string sysid [, string ndataid]]]])",
+        "bool xmlwriter_write_dtd_entity(resources xmlwriter, string name, string content [, int pe [, string pubid [, string sysid [, string ndataid]]]])",
         "Write full DTD Entity tag - returns FALSE on error"
     ],
     "xmlwriter_write_element": [
-        "bool xmlwriter_write_element(resource xmlwriter, string name[, string content])",
+        "bool xmlwriter_write_element(resources xmlwriter, string name[, string content])",
         "Write full element tag - returns FALSE on error"
     ],
     "xmlwriter_write_element_ns": [
-        "bool xmlwriter_write_element_ns(resource xmlwriter, string prefix, string name, string uri[, string content])",
+        "bool xmlwriter_write_element_ns(resources xmlwriter, string prefix, string name, string uri[, string content])",
         "Write full namesapced element tag - returns FALSE on error"
     ],
     "xmlwriter_write_pi": [
-        "bool xmlwriter_write_pi(resource xmlwriter, string target, string content)",
+        "bool xmlwriter_write_pi(resources xmlwriter, string target, string content)",
         "Write full PI tag - returns FALSE on error"
     ],
     "xmlwriter_write_raw": [
-        "bool xmlwriter_write_raw(resource xmlwriter, string content)",
+        "bool xmlwriter_write_raw(resources xmlwriter, string content)",
         "Write text - returns FALSE on error"
     ],
     "xsl_xsltprocessor_get_parameter": [
@@ -11223,43 +11223,43 @@ var functionMap = {
         "Get the version of the Zend Engine"
     ],
     "zip_close": [
-        "void zip_close(resource zip)",
+        "void zip_close(resources zip)",
         "Close a Zip archive"
     ],
     "zip_entry_close": [
-        "void zip_entry_close(resource zip_ent)",
+        "void zip_entry_close(resources zip_ent)",
         "Close a zip entry"
     ],
     "zip_entry_compressedsize": [
-        "int zip_entry_compressedsize(resource zip_entry)",
+        "int zip_entry_compressedsize(resources zip_entry)",
         "Return the compressed size of a ZZip entry"
     ],
     "zip_entry_compressionmethod": [
-        "string zip_entry_compressionmethod(resource zip_entry)",
+        "string zip_entry_compressionmethod(resources zip_entry)",
         "Return a string containing the compression method used on a particular entry"
     ],
     "zip_entry_filesize": [
-        "int zip_entry_filesize(resource zip_entry)",
+        "int zip_entry_filesize(resources zip_entry)",
         "Return the actual filesize of a ZZip entry"
     ],
     "zip_entry_name": [
-        "string zip_entry_name(resource zip_entry)",
+        "string zip_entry_name(resources zip_entry)",
         "Return the name given a ZZip entry"
     ],
     "zip_entry_open": [
-        "bool zip_entry_open(resource zip_dp, resource zip_entry [, string mode])",
-        "Open a Zip File, pointed by the resource entry"
+        "bool zip_entry_open(resources zip_dp, resources zip_entry [, string mode])",
+        "Open a Zip File, pointed by the resources entry"
     ],
     "zip_entry_read": [
-        "mixed zip_entry_read(resource zip_entry [, int len])",
+        "mixed zip_entry_read(resources zip_entry [, int len])",
         "Read from an open directory entry"
     ],
     "zip_open": [
-        "resource zip_open(string filename)",
+        "resources zip_open(string filename)",
         "Create new zip using source uri for output"
     ],
     "zip_read": [
-        "resource zip_read(resource zip)",
+        "resources zip_read(resources zip)",
         "Returns the next file in the archive"
     ],
     "zlib_get_coding_type": [

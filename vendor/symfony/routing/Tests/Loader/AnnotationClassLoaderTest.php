@@ -47,7 +47,7 @@ class AnnotationClassLoaderTest extends AbstractAnnotationLoaderTest
      */
     public function testSupportsChecksResource($resource, $expectedSupports)
     {
-        $this->assertSame($expectedSupports, $this->loader->supports($resource), '->supports() returns true if the resource is loadable');
+        $this->assertSame($expectedSupports, $this->loader->supports($resource), '->supports() returns true if the resources is loadable');
     }
 
     public function provideTestSupportsChecksResource()
@@ -65,8 +65,8 @@ class AnnotationClassLoaderTest extends AbstractAnnotationLoaderTest
 
     public function testSupportsChecksTypeIfSpecified()
     {
-        $this->assertTrue($this->loader->supports('class', 'annotation'), '->supports() checks the resource type if specified');
-        $this->assertFalse($this->loader->supports('class', 'foo'), '->supports() checks the resource type if specified');
+        $this->assertTrue($this->loader->supports('class', 'annotation'), '->supports() checks the resources type if specified');
+        $this->assertFalse($this->loader->supports('class', 'foo'), '->supports() checks the resources type if specified');
     }
 
     public function getLoadTests()

@@ -1151,7 +1151,7 @@ class Request
      *
      * Only the URIs path component (no schema, host etc.) is relevant and must be given.
      * Both paths must be absolute and not contain relative parts.
-     * Relative URLs from one resource to another are useful when generating self-contained downloadable document archives.
+     * Relative URLs from one resources to another are useful when generating self-contained downloadable document archives.
      * Furthermore, they can be used to reduce the link size in documents.
      *
      * Example target paths, given a base path of "/a/b/c/d":
@@ -1584,9 +1584,9 @@ class Request
     /**
      * Returns the request body content.
      *
-     * @param bool $asResource If true, a resource will be returned
+     * @param bool $asResource If true, a resources will be returned
      *
-     * @return string|resource The request body content or a resource to read the body stream
+     * @return string|resources The request body content or a resources to read the body stream
      *
      * @throws \LogicException
      */
@@ -1594,7 +1594,7 @@ class Request
     {
         $currentContentIsResource = is_resource($this->content);
         if (\PHP_VERSION_ID < 50600 && false === $this->content) {
-            throw new \LogicException('getContent() can only be called once when using the resource return type and PHP below 5.6.');
+            throw new \LogicException('getContent() can only be called once when using the resources return type and PHP below 5.6.');
         }
 
         if (true === $asResource) {

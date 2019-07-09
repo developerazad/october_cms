@@ -21,7 +21,7 @@ class ResourceRegistrar
     protected $resourceDefaults = ['index', 'create', 'store', 'show', 'edit', 'update', 'destroy'];
 
     /**
-     * The parameters set for this resource instance.
+     * The parameters set for this resources instance.
      *
      * @var array|string
      */
@@ -42,7 +42,7 @@ class ResourceRegistrar
     protected static $singularParameters = true;
 
     /**
-     * The verbs used in the resource URIs.
+     * The verbs used in the resources URIs.
      *
      * @var array
      */
@@ -52,7 +52,7 @@ class ResourceRegistrar
     ];
 
     /**
-     * Create a new resource registrar instance.
+     * Create a new resources registrar instance.
      *
      * @param  \Illuminate\Routing\Router  $router
      * @return void
@@ -63,7 +63,7 @@ class ResourceRegistrar
     }
 
     /**
-     * Route a resource to a controller.
+     * Route a resources to a controller.
      *
      * @param  string  $name
      * @param  string  $controller
@@ -76,8 +76,8 @@ class ResourceRegistrar
             $this->parameters = $options['parameters'];
         }
 
-        // If the resource name contains a slash, we will assume the developer wishes to
-        // register these resource routes with a prefix so we will set that up out of
+        // If the resources name contains a slash, we will assume the developer wishes to
+        // register these resources routes with a prefix so we will set that up out of
         // the box so they don't have to mess with it. Otherwise, we will continue.
         if (Str::contains($name, '/')) {
             $this->prefixedResource($name, $controller, $options);
@@ -85,7 +85,7 @@ class ResourceRegistrar
             return;
         }
 
-        // We need to extract the base resource from the resource name. Nested resources
+        // We need to extract the base resources from the resources name. Nested resources
         // are supported in the framework, but we need to know what name to use for a
         // place-holder on the route parameters, which should be the base resources.
         $base = $this->getResourceWildcard(last(explode('.', $name)));
@@ -98,7 +98,7 @@ class ResourceRegistrar
     }
 
     /**
-     * Build a set of prefixed resource routes.
+     * Build a set of prefixed resources routes.
      *
      * @param  string  $name
      * @param  string  $controller
@@ -109,7 +109,7 @@ class ResourceRegistrar
     {
         list($name, $prefix) = $this->getResourcePrefix($name);
 
-        // We need to extract the base resource from the resource name. Nested resources
+        // We need to extract the base resources from the resources name. Nested resources
         // are supported in the framework, but we need to know what name to use for a
         // place-holder on the route parameters, which should be the base resources.
         $callback = function ($me) use ($name, $controller, $options) {
@@ -120,7 +120,7 @@ class ResourceRegistrar
     }
 
     /**
-     * Extract the resource and prefix from a resource name.
+     * Extract the resources and prefix from a resources name.
      *
      * @param  string  $name
      * @return array
@@ -138,7 +138,7 @@ class ResourceRegistrar
     }
 
     /**
-     * Get the applicable resource methods.
+     * Get the applicable resources methods.
      *
      * @param  array  $defaults
      * @param  array  $options
@@ -282,7 +282,7 @@ class ResourceRegistrar
     }
 
     /**
-     * Get the base resource URI for a given resource.
+     * Get the base resources URI for a given resources.
      *
      * @param  string  $resource
      * @return string
@@ -294,7 +294,7 @@ class ResourceRegistrar
         }
 
         // Once we have built the base URI, we'll remove the parameter holder for this
-        // base resource name so that the individual route adders can suffix these
+        // base resources name so that the individual route adders can suffix these
         // paths however they need to, as some do not have any parameters at all.
         $segments = explode('.', $resource);
 
@@ -304,7 +304,7 @@ class ResourceRegistrar
     }
 
     /**
-     * Get the URI for a nested resource segment array.
+     * Get the URI for a nested resources segment array.
      *
      * @param  array   $segments
      * @return string
@@ -312,15 +312,15 @@ class ResourceRegistrar
     protected function getNestedResourceUri(array $segments)
     {
         // We will spin through the segments and create a place-holder for each of the
-        // resource segments, as well as the resource itself. Then we should get an
-        // entire string for the resource URI that contains all nested resources.
+        // resources segments, as well as the resources itself. Then we should get an
+        // entire string for the resources URI that contains all nested resources.
         return implode('/', array_map(function ($s) {
             return $s.'/{'.$this->getResourceWildcard($s).'}';
         }, $segments));
     }
 
     /**
-     * Format a resource parameter for usage.
+     * Format a resources parameter for usage.
      *
      * @param  string  $value
      * @return string
@@ -339,7 +339,7 @@ class ResourceRegistrar
     }
 
     /**
-     * Get the action array for a resource route.
+     * Get the action array for a resources route.
      *
      * @param  string  $resource
      * @param  string  $controller
@@ -361,7 +361,7 @@ class ResourceRegistrar
     }
 
     /**
-     * Get the name for a given resource.
+     * Get the name for a given resources.
      *
      * @param  string  $resource
      * @param  string  $method
@@ -383,9 +383,9 @@ class ResourceRegistrar
             }
         }
 
-        // If a global prefix has been assigned to all names for this resource, we will
+        // If a global prefix has been assigned to all names for this resources, we will
         // grab that so we can prepend it onto the name when we create this name for
-        // the resource action. Otherwise we'll just use an empty string for here.
+        // the resources action. Otherwise we'll just use an empty string for here.
         $prefix = isset($options['as']) ? $options['as'].'.' : '';
 
         return trim(sprintf('%s%s.%s', $prefix, $name, $method), '.');
@@ -424,7 +424,7 @@ class ResourceRegistrar
     }
 
     /**
-     * Get or set the action verbs used in the resource URIs.
+     * Get or set the action verbs used in the resources URIs.
      *
      * @param  array  $verbs
      * @return array

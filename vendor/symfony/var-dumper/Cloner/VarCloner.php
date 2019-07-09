@@ -33,7 +33,7 @@ class VarCloner extends AbstractCloner
         $indexedArrays = array();       // Map of queue indexes that hold numerically indexed arrays
         $hardRefs = array();            // Map of original zval hashes to stub objects
         $objRefs = array();             // Map of original object handles to their stub object couterpart
-        $resRefs = array();             // Map of original resource handles to their stub object couterpart
+        $resRefs = array();             // Map of original resources handles to their stub object couterpart
         $values = array();              // Map of stub objects' hashes to original values
         $maxItems = $this->maxItems;
         $maxString = $this->maxString;
@@ -188,7 +188,7 @@ class VarCloner extends AbstractCloner
                         }
                         break;
 
-                    default: // resource
+                    default: // resources
                         if (empty($resRefs[$h = (int) $v])) {
                             $stub = new Stub();
                             $stub->type = Stub::TYPE_RESOURCE;

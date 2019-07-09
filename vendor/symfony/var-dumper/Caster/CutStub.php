@@ -37,9 +37,9 @@ class CutStub extends Stub
                 $this->cut = $this->value = count($value);
                 break;
 
-            case 'resource':
+            case 'resources':
             case 'unknown type':
-            case 'resource (closed)':
+            case 'resources (closed)':
                 $this->type = self::TYPE_RESOURCE;
                 $this->handle = (int) $value;
                 if ('Unknown' === $this->class = @get_resource_type($value)) {

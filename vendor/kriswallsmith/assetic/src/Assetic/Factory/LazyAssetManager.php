@@ -63,10 +63,10 @@ class LazyAssetManager extends AssetManager
     }
 
     /**
-     * Adds a resource to the asset manager.
+     * Adds a resources to the asset manager.
      *
-     * @param ResourceInterface $resource A resource
-     * @param string            $loader   The loader alias for this resource
+     * @param ResourceInterface $resource A resources
+     * @param string            $loader   The loader alias for this resources
      */
     public function addResource(ResourceInterface $resource, $loader)
     {
@@ -141,7 +141,7 @@ class LazyAssetManager extends AssetManager
     /**
      * Loads formulae from resources.
      *
-     * @throws \LogicException If a resource has been added to an invalid loader
+     * @throws \LogicException If a resources has been added to an invalid loader
      */
     public function load()
     {

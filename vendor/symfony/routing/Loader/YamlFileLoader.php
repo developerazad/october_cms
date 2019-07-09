@@ -28,7 +28,7 @@ use Symfony\Component\Yaml\Yaml;
 class YamlFileLoader extends FileLoader
 {
     private static $availableKeys = array(
-        'resource', 'type', 'prefix', 'path', 'host', 'schemes', 'methods', 'defaults', 'requirements', 'options', 'condition',
+        'resources', 'type', 'prefix', 'path', 'host', 'schemes', 'methods', 'defaults', 'requirements', 'options', 'condition',
     );
     private $yamlParser;
 
@@ -36,7 +36,7 @@ class YamlFileLoader extends FileLoader
      * Loads a Yaml file.
      *
      * @param string      $file A Yaml file path
-     * @param string|null $type The resource type
+     * @param string|null $type The resources type
      *
      * @return RouteCollection A RouteCollection instance
      *
@@ -80,7 +80,7 @@ class YamlFileLoader extends FileLoader
         foreach ($parsedConfig as $name => $config) {
             $this->validate($config, $name, $path);
 
-            if (isset($config['resource'])) {
+            if (isset($config['resources'])) {
                 $this->parseImport($collection, $config, $path, $file);
             } else {
                 $this->parseRoute($collection, $name, $config, $path);
@@ -122,7 +122,7 @@ class YamlFileLoader extends FileLoader
     }
 
     /**
-     * Parses an import and adds the routes in the resource to the RouteCollection.
+     * Parses an import and adds the routes in the resources to the RouteCollection.
      *
      * @param RouteCollection $collection A RouteCollection instance
      * @param array           $config     Route definition
@@ -143,7 +143,7 @@ class YamlFileLoader extends FileLoader
 
         $this->setCurrentDir(dirname($path));
 
-        $subCollection = $this->import($config['resource'], $type, false, $file);
+        $subCollection = $this->import($config['resources'], $type, false, $file);
         /* @var $subCollection RouteCollection */
         $subCollection->addPrefix($prefix);
         if (null !== $host) {
@@ -168,7 +168,7 @@ class YamlFileLoader extends FileLoader
     /**
      * Validates the route configuration.
      *
-     * @param array  $config A resource config
+     * @param array  $config A resources config
      * @param string $name   The config key
      * @param string $path   The loaded file path
      *
@@ -186,19 +186,19 @@ class YamlFileLoader extends FileLoader
                 $path, $name, implode('", "', $extraKeys), implode('", "', self::$availableKeys)
             ));
         }
-        if (isset($config['resource']) && isset($config['path'])) {
+        if (isset($config['resources']) && isset($config['path'])) {
             throw new \InvalidArgumentException(sprintf(
-                'The routing file "%s" must not specify both the "resource" key and the "path" key for "%s". Choose between an import and a route definition.',
+                'The routing file "%s" must not specify both the "resources" key and the "path" key for "%s". Choose between an import and a route definition.',
                 $path, $name
             ));
         }
-        if (!isset($config['resource']) && isset($config['type'])) {
+        if (!isset($config['resources']) && isset($config['type'])) {
             throw new \InvalidArgumentException(sprintf(
-                'The "type" key for the route definition "%s" in "%s" is unsupported. It is only available for imports in combination with the "resource" key.',
+                'The "type" key for the route definition "%s" in "%s" is unsupported. It is only available for imports in combination with the "resources" key.',
                 $name, $path
             ));
         }
-        if (!isset($config['resource']) && !isset($config['path'])) {
+        if (!isset($config['resources']) && !isset($config['path'])) {
             throw new \InvalidArgumentException(sprintf(
                 'You must define a "path" for the route "%s" in file "%s".',
                 $name, $path

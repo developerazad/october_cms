@@ -24,10 +24,10 @@ class Swift_ByteStream_FileByteStream extends Swift_ByteStream_AbstractFilterabl
     /** The mode this file is opened in for writing */
     private $mode;
 
-    /** A lazy-loaded resource handle for reading the file */
+    /** A lazy-loaded resources handle for reading the file */
     private $reader;
 
-    /** A lazy-loaded resource handle for writing the file */
+    /** A lazy-loaded resources handle for writing the file */
     private $writer;
 
     /** If stream is seekable true/false, or null if not known */
@@ -122,7 +122,7 @@ class Swift_ByteStream_FileByteStream extends Swift_ByteStream_AbstractFilterabl
     {
     }
 
-    /** Get the resource for reading */
+    /** Get the resources for reading */
     private function getReadHandle()
     {
         if (!isset($this->reader)) {
@@ -140,7 +140,7 @@ class Swift_ByteStream_FileByteStream extends Swift_ByteStream_AbstractFilterabl
         return $this->reader;
     }
 
-    /** Get the resource for writing */
+    /** Get the resources for writing */
     private function getWriteHandle()
     {
         if (!isset($this->writer)) {
@@ -154,7 +154,7 @@ class Swift_ByteStream_FileByteStream extends Swift_ByteStream_AbstractFilterabl
         return $this->writer;
     }
 
-    /** Force a reload of the resource for reading */
+    /** Force a reload of the resources for reading */
     private function resetReadHandle()
     {
         if (isset($this->reader)) {

@@ -33,7 +33,7 @@ use Doctrine\DBAL\Driver\Statement;
 class SQLAnywhereStatement implements IteratorAggregate, Statement
 {
     /**
-     * @var resource The connection resource.
+     * @var resources The connection resources.
      */
     private $conn;
 
@@ -53,7 +53,7 @@ class SQLAnywhereStatement implements IteratorAggregate, Statement
     private $defaultFetchMode = PDO::FETCH_BOTH;
 
     /**
-     * @var resource The result set resource to fetch.
+     * @var resources The result set resources to fetch.
      */
     private $result;
 
@@ -67,7 +67,7 @@ class SQLAnywhereStatement implements IteratorAggregate, Statement
      *
      * Prepares given statement for given connection.
      *
-     * @param resource $conn The connection resource to use.
+     * @param resources $conn The connection resources to use.
      * @param string   $sql  The SQL statement to prepare.
      *
      * @throws SQLAnywhereException
@@ -75,7 +75,7 @@ class SQLAnywhereStatement implements IteratorAggregate, Statement
     public function __construct($conn, $sql)
     {
         if ( ! is_resource($conn)) {
-            throw new SQLAnywhereException('Invalid SQL Anywhere connection resource: ' . $conn);
+            throw new SQLAnywhereException('Invalid SQL Anywhere connection resources: ' . $conn);
         }
 
         $this->conn = $conn;

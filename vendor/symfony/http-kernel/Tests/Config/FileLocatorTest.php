@@ -40,9 +40,9 @@ class FileLocatorTest extends TestCase
         $kernel
             ->expects($this->atLeastOnce())
             ->method('locateResource')
-            ->with('@BundleName/some/path', '/global/resource/path', false);
+            ->with('@BundleName/some/path', '/global/resources/path', false);
 
-        $locator = new FileLocator($kernel, '/global/resource/path');
+        $locator = new FileLocator($kernel, '/global/resources/path');
         $locator->locate('@BundleName/some/path', null, false);
     }
 }

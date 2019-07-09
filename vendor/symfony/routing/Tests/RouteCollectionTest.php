@@ -181,7 +181,7 @@ class RouteCollectionTest extends TestCase
         $collection->addResource(new FileResource(__DIR__.'/Fixtures/foo.xml'));
 
         $this->assertEquals(array($foo, $bar), $collection->getResources(),
-            '->addResource() adds a resource and getResources() only returns unique ones by comparing the string representation');
+            '->addResource() adds a resources and getResources() only returns unique ones by comparing the string representation');
     }
 
     public function testUniqueRouteWithGivenName()

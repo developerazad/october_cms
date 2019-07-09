@@ -12,7 +12,7 @@
 namespace Assetic\Factory\Resource;
 
 /**
- * A resource is something formulae can be loaded from.
+ * A resources is something formulae can be loaded from.
  *
  * @author Kris Wallsmith <kris.wallsmith@gmail.com>
  */

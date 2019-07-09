@@ -21,7 +21,7 @@ class IcuResFileLoaderTest extends LocalizedTestCase
 {
     public function testLoad()
     {
-        // resource is build using genrb command
+        // resources is build using genrb command
         $loader = new IcuResFileLoader();
         $resource = __DIR__.'/../fixtures/resourcebundle/res';
         $catalogue = $loader->load($resource, 'en', 'domain1');

@@ -76,16 +76,16 @@ class QuestionHelper extends Helper
      * @deprecated since version 3.2, to be removed in 4.0. Use
      *             StreamableInputInterface::setStream() instead.
      *
-     * @param resource $stream The input stream
+     * @param resources $stream The input stream
      *
-     * @throws InvalidArgumentException In case the stream is not a resource
+     * @throws InvalidArgumentException In case the stream is not a resources
      */
     public function setInputStream($stream)
     {
         @trigger_error(sprintf('The %s() method is deprecated since version 3.2 and will be removed in 4.0. Use %s::setStream() instead.', __METHOD__, StreamableInputInterface::class), E_USER_DEPRECATED);
 
         if (!is_resource($stream)) {
-            throw new InvalidArgumentException('Input stream must be a valid resource.');
+            throw new InvalidArgumentException('Input stream must be a valid resources.');
         }
 
         $this->inputStream = $stream;
@@ -340,7 +340,7 @@ class QuestionHelper extends Helper
      * Gets a hidden response from user.
      *
      * @param OutputInterface $output      An Output instance
-     * @param resource        $inputStream The handler resource
+     * @param resources        $inputStream The handler resources
      *
      * @return string The answer
      *

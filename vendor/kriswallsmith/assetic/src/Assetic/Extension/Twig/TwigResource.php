@@ -14,7 +14,7 @@ namespace Assetic\Extension\Twig;
 use Assetic\Factory\Resource\ResourceInterface;
 
 /**
- * A Twig template resource.
+ * A Twig template resources.
  *
  * @author Kris Wallsmith <kris.wallsmith@gmail.com>
  */

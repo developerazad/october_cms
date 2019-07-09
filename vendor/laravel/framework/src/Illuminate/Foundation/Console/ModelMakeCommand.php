@@ -44,7 +44,7 @@ class ModelMakeCommand extends GeneratorCommand
             $this->input->setOption('factory', true);
             $this->input->setOption('migration', true);
             $this->input->setOption('controller', true);
-            $this->input->setOption('resource', true);
+            $this->input->setOption('resources', true);
         }
 
         if ($this->option('factory')) {
@@ -55,7 +55,7 @@ class ModelMakeCommand extends GeneratorCommand
             $this->createMigration();
         }
 
-        if ($this->option('controller') || $this->option('resource')) {
+        if ($this->option('controller') || $this->option('resources')) {
             $this->createController();
         }
     }
@@ -101,7 +101,7 @@ class ModelMakeCommand extends GeneratorCommand
 
         $this->call('make:controller', [
             'name' => "{$controller}Controller",
-            '--model' => $this->option('resource') ? $modelName : null,
+            '--model' => $this->option('resources') ? $modelName : null,
         ]);
     }
 
@@ -138,7 +138,7 @@ class ModelMakeCommand extends GeneratorCommand
     protected function getOptions()
     {
         return [
-            ['all', 'a', InputOption::VALUE_NONE, 'Generate a migration, factory, and resource controller for the model'],
+            ['all', 'a', InputOption::VALUE_NONE, 'Generate a migration, factory, and resources controller for the model'],
 
             ['controller', 'c', InputOption::VALUE_NONE, 'Create a new controller for the model'],
 
@@ -150,7 +150,7 @@ class ModelMakeCommand extends GeneratorCommand
 
             ['pivot', 'p', InputOption::VALUE_NONE, 'Indicates if the generated model should be a custom intermediate table model.'],
 
-            ['resource', 'r', InputOption::VALUE_NONE, 'Indicates if the generated controller should be a resource controller.'],
+            ['resources', 'r', InputOption::VALUE_NONE, 'Indicates if the generated controller should be a resources controller.'],
         ];
     }
 }

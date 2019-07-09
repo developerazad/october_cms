@@ -82,7 +82,7 @@ class RouteRegistrar
     }
 
     /**
-     * Route a resource to a controller.
+     * Route a resources to a controller.
      *
      * @param  string  $name
      * @param  string  $controller

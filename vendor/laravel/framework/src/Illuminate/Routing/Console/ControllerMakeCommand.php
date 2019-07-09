@@ -41,7 +41,7 @@ class ControllerMakeCommand extends GeneratorCommand
             return __DIR__.'/stubs/controller.nested.stub';
         } elseif ($this->option('model')) {
             return __DIR__.'/stubs/controller.model.stub';
-        } elseif ($this->option('resource')) {
+        } elseif ($this->option('resources')) {
             return __DIR__.'/stubs/controller.stub';
         }
 
@@ -162,11 +162,11 @@ class ControllerMakeCommand extends GeneratorCommand
     protected function getOptions()
     {
         return [
-            ['model', 'm', InputOption::VALUE_OPTIONAL, 'Generate a resource controller for the given model.'],
+            ['model', 'm', InputOption::VALUE_OPTIONAL, 'Generate a resources controller for the given model.'],
 
-            ['resource', 'r', InputOption::VALUE_NONE, 'Generate a resource controller class.'],
+            ['resources', 'r', InputOption::VALUE_NONE, 'Generate a resources controller class.'],
 
-            ['parent', 'p', InputOption::VALUE_OPTIONAL, 'Generate a nested resource controller class.'],
+            ['parent', 'p', InputOption::VALUE_OPTIONAL, 'Generate a nested resources controller class.'],
         ];
     }
 }

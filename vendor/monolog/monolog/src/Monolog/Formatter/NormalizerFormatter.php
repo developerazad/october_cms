@@ -113,7 +113,7 @@ class NormalizerFormatter implements FormatterInterface
         }
 
         if (is_resource($data)) {
-            return sprintf('[resource] (%s)', get_resource_type($data));
+            return sprintf('[resources] (%s)', get_resource_type($data));
         }
 
         return '[unknown('.gettype($data).')]';

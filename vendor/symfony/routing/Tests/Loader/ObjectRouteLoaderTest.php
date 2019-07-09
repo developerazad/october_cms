@@ -36,7 +36,7 @@ class ObjectRouteLoaderTest extends TestCase
         );
 
         $this->assertSame($collection, $actualRoutes);
-        // the service file should be listed as a resource
+        // the service file should be listed as a resources
         $this->assertNotEmpty($actualRoutes->getResources());
     }
 

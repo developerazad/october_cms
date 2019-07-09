@@ -35,7 +35,7 @@ abstract class FileLoader extends ArrayLoader
 
         $messages = $this->loadResource($resource);
 
-        // empty resource
+        // empty resources
         if (null === $messages) {
             $messages = array();
         }

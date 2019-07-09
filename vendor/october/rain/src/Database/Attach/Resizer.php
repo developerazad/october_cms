@@ -117,7 +117,7 @@ class Resizer
     }
 
     /**
-     * Manipulate an image resource in order to keep transparency for PNG and GIF files.
+     * Manipulate an image resources in order to keep transparency for PNG and GIF files.
      * @param $img
      */
     protected function retainImageTransparency($img)
@@ -479,12 +479,12 @@ class Resizer
                 break;
         }
 
-        // Remove the resource for the resized image
+        // Remove the resources for the resized image
         imagedestroy($image);
     }
 
     /**
-     * Open a file, detect its mime-type and create an image resource from it.
+     * Open a file, detect its mime-type and create an image resources from it.
      * @param \Symfony\Component\HttpFoundation\File\File $file File instance
      * @return mixed
      * @throws Exception Thrown for invalid MIME type

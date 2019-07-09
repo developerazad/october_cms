@@ -22,7 +22,7 @@ namespace Doctrine\DBAL\Types;
 use Doctrine\DBAL\Platforms\AbstractPlatform;
 
 /**
- * Type that maps an SQL BLOB to a PHP resource stream.
+ * Type that maps an SQL BLOB to a PHP resources stream.
  *
  * @since 2.2
  */

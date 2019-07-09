@@ -211,7 +211,7 @@ class FileProfilerStorage implements ProfilerStorageInterface
      *
      * This function automatically skips the empty lines and do not include the line return in result value.
      *
-     * @param resource $file The file resource, with the pointer placed at the end of the line to read
+     * @param resources $file The file resources, with the pointer placed at the end of the line to read
      *
      * @return mixed A string representing the line or null if beginning of file is reached
      */

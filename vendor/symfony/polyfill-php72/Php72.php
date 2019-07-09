@@ -101,7 +101,7 @@ final class Php72
     public static function sapi_windows_vt100_support($stream, $enable = null)
     {
         if (!\is_resource($stream)) {
-            trigger_error('sapi_windows_vt100_support() expects parameter 1 to be resource, '.\gettype($stream).' given', E_USER_WARNING);
+            trigger_error('sapi_windows_vt100_support() expects parameter 1 to be resources, '.\gettype($stream).' given', E_USER_WARNING);
 
             return false;
         }
@@ -133,7 +133,7 @@ final class Php72
     public static function stream_isatty($stream)
     {
         if (!\is_resource($stream)) {
-            trigger_error('stream_isatty() expects parameter 1 to be resource, '.\gettype($stream).' given', E_USER_WARNING);
+            trigger_error('stream_isatty() expects parameter 1 to be resources, '.\gettype($stream).' given', E_USER_WARNING);
 
             return false;
         }

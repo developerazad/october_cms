@@ -158,7 +158,7 @@ class __TwigTemplate_14a1ea440f43b0071cc6e8a781449ba78aa7a8b6325c3cba3bca174a960
     <!-- Assets -->
     <h3>Assets</h3>
     <p class=\"lead\">
-        <i class=\"icon-picture\"></i> &nbsp; Assets are resource files like images and stylesheets.
+        <i class=\"icon-picture\"></i> &nbsp; Assets are resources files like images and stylesheets.
     </p>
     <p>This theme stores its asset files (JavaScript, StyleSheet, images, fonts, etc) in the <code>themes/demo/assets</code> directory. This theme is also packaged with these useful 3rd party tools:</p>
     <ul class=\"list-inline\">
@@ -296,7 +296,7 @@ class __TwigTemplate_14a1ea440f43b0071cc6e8a781449ba78aa7a8b6325c3cba3bca174a960
     <!-- Assets -->
     <h3>Assets</h3>
     <p class=\"lead\">
-        <i class=\"icon-picture\"></i> &nbsp; Assets are resource files like images and stylesheets.
+        <i class=\"icon-picture\"></i> &nbsp; Assets are resources files like images and stylesheets.
     </p>
     <p>This theme stores its asset files (JavaScript, StyleSheet, images, fonts, etc) in the <code>themes/demo/assets</code> directory. This theme is also packaged with these useful 3rd party tools:</p>
     <ul class=\"list-inline\">

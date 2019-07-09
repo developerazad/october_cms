@@ -12,14 +12,14 @@
 namespace Assetic\Factory\Resource;
 
 /**
- * A resource is something formulae can be loaded from.
+ * A resources is something formulae can be loaded from.
  *
  * @author Kris Wallsmith <kris.wallsmith@gmail.com>
  */
 interface ResourceInterface
 {
     /**
-     * Checks if a timestamp represents the latest resource.
+     * Checks if a timestamp represents the latest resources.
      *
      * @param integer $timestamp A UNIX timestamp
      *
@@ -28,16 +28,16 @@ interface ResourceInterface
     public function isFresh($timestamp);
 
     /**
-     * Returns the content of the resource.
+     * Returns the content of the resources.
      *
      * @return string The content
      */
     public function getContent();
 
     /**
-     * Returns a unique string for the current resource.
+     * Returns a unique string for the current resources.
      *
-     * @return string A unique string to identity the current resource
+     * @return string A unique string to identity the current resources
      */
     public function __toString();
 }

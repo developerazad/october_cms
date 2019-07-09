@@ -128,9 +128,9 @@ abstract class AbstractCsv implements JsonSerializable, IteratorAggregate
     }
 
     /**
-     * Return a new {@link AbstractCsv} from a PHP resource stream or a StreamIterator
+     * Return a new {@link AbstractCsv} from a PHP resources stream or a StreamIterator
      *
-     * @param resource $stream
+     * @param resources $stream
      *
      * @return static
      */

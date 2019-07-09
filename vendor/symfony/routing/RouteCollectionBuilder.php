@@ -47,7 +47,7 @@ class RouteCollectionBuilder
     }
 
     /**
-     * Import an external routing resource and returns the RouteCollectionBuilder.
+     * Import an external routing resources and returns the RouteCollectionBuilder.
      *
      *  $routes->import('blog.yml', '/blog');
      *
@@ -252,7 +252,7 @@ class RouteCollectionBuilder
     }
 
     /**
-     * Adds a resource for this collection.
+     * Adds a resources for this collection.
      *
      * @param ResourceInterface $resource
      *
@@ -347,10 +347,10 @@ class RouteCollectionBuilder
     }
 
     /**
-     * Finds a loader able to load an imported resource and loads it.
+     * Finds a loader able to load an imported resources and loads it.
      *
-     * @param mixed       $resource A resource
-     * @param string|null $type     The resource type or null if unknown
+     * @param mixed       $resource A resources
+     * @param string|null $type     The resources type or null if unknown
      *
      * @return RouteCollection[]
      *

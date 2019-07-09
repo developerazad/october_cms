@@ -33,7 +33,7 @@ interface FilesystemInterface
      *
      * @throws FileNotFoundException
      *
-     * @return resource|false The path resource or false on failure.
+     * @return resources|false The path resources or false on failure.
      */
     public function readStream($path);
 
@@ -119,10 +119,10 @@ interface FilesystemInterface
      * Write a new file using a stream.
      *
      * @param string   $path     The path of the new file.
-     * @param resource $resource The file handle.
+     * @param resources $resource The file handle.
      * @param array    $config   An optional configuration array.
      *
-     * @throws InvalidArgumentException If $resource is not a file handle.
+     * @throws InvalidArgumentException If $resources is not a file handle.
      * @throws FileExistsException
      *
      * @return bool True on success, false on failure.
@@ -146,10 +146,10 @@ interface FilesystemInterface
      * Update an existing file using a stream.
      *
      * @param string   $path     The path of the existing file.
-     * @param resource $resource The file handle.
+     * @param resources $resource The file handle.
      * @param array    $config   An optional configuration array.
      *
-     * @throws InvalidArgumentException If $resource is not a file handle.
+     * @throws InvalidArgumentException If $resources is not a file handle.
      * @throws FileNotFoundException
      *
      * @return bool True on success, false on failure.
@@ -241,10 +241,10 @@ interface FilesystemInterface
      * Create a file or update if exists.
      *
      * @param string   $path     The path to the file.
-     * @param resource $resource The file handle.
+     * @param resources $resource The file handle.
      * @param array    $config   An optional configuration array.
      *
-     * @throws InvalidArgumentException Thrown if $resource is not a resource.
+     * @throws InvalidArgumentException Thrown if $resources is not a resources.
      *
      * @return bool True on success, false on failure.
      */

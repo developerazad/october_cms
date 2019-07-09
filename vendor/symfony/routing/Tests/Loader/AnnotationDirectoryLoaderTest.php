@@ -62,11 +62,11 @@ class AnnotationDirectoryLoaderTest extends AbstractAnnotationLoaderTest
     {
         $fixturesDir = __DIR__.'/../Fixtures';
 
-        $this->assertTrue($this->loader->supports($fixturesDir), '->supports() returns true if the resource is loadable');
-        $this->assertFalse($this->loader->supports('foo.foo'), '->supports() returns true if the resource is loadable');
+        $this->assertTrue($this->loader->supports($fixturesDir), '->supports() returns true if the resources is loadable');
+        $this->assertFalse($this->loader->supports('foo.foo'), '->supports() returns true if the resources is loadable');
 
-        $this->assertTrue($this->loader->supports($fixturesDir, 'annotation'), '->supports() checks the resource type if specified');
-        $this->assertFalse($this->loader->supports($fixturesDir, 'foo'), '->supports() checks the resource type if specified');
+        $this->assertTrue($this->loader->supports($fixturesDir, 'annotation'), '->supports() checks the resources type if specified');
+        $this->assertFalse($this->loader->supports($fixturesDir, 'foo'), '->supports() checks the resources type if specified');
     }
 
     private function expectAnnotationsToBeReadFrom(array $classes)

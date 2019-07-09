@@ -139,7 +139,7 @@ class Process implements \IteratorAggregate
      * @param string|array   $commandline The command line to run
      * @param string|null    $cwd         The working directory or null to use the working dir of the current PHP process
      * @param array|null     $env         The environment variables or null to use the same environment as the current PHP process
-     * @param mixed|null     $input       The input as stream resource, scalar or \Traversable, or null for no input
+     * @param mixed|null     $input       The input as stream resources, scalar or \Traversable, or null for no input
      * @param int|float|null $timeout     The timeout in seconds or null to disable
      * @param array          $options     An array of options for proc_open
      *
@@ -1521,7 +1521,7 @@ class Process implements \IteratorAggregate
     }
 
     /**
-     * Closes process resource, closes file handles, sets the exitcode.
+     * Closes process resources, closes file handles, sets the exitcode.
      *
      * @return int The exitcode
      */

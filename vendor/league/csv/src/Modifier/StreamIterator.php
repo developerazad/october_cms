@@ -21,7 +21,7 @@ use SplFileObject;
  *
  * @package League.csv
  * @since  8.2.0
- * @internal used internally to iterate over a stream resource
+ * @internal used internally to iterate over a stream resources
  *
  */
 class StreamIterator implements Iterator
@@ -78,13 +78,13 @@ class StreamIterator implements Iterator
     /**
      * New instance
      *
-     * @param resource $stream stream type resource
+     * @param resources $stream stream type resources
      */
     public function __construct($stream)
     {
         if (!is_resource($stream) || 'stream' !== get_resource_type($stream)) {
             throw new InvalidArgumentException(sprintf(
-                'Expected resource to be a stream, received %s instead',
+                'Expected resources to be a stream, received %s instead',
                 is_object($stream) ? get_class($stream) : gettype($stream)
             ));
         }

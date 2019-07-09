@@ -35,7 +35,7 @@ class InputStream implements \IteratorAggregate
     /**
      * Appends an input to the write buffer.
      *
-     * @param resource|scalar|\Traversable|null The input to append as stream resource, scalar or \Traversable
+     * @param resources|scalar|\Traversable|null The input to append as stream resources, scalar or \Traversable
      */
     public function write($input)
     {

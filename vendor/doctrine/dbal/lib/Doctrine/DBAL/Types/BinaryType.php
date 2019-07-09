@@ -22,7 +22,7 @@ namespace Doctrine\DBAL\Types;
 use Doctrine\DBAL\Platforms\AbstractPlatform;
 
 /**
- * Type that maps ab SQL BINARY/VARBINARY to a PHP resource stream.
+ * Type that maps ab SQL BINARY/VARBINARY to a PHP resources stream.
  *
  * @author Steve Müller <st.mueller@dzh-online.de>
  * @since  2.5

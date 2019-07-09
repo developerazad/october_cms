@@ -27,4 +27,6 @@
   'RainLab\\Blog\\FormWidgets\\BlogMarkdown' => 'plugins\\rainlab\\blog\\formwidgets\\BlogMarkdown.php',
   'rainlab\\blog\\Controllers\\categories' => 'plugins\\rainlab\\blog\\controllers\\categories.php',
   'system\\Controllers\\mailtemplates' => 'modules\\system\\controllers\\mailtemplates.php',
+  'eduonix\\resources\\Plugin' => 'plugins\\eduonix\\resources\\Plugin.php',
+  'Eduonix\\Resources\\Components\\Links' => 'plugins\\eduonix\\resources\\components\\Links.php',
 );

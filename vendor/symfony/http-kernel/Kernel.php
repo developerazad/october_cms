@@ -208,12 +208,12 @@ abstract class Kernel implements KernelInterface, TerminableInterface
     /**
      * {@inheritdoc}
      *
-     * @throws \RuntimeException if a custom resource is hidden by a resource in a derived bundle
+     * @throws \RuntimeException if a custom resources is hidden by a resources in a derived bundle
      */
     public function locateResource($name, $dir = null, $first = true)
     {
         if ('@' !== $name[0]) {
-            throw new \InvalidArgumentException(sprintf('A resource name must start with @ ("%s" given).', $name));
+            throw new \InvalidArgumentException(sprintf('A resources name must start with @ ("%s" given).', $name));
         }
 
         if (false !== strpos($name, '..')) {
@@ -235,7 +235,7 @@ abstract class Kernel implements KernelInterface, TerminableInterface
         foreach ($bundles as $bundle) {
             if ($isResource && file_exists($file = $dir.'/'.$bundle->getName().$overridePath)) {
                 if (null !== $resourceBundle) {
-                    throw new \RuntimeException(sprintf('"%s" resource is hidden by a resource from the "%s" derived bundle. Create a "%s" file to override the bundle resource.',
+                    throw new \RuntimeException(sprintf('"%s" resources is hidden by a resources from the "%s" derived bundle. Create a "%s" file to override the bundle resources.',
                         $file,
                         $resourceBundle,
                         $dir.'/'.$bundles[0]->getName().$overridePath

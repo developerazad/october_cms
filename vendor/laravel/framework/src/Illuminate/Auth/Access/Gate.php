@@ -118,7 +118,7 @@ class Gate implements GateContract
     }
 
     /**
-     * Define abilities for a resource.
+     * Define abilities for a resources.
      *
      * @param  string  $name
      * @param  string  $class

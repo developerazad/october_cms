@@ -22,13 +22,13 @@ class YamlFileLoaderTest extends TestCase
     {
         $loader = new YamlFileLoader($this->getMockBuilder('Symfony\Component\Config\FileLocator')->getMock());
 
-        $this->assertTrue($loader->supports('foo.yml'), '->supports() returns true if the resource is loadable');
-        $this->assertTrue($loader->supports('foo.yaml'), '->supports() returns true if the resource is loadable');
-        $this->assertFalse($loader->supports('foo.foo'), '->supports() returns true if the resource is loadable');
+        $this->assertTrue($loader->supports('foo.yml'), '->supports() returns true if the resources is loadable');
+        $this->assertTrue($loader->supports('foo.yaml'), '->supports() returns true if the resources is loadable');
+        $this->assertFalse($loader->supports('foo.foo'), '->supports() returns true if the resources is loadable');
 
-        $this->assertTrue($loader->supports('foo.yml', 'yaml'), '->supports() checks the resource type if specified');
-        $this->assertTrue($loader->supports('foo.yaml', 'yaml'), '->supports() checks the resource type if specified');
-        $this->assertFalse($loader->supports('foo.yml', 'foo'), '->supports() checks the resource type if specified');
+        $this->assertTrue($loader->supports('foo.yml', 'yaml'), '->supports() checks the resources type if specified');
+        $this->assertTrue($loader->supports('foo.yaml', 'yaml'), '->supports() checks the resources type if specified');
+        $this->assertFalse($loader->supports('foo.yml', 'foo'), '->supports() checks the resources type if specified');
     }
 
     public function testLoadDoesNothingIfEmpty()

@@ -271,7 +271,7 @@ class Router implements RegistrarContract, BindingRegistrar
     }
 
     /**
-     * Register an array of resource controllers.
+     * Register an array of resources controllers.
      *
      * @param  array  $resources
      * @return void
@@ -284,7 +284,7 @@ class Router implements RegistrarContract, BindingRegistrar
     }
 
     /**
-     * Route a resource to a controller.
+     * Route a resources to a controller.
      *
      * @param  string  $name
      * @param  string  $controller
@@ -305,7 +305,7 @@ class Router implements RegistrarContract, BindingRegistrar
     }
 
     /**
-     * Register an array of API resource controllers.
+     * Register an array of API resources controllers.
      *
      * @param  array  $resources
      * @return void
@@ -318,7 +318,7 @@ class Router implements RegistrarContract, BindingRegistrar
     }
 
     /**
-     * Route an API resource to a controller.
+     * Route an API resources to a controller.
      *
      * @param  string  $name
      * @param  string  $controller
@@ -1136,7 +1136,7 @@ class Router implements RegistrarContract, BindingRegistrar
     }
 
     /**
-     * Set the unmapped global resource parameters to singular.
+     * Set the unmapped global resources parameters to singular.
      *
      * @param  bool  $singular
      * @return void
@@ -1147,7 +1147,7 @@ class Router implements RegistrarContract, BindingRegistrar
     }
 
     /**
-     * Set the global resource parameter mapping.
+     * Set the global resources parameter mapping.
      *
      * @param  array  $parameters
      * @return void
@@ -1158,7 +1158,7 @@ class Router implements RegistrarContract, BindingRegistrar
     }
 
     /**
-     * Get or set the verbs used in the resource URIs.
+     * Get or set the verbs used in the resources URIs.
      *
      * @param  array  $verbs
      * @return array|null

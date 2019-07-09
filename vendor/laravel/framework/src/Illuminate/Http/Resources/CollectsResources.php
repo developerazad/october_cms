@@ -8,7 +8,7 @@ use Illuminate\Pagination\AbstractPaginator;
 trait CollectsResources
 {
     /**
-     * Map the given collection resource into its individual resources.
+     * Map the given collection resources into its individual resources.
      *
      * @param  mixed  $resource
      * @return mixed
@@ -31,7 +31,7 @@ trait CollectsResources
     }
 
     /**
-     * Get the resource that this resource collects.
+     * Get the resources that this resources collects.
      *
      * @return string|null
      */
@@ -48,7 +48,7 @@ trait CollectsResources
     }
 
     /**
-     * Get an iterator for the resource collection.
+     * Get an iterator for the resources collection.
      *
      * @return \ArrayIterator
      */

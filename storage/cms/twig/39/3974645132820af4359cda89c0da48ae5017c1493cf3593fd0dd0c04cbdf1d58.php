@@ -36,7 +36,13 @@ class __TwigTemplate_d3a99ef45606d6cc6d90d377e72296677c6237bcb8e432bec89fa214a58
     <h3>About Us</h3>
     <p class=\"text-center well\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A atque beatae cum doloremque harum impedit in itaque laboriosam, odit pariatur provident quaerat, quia ratione sint totam unde, vitae voluptas voluptatibus!</p>
 
-</div>";
+";
+        // line 5
+        $context['__cms_component_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("resourcesLinks"        , $context['__cms_component_params']        );
+        unset($context['__cms_component_params']);
+        // line 6
+        echo "</div>";
     }
 
     public function getTemplateName()
@@ -44,9 +50,14 @@ class __TwigTemplate_d3a99ef45606d6cc6d90d377e72296677c6237bcb8e432bec89fa214a58
         return "D:\\xampp\\htdocs\\octoberCMS/themes/come2learn/pages/about.htm";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  35 => 1,);
+        return array (  45 => 6,  41 => 5,  35 => 1,);
     }
 
     public function getSourceContext()
@@ -55,6 +66,7 @@ class __TwigTemplate_d3a99ef45606d6cc6d90d377e72296677c6237bcb8e432bec89fa214a58
     <h3>About Us</h3>
     <p class=\"text-center well\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A atque beatae cum doloremque harum impedit in itaque laboriosam, odit pariatur provident quaerat, quia ratione sint totam unde, vitae voluptas voluptatibus!</p>
 
+{% component 'resourcesLinks' %}
 </div>", "D:\\xampp\\htdocs\\octoberCMS/themes/come2learn/pages/about.htm", "");
     }
 }

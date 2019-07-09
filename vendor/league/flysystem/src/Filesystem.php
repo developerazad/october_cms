@@ -75,7 +75,7 @@ class Filesystem implements FilesystemInterface
     public function writeStream($path, $resource, array $config = [])
     {
         if ( ! is_resource($resource)) {
-            throw new InvalidArgumentException(__METHOD__ . ' expects argument #2 to be a valid resource.');
+            throw new InvalidArgumentException(__METHOD__ . ' expects argument #2 to be a valid resources.');
         }
 
         $path = Util::normalizePath($path);
@@ -108,7 +108,7 @@ class Filesystem implements FilesystemInterface
     public function putStream($path, $resource, array $config = [])
     {
         if ( ! is_resource($resource)) {
-            throw new InvalidArgumentException(__METHOD__ . ' expects argument #2 to be a valid resource.');
+            throw new InvalidArgumentException(__METHOD__ . ' expects argument #2 to be a valid resources.');
         }
 
         $path = Util::normalizePath($path);
@@ -159,7 +159,7 @@ class Filesystem implements FilesystemInterface
     public function updateStream($path, $resource, array $config = [])
     {
         if ( ! is_resource($resource)) {
-            throw new InvalidArgumentException(__METHOD__ . ' expects argument #2 to be a valid resource.');
+            throw new InvalidArgumentException(__METHOD__ . ' expects argument #2 to be a valid resources.');
         }
 
         $path = Util::normalizePath($path);

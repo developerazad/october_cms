@@ -27,7 +27,7 @@ class ClosureLoader extends Loader
      * Loads a Closure.
      *
      * @param \Closure    $closure A Closure
-     * @param string|null $type    The resource type
+     * @param string|null $type    The resources type
      *
      * @return RouteCollection A RouteCollection instance
      */

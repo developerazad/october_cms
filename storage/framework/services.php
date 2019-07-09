@@ -133,7 +133,7 @@
     'command.queue.failed-table' => 'October\\Rain\\Foundation\\Providers\\ConsoleSupportServiceProvider',
     'command.queue.table' => 'October\\Rain\\Foundation\\Providers\\ConsoleSupportServiceProvider',
     'command.request.make' => 'October\\Rain\\Foundation\\Providers\\ConsoleSupportServiceProvider',
-    'command.resource.make' => 'October\\Rain\\Foundation\\Providers\\ConsoleSupportServiceProvider',
+    'command.resources.make' => 'October\\Rain\\Foundation\\Providers\\ConsoleSupportServiceProvider',
     'command.rule.make' => 'October\\Rain\\Foundation\\Providers\\ConsoleSupportServiceProvider',
     'command.seeder.make' => 'October\\Rain\\Foundation\\Providers\\ConsoleSupportServiceProvider',
     'command.session.table' => 'October\\Rain\\Foundation\\Providers\\ConsoleSupportServiceProvider',

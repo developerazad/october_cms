@@ -32,8 +32,8 @@ interface RequestMatcherInterface
      *
      * @return array An array of parameters
      *
-     * @throws ResourceNotFoundException If no matching resource could be found
-     * @throws MethodNotAllowedException If a matching resource was found but the request method is not allowed
+     * @throws ResourceNotFoundException If no matching resources could be found
+     * @throws MethodNotAllowedException If a matching resources was found but the request method is not allowed
      */
     public function matchRequest(Request $request);
 }

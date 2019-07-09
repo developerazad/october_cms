@@ -17,21 +17,21 @@ class Resource implements ArrayAccess, JsonSerializable, Responsable, UrlRoutabl
     use ConditionallyLoadsAttributes, DelegatesToResource;
 
     /**
-     * The resource instance.
+     * The resources instance.
      *
      * @var mixed
      */
     public $resource;
 
     /**
-     * The additional data that should be added to the top-level resource array.
+     * The additional data that should be added to the top-level resources array.
      *
      * @var array
      */
     public $with = [];
 
     /**
-     * The additional meta data that should be added to the resource response.
+     * The additional meta data that should be added to the resources response.
      *
      * Added during response construction by the developer.
      *
@@ -47,7 +47,7 @@ class Resource implements ArrayAccess, JsonSerializable, Responsable, UrlRoutabl
     public static $wrap = 'data';
 
     /**
-     * Create a new resource instance.
+     * Create a new resources instance.
      *
      * @param  mixed  $resource
      * @return void
@@ -58,7 +58,7 @@ class Resource implements ArrayAccess, JsonSerializable, Responsable, UrlRoutabl
     }
 
     /**
-     * Create a new resource instance.
+     * Create a new resources instance.
      *
      * @param  dynamic  $parameters
      * @return static
@@ -69,7 +69,7 @@ class Resource implements ArrayAccess, JsonSerializable, Responsable, UrlRoutabl
     }
 
     /**
-     * Create new anonymous resource collection.
+     * Create new anonymous resources collection.
      *
      * @param  mixed  $resource
      * @return \Illuminate\Http\Resources\Json\AnonymousResourceCollection
@@ -80,7 +80,7 @@ class Resource implements ArrayAccess, JsonSerializable, Responsable, UrlRoutabl
     }
 
     /**
-     * Resolve the resource to an array.
+     * Resolve the resources to an array.
      *
      * @param  \Illuminate\Http\Request|null  $request
      * @return array
@@ -103,7 +103,7 @@ class Resource implements ArrayAccess, JsonSerializable, Responsable, UrlRoutabl
     }
 
     /**
-     * Transform the resource into an array.
+     * Transform the resources into an array.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return array
@@ -114,7 +114,7 @@ class Resource implements ArrayAccess, JsonSerializable, Responsable, UrlRoutabl
     }
 
     /**
-     * Get any additional data that should be returned with the resource array.
+     * Get any additional data that should be returned with the resources array.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return array
@@ -125,7 +125,7 @@ class Resource implements ArrayAccess, JsonSerializable, Responsable, UrlRoutabl
     }
 
     /**
-     * Add additional meta data to the resource response.
+     * Add additional meta data to the resources response.
      *
      * @param  array  $data
      * @return $this
@@ -150,7 +150,7 @@ class Resource implements ArrayAccess, JsonSerializable, Responsable, UrlRoutabl
     }
 
     /**
-     * Set the string that should wrap the outer-most resource array.
+     * Set the string that should wrap the outer-most resources array.
      *
      * @param  string  $value
      * @return void
@@ -161,7 +161,7 @@ class Resource implements ArrayAccess, JsonSerializable, Responsable, UrlRoutabl
     }
 
     /**
-     * Disable wrapping of the outer-most resource array.
+     * Disable wrapping of the outer-most resources array.
      *
      * @return void
      */
@@ -171,7 +171,7 @@ class Resource implements ArrayAccess, JsonSerializable, Responsable, UrlRoutabl
     }
 
     /**
-     * Transform the resource into an HTTP response.
+     * Transform the resources into an HTTP response.
      *
      * @param  \Illuminate\Http\Request|null  $request
      * @return \Illuminate\Http\JsonResponse
@@ -195,7 +195,7 @@ class Resource implements ArrayAccess, JsonSerializable, Responsable, UrlRoutabl
     }
 
     /**
-     * Prepare the resource for JSON serialization.
+     * Prepare the resources for JSON serialization.
      *
      * @return array
      */

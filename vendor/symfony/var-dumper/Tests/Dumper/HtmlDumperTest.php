@@ -63,7 +63,7 @@ class HtmlDumperTest extends TestCase
   "<span class=sf-dump-key>str</span>" => "<span class=sf-dump-str title="5 characters">d&%s;j&%s;<span class=sf-dump-default>\\n</span></span>"
   <span class=sf-dump-key>7</span> => b"<span class=sf-dump-str title="2 binary or non-UTF-8 characters">&%s;<span class=sf-dump-default>\\x00</span></span>"
   "<span class=sf-dump-key>[]</span>" => []
-  "<span class=sf-dump-key>res</span>" => <span class=sf-dump-note>stream resource</span> <a class=sf-dump-ref>@{$res}</a><samp>
+  "<span class=sf-dump-key>res</span>" => <span class=sf-dump-note>stream resources</span> <a class=sf-dump-ref>@{$res}</a><samp>
 %A  <span class=sf-dump-meta>wrapper_type</span>: "<span class=sf-dump-str title="9 characters">plainfile</span>"
     <span class=sf-dump-meta>stream_type</span>: "<span class=sf-dump-str title="5 characters">STDIO</span>"
     <span class=sf-dump-meta>mode</span>: "<span class=sf-dump-str>r</span>"

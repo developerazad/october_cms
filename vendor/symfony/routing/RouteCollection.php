@@ -266,9 +266,9 @@ class RouteCollection implements \IteratorAggregate, \Countable
     }
 
     /**
-     * Adds a resource for this collection.
+     * Adds a resources for this collection.
      *
-     * @param ResourceInterface $resource A resource instance
+     * @param ResourceInterface $resource A resources instance
      */
     public function addResource(ResourceInterface $resource)
     {

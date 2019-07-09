@@ -12,7 +12,7 @@
 namespace Symfony\Component\Routing\Exception;
 
 /**
- * The resource was not found.
+ * The resources was not found.
  *
  * This exception should trigger an HTTP 404 response in your application code.
  *

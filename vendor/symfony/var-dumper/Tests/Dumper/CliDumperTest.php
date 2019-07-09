@@ -64,7 +64,7 @@ array:24 [
   "str" => "déjà\\n"
   7 => b"é\\x00"
   "[]" => []
-  "res" => stream resource {@{$res}
+  "res" => stream resources {@{$res}
 %A  wrapper_type: "plainfile"
     stream_type: "STDIO"
     mode: "r"
@@ -180,7 +180,7 @@ EOTXT;
 
         $this->assertDumpMatchesFormat(
             <<<'EOTXT'
-xml resource {
+xml resources {
   current_byte_index: %i
   current_column_number: %i
   current_line_number: 1
@@ -279,7 +279,7 @@ EOTXT
 
         $this->assertStringMatchesFormat(
             <<<EOTXT
-Closed resource @{$res}
+Closed resources @{$res}
 
 EOTXT
             ,
@@ -357,7 +357,7 @@ EOTXT
         $r = defined('HHVM_VERSION') ? '' : '#%d';
         $this->assertStringMatchesFormat(
             <<<EOTXT
-stream resource {@{$ref}
+stream resources {@{$ref}
   ⚠: Symfony\Component\VarDumper\Exception\ThrowingCasterException {{$r}
     #message: "Unexpected Exception thrown from a caster: Foobar"
     trace: {

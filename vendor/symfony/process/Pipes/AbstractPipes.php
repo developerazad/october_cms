@@ -157,7 +157,7 @@ abstract class AbstractPipes implements PipesInterface
             }
         }
 
-        // no input to read on resource, buffer is empty
+        // no input to read on resources, buffer is empty
         if (!isset($this->inputBuffer[0]) && !($this->input instanceof \Iterator ? $this->input->valid() : $this->input)) {
             $this->input = null;
             fclose($this->pipes[0]);

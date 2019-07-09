@@ -32,7 +32,7 @@ class XmlFileLoader extends FileLoader
      * Loads an XML file.
      *
      * @param string      $file An XML file path
-     * @param string|null $type The resource type
+     * @param string|null $type The resources type
      *
      * @return RouteCollection A RouteCollection instance
      *
@@ -121,7 +121,7 @@ class XmlFileLoader extends FileLoader
     }
 
     /**
-     * Parses an import and adds the routes in the resource to the RouteCollection.
+     * Parses an import and adds the routes in the resources to the RouteCollection.
      *
      * @param RouteCollection $collection RouteCollection instance
      * @param \DOMElement     $node       Element to parse that represents a Route
@@ -132,8 +132,8 @@ class XmlFileLoader extends FileLoader
      */
     protected function parseImport(RouteCollection $collection, \DOMElement $node, $path, $file)
     {
-        if ('' === $resource = $node->getAttribute('resource')) {
-            throw new \InvalidArgumentException(sprintf('The <import> element in file "%s" must have a "resource" attribute.', $path));
+        if ('' === $resource = $node->getAttribute('resources')) {
+            throw new \InvalidArgumentException(sprintf('The <import> element in file "%s" must have a "resources" attribute.', $path));
         }
 
         $type = $node->getAttribute('type');

@@ -5,35 +5,35 @@ namespace Illuminate\Routing;
 class PendingResourceRegistration
 {
     /**
-     * The resource registrar.
+     * The resources registrar.
      *
      * @var \Illuminate\Routing\ResourceRegistrar
      */
     protected $registrar;
 
     /**
-     * The resource name.
+     * The resources name.
      *
      * @var string
      */
     protected $name;
 
     /**
-     * The resource controller.
+     * The resources controller.
      *
      * @var string
      */
     protected $controller;
 
     /**
-     * The resource options.
+     * The resources options.
      *
      * @var array
      */
     protected $options = [];
 
     /**
-     * Create a new pending resource registration instance.
+     * Create a new pending resources registration instance.
      *
      * @param  \Illuminate\Routing\ResourceRegistrar  $registrar
      * @param  string  $name
@@ -130,7 +130,7 @@ class PendingResourceRegistration
     }
 
     /**
-     * Set a middleware to the resource.
+     * Set a middleware to the resources.
      *
      * @param  mixed  $middleware
      * @return \Illuminate\Routing\PendingResourceRegistration

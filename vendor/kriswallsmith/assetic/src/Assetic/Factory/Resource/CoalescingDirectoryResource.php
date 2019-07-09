@@ -12,7 +12,7 @@
 namespace Assetic\Factory\Resource;
 
 /**
- * Coalesces multiple directories together into one merged resource.
+ * Coalesces multiple directories together into one merged resources.
  *
  * @author Kris Wallsmith <kris.wallsmith@gmail.com>
  */
@@ -56,7 +56,7 @@ class CoalescingDirectoryResource implements IteratorResourceInterface
     }
 
     /**
-     * Returns a string to uniquely identify the current resource.
+     * Returns a string to uniquely identify the current resources.
      *
      * @return string An identifying string
      */

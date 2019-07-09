@@ -11,7 +11,7 @@ class ResourceCollection extends Resource implements IteratorAggregate
     use CollectsResources;
 
     /**
-     * The resource that this resource collects.
+     * The resources that this resources collects.
      *
      * @var string
      */
@@ -25,7 +25,7 @@ class ResourceCollection extends Resource implements IteratorAggregate
     public $collection;
 
     /**
-     * Create a new resource instance.
+     * Create a new resources instance.
      *
      * @param  mixed  $resource
      * @return void
@@ -38,7 +38,7 @@ class ResourceCollection extends Resource implements IteratorAggregate
     }
 
     /**
-     * Transform the resource into a JSON array.
+     * Transform the resources into a JSON array.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return array

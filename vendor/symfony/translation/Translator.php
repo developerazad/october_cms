@@ -114,7 +114,7 @@ class Translator implements TranslatorInterface, TranslatorBagInterface
      * Adds a Resource.
      *
      * @param string $format   The name of the loader (@see addLoader())
-     * @param mixed  $resource The resource name
+     * @param mixed  $resource The resources name
      * @param string $locale   The locale
      * @param string $domain   The domain
      *

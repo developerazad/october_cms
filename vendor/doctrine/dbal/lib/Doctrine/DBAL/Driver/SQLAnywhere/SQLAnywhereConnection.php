@@ -32,7 +32,7 @@ use Doctrine\DBAL\Driver\ServerInfoAwareConnection;
 class SQLAnywhereConnection implements Connection, ServerInfoAwareConnection
 {
     /**
-     * @var resource The SQL Anywhere connection resource.
+     * @var resources The SQL Anywhere connection resources.
      */
     private $connection;
 

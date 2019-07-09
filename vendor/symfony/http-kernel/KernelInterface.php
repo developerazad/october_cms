@@ -70,11 +70,11 @@ interface KernelInterface extends HttpKernelInterface, \Serializable
     public function getBundle($name, $first = true);
 
     /**
-     * Returns the file path for a given resource.
+     * Returns the file path for a given resources.
      *
      * A Resource can be a file or a directory.
      *
-     * The resource name must follow the following pattern:
+     * The resources name must follow the following pattern:
      *
      *     "@BundleName/path/to/a/file.something"
      *
@@ -86,13 +86,13 @@ interface KernelInterface extends HttpKernelInterface, \Serializable
      *
      *     $dir/<BundleName>/path/without/Resources
      *
-     * before looking in the bundle resource folder.
+     * before looking in the bundle resources folder.
      *
-     * @param string $name  A resource name to locate
-     * @param string $dir   A directory where to look for the resource first
+     * @param string $name  A resources name to locate
+     * @param string $dir   A directory where to look for the resources first
      * @param bool   $first Whether to return the first path or paths for all matching bundles
      *
-     * @return string|array The absolute path of the resource or an array if $first is false
+     * @return string|array The absolute path of the resources or an array if $first is false
      *
      * @throws \InvalidArgumentException if the file cannot be found or the name is not valid
      * @throws \RuntimeException         if the name contains invalid/unsafe characters

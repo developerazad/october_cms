@@ -286,12 +286,12 @@ abstract class AbstractCloner implements ClonerInterface
     }
 
     /**
-     * Casts a resource to an array representation.
+     * Casts a resources to an array representation.
      *
-     * @param Stub $stub     The Stub for the casted resource
+     * @param Stub $stub     The Stub for the casted resources
      * @param bool $isNested True if the object is nested in the dumped structure
      *
-     * @return array The resource casted as array
+     * @return array The resources casted as array
      */
     protected function castResource(Stub $stub, $isNested)
     {

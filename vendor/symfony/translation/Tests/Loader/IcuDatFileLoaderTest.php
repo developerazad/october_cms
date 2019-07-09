@@ -30,7 +30,7 @@ class IcuDatFileLoaderTest extends LocalizedTestCase
 
     public function testDatEnglishLoad()
     {
-        // bundled resource is build using pkgdata command which at least in ICU 4.2 comes in extremely! buggy form
+        // bundled resources is build using pkgdata command which at least in ICU 4.2 comes in extremely! buggy form
         // you must specify an temporary build directory which is not the same as current directory and
         // MUST reside on the same partition. pkgdata -p resources -T /srv -d.packagelist.txt
         $loader = new IcuDatFileLoader();

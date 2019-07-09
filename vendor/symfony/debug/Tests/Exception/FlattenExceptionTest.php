@@ -236,8 +236,8 @@ class FlattenExceptionTest extends TestCase
         $this->assertSame(array('object', 'stdClass'), $array[$i++]);
         $this->assertSame(array('object', 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException'), $array[$i++]);
         $this->assertSame(array('incomplete-object', 'BogusTestClass'), $array[$i++]);
-        $this->assertSame(array('resource', defined('HHVM_VERSION') ? 'Directory' : 'stream'), $array[$i++]);
-        $this->assertSame(array('resource', 'stream'), $array[$i++]);
+        $this->assertSame(array('resources', defined('HHVM_VERSION') ? 'Directory' : 'stream'), $array[$i++]);
+        $this->assertSame(array('resources', 'stream'), $array[$i++]);
 
         $args = $array[$i++];
         $this->assertSame($args[0], 'object');

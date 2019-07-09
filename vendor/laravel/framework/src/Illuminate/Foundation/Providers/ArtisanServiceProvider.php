@@ -148,7 +148,7 @@ class ArtisanServiceProvider extends ServiceProvider
         'QueueFailedTable' => 'command.queue.failed-table',
         'QueueTable' => 'command.queue.table',
         'RequestMake' => 'command.request.make',
-        'ResourceMake' => 'command.resource.make',
+        'ResourceMake' => 'command.resources.make',
         'RuleMake' => 'command.rule.make',
         'SeederMake' => 'command.seeder.make',
         'SessionTable' => 'command.session.table',
@@ -750,7 +750,7 @@ class ArtisanServiceProvider extends ServiceProvider
      */
     protected function registerResourceMakeCommand()
     {
-        $this->app->singleton('command.resource.make', function ($app) {
+        $this->app->singleton('command.resources.make', function ($app) {
             return new ResourceMakeCommand($app['files']);
         });
     }

@@ -17,7 +17,7 @@ use Symfony\Component\Translation\Exception\NotFoundResourceException;
 use Symfony\Component\Config\Resource\FileResource;
 
 /**
- * IcuResFileLoader loads translations from a resource bundle.
+ * IcuResFileLoader loads translations from a resources bundle.
  *
  * @author stealth35
  */
@@ -39,12 +39,12 @@ class IcuDatFileLoader extends IcuResFileLoader
         try {
             $rb = new \ResourceBundle($locale, $resource);
         } catch (\Exception $e) {
-            // HHVM compatibility: constructor throws on invalid resource
+            // HHVM compatibility: constructor throws on invalid resources
             $rb = null;
         }
 
         if (!$rb) {
-            throw new InvalidResourceException(sprintf('Cannot load resource "%s"', $resource));
+            throw new InvalidResourceException(sprintf('Cannot load resources "%s"', $resource));
         } elseif (intl_is_failure($rb->getErrorCode())) {
             throw new InvalidResourceException($rb->getErrorMessage(), $rb->getErrorCode());
         }

@@ -21,12 +21,12 @@ use Assetic\Factory\Resource\ResourceInterface;
 interface FormulaLoaderInterface
 {
     /**
-     * Loads formulae from a resource.
+     * Loads formulae from a resources.
      *
      * Formulae should be loaded the same regardless of the current debug
      * mode. Debug considerations should happen downstream.
      *
-     * @param ResourceInterface $resource A resource
+     * @param ResourceInterface $resource A resources
      *
      * @return array An array of formulae
      */

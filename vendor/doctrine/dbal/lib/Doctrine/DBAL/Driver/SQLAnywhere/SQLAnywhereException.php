@@ -33,8 +33,8 @@ class SQLAnywhereException extends AbstractDriverException
     /**
      * Helper method to turn SQL Anywhere error into exception.
      *
-     * @param resource|null $conn The SQL Anywhere connection resource to retrieve the last error from.
-     * @param resource|null $stmt The SQL Anywhere statement resource to retrieve the last error from.
+     * @param resources|null $conn The SQL Anywhere connection resources to retrieve the last error from.
+     * @param resources|null $stmt The SQL Anywhere statement resources to retrieve the last error from.
      *
      * @return SQLAnywhereException
      *
@@ -43,11 +43,11 @@ class SQLAnywhereException extends AbstractDriverException
     public static function fromSQLAnywhereError($conn = null, $stmt = null)
     {
         if (null !== $conn && ! (is_resource($conn))) {
-            throw new \InvalidArgumentException('Invalid SQL Anywhere connection resource given: ' . $conn);
+            throw new \InvalidArgumentException('Invalid SQL Anywhere connection resources given: ' . $conn);
         }
 
         if (null !== $stmt && ! (is_resource($stmt))) {
-            throw new \InvalidArgumentException('Invalid SQL Anywhere statement resource given: ' . $stmt);
+            throw new \InvalidArgumentException('Invalid SQL Anywhere statement resources given: ' . $stmt);
         }
 
         $state   = $conn ? sasql_sqlstate($conn) : sasql_sqlstate();
@@ -55,7 +55,7 @@ class SQLAnywhereException extends AbstractDriverException
         $message = null;
 
         /**
-         * Try retrieving the last error from statement resource if given
+         * Try retrieving the last error from statement resources if given
          */
         if ($stmt) {
             $code    = sasql_stmt_errno($stmt);
@@ -63,11 +63,11 @@ class SQLAnywhereException extends AbstractDriverException
         }
 
         /**
-         * Try retrieving the last error from the connection resource
-         * if either the statement resource is not given or the statement
-         * resource is given but the last error could not be retrieved from it (fallback).
+         * Try retrieving the last error from the connection resources
+         * if either the statement resources is not given or the statement
+         * resources is given but the last error could not be retrieved from it (fallback).
          * Depending on the type of error, it is sometimes necessary to retrieve
-         * it from the connection resource even though it occurred during
+         * it from the connection resources even though it occurred during
          * a prepared statement.
          */
         if ($conn && ! $code) {
@@ -76,9 +76,9 @@ class SQLAnywhereException extends AbstractDriverException
         }
 
         /**
-         * Fallback mode if either no connection resource is given
+         * Fallback mode if either no connection resources is given
          * or the last error could not be retrieved from the given
-         * connection / statement resource.
+         * connection / statement resources.
          */
         if ( ! $conn || ! $code) {
             $code    = sasql_errorcode();

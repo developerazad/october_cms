@@ -62,7 +62,7 @@ EODUMP;
         } else {
             $xCast = <<<'EODUMP'
 Redis {
-  +"socket": Redis Socket Buffer resource
+  +"socket": Redis Socket Buffer resources
   isConnected: true
   host: "127.0.0.1"
   port: 6379

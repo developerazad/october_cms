@@ -49,7 +49,7 @@ class AnnotationFileLoader extends FileLoader
      * Loads from annotations from a file.
      *
      * @param string      $file A PHP file path
-     * @param string|null $type The resource type
+     * @param string|null $type The resources type
      *
      * @return RouteCollection A RouteCollection instance
      *

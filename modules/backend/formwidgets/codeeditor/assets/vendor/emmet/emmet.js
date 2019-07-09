@@ -1495,8 +1495,8 @@ emmet.define('abbreviationParser', function(require, _) {
             if (arguments.length == 2) {
                 this._data[name] = value;
 
-                if (name == 'resource' && require('elements').is(value, 'snippet')) {
-                    // setting snippet as matched resource: update `content`
+                if (name == 'resources' && require('elements').is(value, 'snippet')) {
+                    // setting snippet as matched resources: update `content`
                     // property with snippet value
                     this.content = value.data;
                     if (this._text) {
@@ -1568,7 +1568,7 @@ emmet.define('abbreviationParser', function(require, _) {
          * @returns {Object}
          */
         matchedResource: function() {
-            return this.data('resource');
+            return this.data('resources');
         },
 
         /**
@@ -2220,14 +2220,14 @@ emmet.define('abbreviationParser', function(require, _) {
     };
 });/**
  * Processor function that matches parsed <code>AbbreviationNode</code>
- * against resources defined in <code>resource</code> module
+ * against resources defined in <code>resources</code> module
  * @param {Function} require
  * @param {Underscore} _
  */
 emmet.exec(function(require, _) {
     /**
      * Finds matched resources for child nodes of passed <code>node</code>
-     * element. A matched resource is a reference to <i>snippets.json</i> entry
+     * element. A matched resources is a reference to <i>snippets.json</i> entry
      * that describes output of parsed node
      * @param {AbbreviationNode} node
      * @param {String} syntax
@@ -2238,11 +2238,11 @@ emmet.exec(function(require, _) {
         var parser = require('abbreviationParser');
 
         // do a shallow copy because the children list can be modified during
-        // resource matching
+        // resources matching
         _.each(_.clone(node.children), /** @param {AbbreviationNode} child */ function(child) {
             var r = resources.getMatchedResource(child, syntax);
             if (_.isString(r)) {
-                child.data('resource', elements.create('snippet', r));
+                child.data('resources', elements.create('snippet', r));
             } else if (elements.is(r, 'reference')) {
                 // it’s a reference to another abbreviation:
                 // parse it and insert instead of current child
@@ -2281,7 +2281,7 @@ emmet.exec(function(require, _) {
 
                 child.replace(subtree.children);
             } else {
-                child.data('resource', r);
+                child.data('resources', r);
             }
 
             matchResources(child, syntax);
@@ -4579,7 +4579,7 @@ emmet.define('stringStream', function(require, _) {
  * Parsed resources (snippets, abbreviations, variables, etc.) for Emmet.
  * Contains convenient method to get access for snippets with respect of
  * inheritance. Also provides ability to store data in different vocabularies
- * ('system' and 'user') for fast and safe resource update
+ * ('system' and 'user') for fast and safe resources update
  * @author Sergey Chikuyonok (serge.che@gmail.com)
  * @link http://chikuyonok.ru
  *
@@ -4667,7 +4667,7 @@ emmet.define('resources', function(require, _) {
         },
 
         /**
-         * Returns resource vocabulary by its name
+         * Returns resources vocabulary by its name
          * @param {String} name Vocabulary name ('system' or 'user')
          * @return {Object}
          */
@@ -4676,7 +4676,7 @@ emmet.define('resources', function(require, _) {
         },
 
         /**
-         * Returns resource (abbreviation, snippet, etc.) matched for passed
+         * Returns resources (abbreviation, snippet, etc.) matched for passed
          * abbreviation
          * @param {AbbreviationNode} node
          * @param {String} syntax
@@ -5680,7 +5680,7 @@ emmet.define('actionUtils', function(require, _) {
 emmet.define('abbreviationUtils', function(require, _) {
     return {
         /**
-         * Check if passed abbreviation node has matched snippet resource
+         * Check if passed abbreviation node has matched snippet resources
          * @param {AbbreviationNode} node
          * @returns {Boolean}
          * @memberOf abbreviationUtils
@@ -6429,7 +6429,7 @@ emmet.define('tabStops', function(require, _) {
          * Helper function that produces a callback function for
          * <code>replaceVariables()</code> method from {@link utils}
          * module. This callback will replace variable definitions (like
-         * ${var_name}) with their value defined in <i>resource</i> module,
+         * ${var_name}) with their value defined in <i>resources</i> module,
          * or outputs tabstop with variable name otherwise.
          * @param {AbbreviationNode} node Context node
          * @returns {Function}
@@ -6883,7 +6883,7 @@ emmet.define('elements', function(require, _) {
         }
     };
 
-    // register resource references
+    // register resources references
     function commonFactory(value) {
         return {data: value};
     }
@@ -10757,13 +10757,13 @@ emmet.define('cssResolver', function(require, _) {
                 abbr = RegExp.$1;
             }
 
-            // check if we have abbreviated resource
+            // check if we have abbreviated resources
             var snippet = resources.findSnippet(syntax, abbr);
             if (snippet && !autoInsertPrefixes) {
                 return transformSnippet(snippet, isImportant, syntax);
             }
 
-            // no abbreviated resource, parse abbreviation
+            // no abbreviated resources, parse abbreviation
             var prefixData = this.extractPrefixes(abbr);
             var valuesData = this.extractValues(prefixData.property);
             var abbrData = _.extend(prefixData, valuesData);
@@ -12214,7 +12214,7 @@ emmet.exec(function(require, _){
     }
 
     /**
-     * Processes element with matched resource of type <code>snippet</code>
+     * Processes element with matched resources of type <code>snippet</code>
      * @param {AbbreviationNode} item
      * @param {OutputProfile} profile
      * @param {Number} level Depth level

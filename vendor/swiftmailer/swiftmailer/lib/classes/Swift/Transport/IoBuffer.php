@@ -9,7 +9,7 @@
  */
 
 /**
- * Buffers input and output to a resource.
+ * Buffers input and output to a resources.
  *
  * @author Chris Corbyn
  */

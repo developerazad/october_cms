@@ -72,7 +72,7 @@ trait AuthorizesRequests
     }
 
     /**
-     * Authorize a resource action based on the incoming request.
+     * Authorize a resources action based on the incoming request.
      *
      * @param  string  $model
      * @param  string|null  $parameter
@@ -98,7 +98,7 @@ trait AuthorizesRequests
     }
 
     /**
-     * Get the map of resource methods to ability names.
+     * Get the map of resources methods to ability names.
      *
      * @return array
      */
@@ -115,7 +115,7 @@ trait AuthorizesRequests
     }
 
     /**
-     * Get the list of resource methods which do not have model parameters.
+     * Get the list of resources methods which do not have model parameters.
      *
      * @return array
      */

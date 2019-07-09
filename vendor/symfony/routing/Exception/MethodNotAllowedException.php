@@ -12,7 +12,7 @@
 namespace Symfony\Component\Routing\Exception;
 
 /**
- * The resource was found but the request method is not allowed.
+ * The resources was found but the request method is not allowed.
  *
  * This exception should trigger an HTTP 405 response in your application code.
  *

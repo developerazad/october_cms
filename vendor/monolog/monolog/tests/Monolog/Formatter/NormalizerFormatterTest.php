@@ -50,7 +50,7 @@ class NormalizerFormatterTest extends \PHPUnit_Framework_TestCase
                 'foo' => '[object] (Monolog\\Formatter\\TestFooNorm: {"foo":"foo"})',
                 'bar' => '[object] (Monolog\\Formatter\\TestBarNorm: bar)',
                 'baz' => array(),
-                'res' => '[resource] (stream)',
+                'res' => '[resources] (stream)',
             ),
             'context' => array(
                 'foo' => 'bar',
@@ -375,12 +375,12 @@ class NormalizerFormatterTest extends \PHPUnit_Framework_TestCase
         });
 
         try {
-            // This will contain $resource and $wrappedResource as arguments in the trace item
+            // This will contain $resources and $wrappedResource as arguments in the trace item
             $resource = fopen('php://memory', 'rw+');
             fwrite($resource, 'test_resource');
             $wrappedResource = new TestFooNorm;
             $wrappedResource->foo = $resource;
-            // Just do something stupid with a resource/wrapped resource as argument
+            // Just do something stupid with a resources/wrapped resources as argument
             array_keys($wrappedResource);
         } catch (\Exception $e) {
             restore_error_handler();
@@ -391,7 +391,7 @@ class NormalizerFormatterTest extends \PHPUnit_Framework_TestCase
         $result = $formatter->format($record);
 
         $this->assertRegExp(
-            '%"resource":"\[resource\] \(stream\)"%',
+            '%"resources":"\[resources\] \(stream\)"%',
             $result['context']['exception']['trace'][0]
         );
 
@@ -401,7 +401,7 @@ class NormalizerFormatterTest extends \PHPUnit_Framework_TestCase
             $pattern = '%\\\\"foo\\\\":null%';
         }
 
-        // Tests that the wrapped resource is ignored while encoding, only works for PHP <= 5.4
+        // Tests that the wrapped resources is ignored while encoding, only works for PHP <= 5.4
         $this->assertRegExp(
             $pattern,
             $result['context']['exception']['trace'][0]

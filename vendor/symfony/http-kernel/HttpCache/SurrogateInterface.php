@@ -77,7 +77,7 @@ interface SurrogateInterface
     public function renderIncludeTag($uri, $alt = null, $ignoreErrors = true, $comment = '');
 
     /**
-     * Replaces a Response Surrogate tags with the included resource content.
+     * Replaces a Response Surrogate tags with the included resources content.
      *
      * @param Request  $request  A Request instance
      * @param Response $response A Response instance

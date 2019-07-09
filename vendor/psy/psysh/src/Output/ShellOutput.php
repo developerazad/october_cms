@@ -199,6 +199,6 @@ class ShellOutput extends ConsoleOutput
         $formatter->setStyle('keyword',  new OutputFormatterStyle('yellow'));
         $formatter->setStyle('comment',  new OutputFormatterStyle('blue'));
         $formatter->setStyle('object',   new OutputFormatterStyle('blue'));
-        $formatter->setStyle('resource', new OutputFormatterStyle('yellow'));
+        $formatter->setStyle('resources', new OutputFormatterStyle('yellow'));
     }
 }

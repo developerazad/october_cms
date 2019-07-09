@@ -387,8 +387,8 @@ EOF;
                 $formattedValue = '<em>null</em>';
             } elseif ('boolean' === $item[0]) {
                 $formattedValue = '<em>'.strtolower(var_export($item[1], true)).'</em>';
-            } elseif ('resource' === $item[0]) {
-                $formattedValue = '<em>resource</em>';
+            } elseif ('resources' === $item[0]) {
+                $formattedValue = '<em>resources</em>';
             } else {
                 $formattedValue = str_replace("\n", '', $this->escapeHtml(var_export($item[1], true)));
             }

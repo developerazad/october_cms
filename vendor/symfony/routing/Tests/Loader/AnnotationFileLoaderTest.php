@@ -71,10 +71,10 @@ class AnnotationFileLoaderTest extends AbstractAnnotationLoaderTest
     {
         $fixture = __DIR__.'/../Fixtures/annotated.php';
 
-        $this->assertTrue($this->loader->supports($fixture), '->supports() returns true if the resource is loadable');
-        $this->assertFalse($this->loader->supports('foo.foo'), '->supports() returns true if the resource is loadable');
+        $this->assertTrue($this->loader->supports($fixture), '->supports() returns true if the resources is loadable');
+        $this->assertFalse($this->loader->supports('foo.foo'), '->supports() returns true if the resources is loadable');
 
-        $this->assertTrue($this->loader->supports($fixture, 'annotation'), '->supports() checks the resource type if specified');
-        $this->assertFalse($this->loader->supports($fixture, 'foo'), '->supports() checks the resource type if specified');
+        $this->assertTrue($this->loader->supports($fixture, 'annotation'), '->supports() checks the resources type if specified');
+        $this->assertFalse($this->loader->supports($fixture, 'foo'), '->supports() checks the resources type if specified');
     }
 }

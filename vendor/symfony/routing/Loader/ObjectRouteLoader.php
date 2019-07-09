@@ -38,7 +38,7 @@ abstract class ObjectRouteLoader extends Loader
      * Calls the service that will load the routes.
      *
      * @param mixed       $resource Some value that will resolve to a callable
-     * @param string|null $type     The resource type
+     * @param string|null $type     The resources type
      *
      * @return RouteCollection
      */
@@ -46,7 +46,7 @@ abstract class ObjectRouteLoader extends Loader
     {
         $parts = explode(':', $resource);
         if (count($parts) != 2) {
-            throw new \InvalidArgumentException(sprintf('Invalid resource "%s" passed to the "service" route loader: use the format "service_name:methodName"', $resource));
+            throw new \InvalidArgumentException(sprintf('Invalid resources "%s" passed to the "service" route loader: use the format "service_name:methodName"', $resource));
         }
 
         $serviceString = $parts[0];
@@ -59,7 +59,7 @@ abstract class ObjectRouteLoader extends Loader
         }
 
         if (!method_exists($loaderObject, $method)) {
-            throw new \BadMethodCallException(sprintf('Method "%s" not found on "%s" when importing routing resource "%s"', $method, get_class($loaderObject), $resource));
+            throw new \BadMethodCallException(sprintf('Method "%s" not found on "%s" when importing routing resources "%s"', $method, get_class($loaderObject), $resource));
         }
 
         $routeCollection = call_user_func(array($loaderObject, $method), $this);

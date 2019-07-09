@@ -13,14 +13,14 @@ class ResourceMakeCommand extends GeneratorCommand
      *
      * @var string
      */
-    protected $name = 'make:resource';
+    protected $name = 'make:resources';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Create a new resource';
+    protected $description = 'Create a new resources';
 
     /**
      * The type of class being generated.
@@ -56,7 +56,7 @@ class ResourceMakeCommand extends GeneratorCommand
     }
 
     /**
-     * Determine if the command is generating a resource collection.
+     * Determine if the command is generating a resources collection.
      *
      * @return bool
      */
@@ -85,7 +85,7 @@ class ResourceMakeCommand extends GeneratorCommand
     protected function getOptions()
     {
         return [
-            ['collection', 'c', InputOption::VALUE_NONE, 'Create a resource collection.'],
+            ['collection', 'c', InputOption::VALUE_NONE, 'Create a resources collection.'],
         ];
     }
 }

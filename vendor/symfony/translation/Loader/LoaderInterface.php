@@ -25,14 +25,14 @@ interface LoaderInterface
     /**
      * Loads a locale.
      *
-     * @param mixed  $resource A resource
+     * @param mixed  $resource A resources
      * @param string $locale   A locale
      * @param string $domain   The domain
      *
      * @return MessageCatalogue A MessageCatalogue instance
      *
-     * @throws NotFoundResourceException when the resource cannot be found
-     * @throws InvalidResourceException  when the resource cannot be loaded
+     * @throws NotFoundResourceException when the resources cannot be found
+     * @throws InvalidResourceException  when the resources cannot be loaded
      */
     public function load($resource, $locale, $domain = 'messages');
 }

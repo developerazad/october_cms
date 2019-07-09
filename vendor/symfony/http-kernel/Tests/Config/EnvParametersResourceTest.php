@@ -48,7 +48,7 @@ class EnvParametersResourceTest extends TestCase
         $this->assertSame(
             array('prefix' => $this->prefix, 'variables' => $this->initialEnv),
             $this->resource->getResource(),
-            '->getResource() returns the resource'
+            '->getResource() returns the resources'
         );
     }
 

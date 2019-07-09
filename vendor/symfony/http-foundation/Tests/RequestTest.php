@@ -1026,7 +1026,7 @@ class RequestTest extends TestCase
     {
         $req = new Request();
         $retval = $req->getContent(true);
-        $this->assertInternalType('resource', $retval);
+        $this->assertInternalType('resources', $retval);
         $this->assertEquals('', fread($retval, 1));
         $this->assertTrue(feof($retval));
     }
@@ -1036,7 +1036,7 @@ class RequestTest extends TestCase
         $req = new Request(array(), array(), array(), array(), array(), array(), 'MyContent');
         $resource = $req->getContent(true);
 
-        $this->assertInternalType('resource', $resource);
+        $this->assertInternalType('resources', $resource);
         $this->assertEquals('MyContent', stream_get_contents($resource));
     }
 
@@ -1070,7 +1070,7 @@ class RequestTest extends TestCase
     {
         return array(
             'Resource then fetch' => array(true, false),
-            'Resource then resource' => array(true, true),
+            'Resource then resources' => array(true, true),
         );
     }
 
@@ -1099,9 +1099,9 @@ class RequestTest extends TestCase
     {
         return array(
             'Fetch then fetch' => array(false, false),
-            'Fetch then resource' => array(false, true),
+            'Fetch then resources' => array(false, true),
             'Resource then fetch' => array(true, false),
-            'Resource then resource' => array(true, true),
+            'Resource then resources' => array(true, true),
         );
     }
 

@@ -112,7 +112,7 @@ abstract class LoggerInterfaceTest extends \PHPUnit_Framework_TestCase
             'float' => 0.5,
             'nested' => array('with object' => new DummyTest),
             'object' => new \DateTime,
-            'resource' => fopen('php://memory', 'r'),
+            'resources' => fopen('php://memory', 'r'),
             'closed' => $closed,
         );
 

@@ -87,7 +87,7 @@ class Router implements RouterInterface, RequestMatcherInterface
      * Constructor.
      *
      * @param LoaderInterface $loader   A LoaderInterface instance
-     * @param mixed           $resource The main resource to load
+     * @param mixed           $resource The main resources to load
      * @param array           $options  An array of options
      * @param RequestContext  $context  The context
      * @param LoggerInterface $logger   A logger instance
@@ -116,7 +116,7 @@ class Router implements RouterInterface, RequestMatcherInterface
      *   * matcher_base_class:     The base class for the dumped matcher class
      *   * matcher_dumper_class:   The class name for the dumped matcher class
      *   * matcher_cache_class:    The name of a MatcherDumperInterface implementation
-     *   * resource_type:          Type hint for the main resource (optional)
+     *   * resource_type:          Type hint for the main resources (optional)
      *   * strict_requirements:    Configure strict requirement checking for generators
      *                             implementing ConfigurableRequirementsInterface (default is true)
      *

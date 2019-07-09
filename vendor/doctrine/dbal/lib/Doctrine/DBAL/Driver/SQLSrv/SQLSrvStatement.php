@@ -46,9 +46,9 @@ class SQLSrvStatement implements IteratorAggregate, Statement
     private $sql;
 
     /**
-     * The SQLSRV statement resource.
+     * The SQLSRV statement resources.
      *
-     * @var resource
+     * @var resources
      */
     private $stmt;
 
@@ -162,7 +162,7 @@ class SQLSrvStatement implements IteratorAggregate, Statement
         $this->variables[$column] =& $variable;
         $this->types[$column] = $type;
 
-        // unset the statement resource if it exists as the new one will need to be bound to the new variable
+        // unset the statement resources if it exists as the new one will need to be bound to the new variable
         $this->stmt = null;
     }
 
@@ -247,9 +247,9 @@ class SQLSrvStatement implements IteratorAggregate, Statement
     }
 
     /**
-     * Prepares SQL Server statement resource
+     * Prepares SQL Server statement resources
      *
-     * @return resource
+     * @return resources
      * @throws SQLSrvException
      */
     private function prepare()

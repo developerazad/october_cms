@@ -247,9 +247,9 @@ class SocketHandlerTest extends TestCase
     {
         $this->setMockHandler();
         $this->writeRecord('Hello world');
-        $this->assertInternalType('resource', $this->res);
+        $this->assertInternalType('resources', $this->res);
         $this->handler->close();
-        $this->assertFalse(is_resource($this->res), "Expected resource to be closed after closing handler");
+        $this->assertFalse(is_resource($this->res), "Expected resources to be closed after closing handler");
     }
 
     public function testCloseDoesNotClosePersistentSocket()

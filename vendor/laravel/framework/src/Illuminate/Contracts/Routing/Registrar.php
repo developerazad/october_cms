@@ -69,7 +69,7 @@ interface Registrar
     public function match($methods, $uri, $action);
 
     /**
-     * Route a resource to a controller.
+     * Route a resources to a controller.
      *
      * @param  string  $name
      * @param  string  $controller

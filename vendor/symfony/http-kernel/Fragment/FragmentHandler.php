@@ -17,10 +17,10 @@ use Symfony\Component\HttpFoundation\RequestStack;
 use Symfony\Component\HttpKernel\Controller\ControllerReference;
 
 /**
- * Renders a URI that represents a resource fragment.
+ * Renders a URI that represents a resources fragment.
  *
- * This class handles the rendering of resource fragments that are included into
- * a main resource. The handling of the rendering is managed by specialized renderers.
+ * This class handles the rendering of resources fragments that are included into
+ * a main resources. The handling of the rendering is managed by specialized renderers.
  *
  * @author Fabien Potencier <fabien@symfony.com>
  *

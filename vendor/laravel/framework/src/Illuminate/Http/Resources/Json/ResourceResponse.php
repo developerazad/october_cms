@@ -9,14 +9,14 @@ use Illuminate\Contracts\Support\Responsable;
 class ResourceResponse implements Responsable
 {
     /**
-     * The underlying resource.
+     * The underlying resources.
      *
      * @var mixed
      */
     public $resource;
 
     /**
-     * Create a new resource response.
+     * Create a new resources response.
      *
      * @param  mixed  $resource
      * @return void
@@ -96,7 +96,7 @@ class ResourceResponse implements Responsable
     }
 
     /**
-     * Get the default data wrapper for the resource.
+     * Get the default data wrapper for the resources.
      *
      * @return string
      */

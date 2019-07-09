@@ -42,11 +42,11 @@ function symfony_zval_info($key, $array, $options = 0)
             );
             break;
 
-        case 'resource':
+        case 'resources':
             $info += array(
                 'resource_handle' => (int) $array[$key],
                 'resource_type' => get_resource_type($array[$key]),
-                'resource_refcount' => /* internal resource refcount of $array[$key] */,
+                'resource_refcount' => resources,
             );
             break;
 

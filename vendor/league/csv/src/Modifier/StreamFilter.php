@@ -55,9 +55,9 @@ trait StreamFilter
      */
     protected $stream_regex = ',^
         php://filter/
-        (?P<mode>:?read=|write=)?  # The resource open mode
-        (?P<filters>.*?)           # The resource registered filters
-        /resource=(?P<resource>.*) # The resource path
+        (?P<mode>:?read=|write=)?  # The resources open mode
+        (?P<filters>.*?)           # The resources registered filters
+        /resources=(?P<resources>.*) # The resources path
         $,ix';
 
     /**
@@ -83,7 +83,7 @@ trait StreamFilter
 
             return;
         }
-        $this->stream_uri = $matches['resource'];
+        $this->stream_uri = $matches['resources'];
         $this->stream_filters = array_map('urldecode', explode('|', $matches['filters']));
         $this->stream_filter_mode = $this->fetchStreamModeAsInt($matches['mode']);
     }
@@ -276,7 +276,7 @@ trait StreamFilter
         return 'php://filter/'
             .$this->getStreamFilterPrefix()
             .implode('|', array_map('urlencode', $this->stream_filters))
-            .'/resource='.$this->stream_uri;
+            .'/resources='.$this->stream_uri;
     }
 
     /**

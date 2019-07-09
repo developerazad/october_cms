@@ -7,7 +7,7 @@ use Exception;
 trait DelegatesToResource
 {
     /**
-     * Get the value of the resource's route key.
+     * Get the value of the resources's route key.
      *
      * @return mixed
      */
@@ -17,7 +17,7 @@ trait DelegatesToResource
     }
 
     /**
-     * Get the route key for the resource.
+     * Get the route key for the resources.
      *
      * @return string
      */
@@ -84,7 +84,7 @@ trait DelegatesToResource
     }
 
     /**
-     * Determine if an attribute exists on the resource.
+     * Determine if an attribute exists on the resources.
      *
      * @param  string  $key
      * @return bool
@@ -95,7 +95,7 @@ trait DelegatesToResource
     }
 
     /**
-     * Unset an attribute on the resource.
+     * Unset an attribute on the resources.
      *
      * @param  string  $key
      * @return void
@@ -106,7 +106,7 @@ trait DelegatesToResource
     }
 
     /**
-     * Dynamically get properties from the underlying resource.
+     * Dynamically get properties from the underlying resources.
      *
      * @param  string  $key
      * @return mixed
@@ -117,7 +117,7 @@ trait DelegatesToResource
     }
 
     /**
-     * Dynamically pass method calls to the underlying resource.
+     * Dynamically pass method calls to the underlying resources.
      *
      * @param  string  $method
      * @param  array  $parameters

@@ -24,11 +24,11 @@ class ClosureLoaderTest extends TestCase
 
         $closure = function () {};
 
-        $this->assertTrue($loader->supports($closure), '->supports() returns true if the resource is loadable');
-        $this->assertFalse($loader->supports('foo.foo'), '->supports() returns true if the resource is loadable');
+        $this->assertTrue($loader->supports($closure), '->supports() returns true if the resources is loadable');
+        $this->assertFalse($loader->supports('foo.foo'), '->supports() returns true if the resources is loadable');
 
-        $this->assertTrue($loader->supports($closure, 'closure'), '->supports() checks the resource type if specified');
-        $this->assertFalse($loader->supports($closure, 'foo'), '->supports() checks the resource type if specified');
+        $this->assertTrue($loader->supports($closure, 'closure'), '->supports() checks the resources type if specified');
+        $this->assertFalse($loader->supports($closure, 'foo'), '->supports() checks the resources type if specified');
     }
 
     public function testLoad()
@@ -44,6 +44,6 @@ class ClosureLoaderTest extends TestCase
             return $routes;
         });
 
-        $this->assertEquals($route, $routes->get('foo'), '->load() loads a \Closure resource');
+        $this->assertEquals($route, $routes->get('foo'), '->load() loads a \Closure resources');
     }
 }

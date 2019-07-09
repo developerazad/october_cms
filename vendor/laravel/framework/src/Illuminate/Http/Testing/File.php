@@ -14,9 +14,9 @@ class File extends UploadedFile
     public $name;
 
     /**
-     * The temporary file resource.
+     * The temporary file resources.
      *
-     * @var resource
+     * @var resources
      */
     public $tempFile;
 

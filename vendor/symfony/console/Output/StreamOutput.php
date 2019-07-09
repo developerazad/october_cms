@@ -35,7 +35,7 @@ class StreamOutput extends Output
     /**
      * Constructor.
      *
-     * @param resource                      $stream    A stream resource
+     * @param resources                      $stream    A stream resources
      * @param int                           $verbosity The verbosity level (one of the VERBOSITY constants in OutputInterface)
      * @param bool|null                     $decorated Whether to decorate messages (null for auto-guessing)
      * @param OutputFormatterInterface|null $formatter Output formatter instance (null to use default OutputFormatter)
@@ -60,7 +60,7 @@ class StreamOutput extends Output
     /**
      * Gets the stream attached to this StreamOutput instance.
      *
-     * @return resource A stream resource
+     * @return resources A stream resources
      */
     public function getStream()
     {

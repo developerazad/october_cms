@@ -50,7 +50,7 @@ class EnvParametersResource implements SelfCheckingResourceInterface, \Serializa
     }
 
     /**
-     * @return array An array with two keys: 'prefix' for the prefix used and 'variables' containing all the variables watched by this resource
+     * @return array An array with two keys: 'prefix' for the prefix used and 'variables' containing all the variables watched by this resources
      */
     public function getResource()
     {

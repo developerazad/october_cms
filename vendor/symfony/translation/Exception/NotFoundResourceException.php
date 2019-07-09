@@ -12,7 +12,7 @@
 namespace Symfony\Component\Translation\Exception;
 
 /**
- * Thrown when a resource does not exist.
+ * Thrown when a resources does not exist.
  *
  * @author Fabien Potencier <fabien@symfony.com>
  */

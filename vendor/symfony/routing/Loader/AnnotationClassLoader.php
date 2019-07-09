@@ -96,7 +96,7 @@ abstract class AnnotationClassLoader implements LoaderInterface
      * Loads from annotations from a class.
      *
      * @param string      $class A class name
-     * @param string|null $type  The resource type
+     * @param string|null $type  The resources type
      *
      * @return RouteCollection A RouteCollection instance
      *

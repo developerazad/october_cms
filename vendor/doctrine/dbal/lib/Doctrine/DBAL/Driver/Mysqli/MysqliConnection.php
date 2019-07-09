@@ -81,7 +81,7 @@ class MysqliConnection implements Connection, PingableConnection, ServerInfoAwar
     }
 
     /**
-     * Retrieves mysqli native resource handle.
+     * Retrieves mysqli native resources handle.
      *
      * Could be used if part of your application is not using DBAL.
      *

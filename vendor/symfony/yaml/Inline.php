@@ -133,7 +133,7 @@ class Inline
      *
      * @return string The YAML string representing the PHP value
      *
-     * @throws DumpException When trying to dump PHP resource
+     * @throws DumpException When trying to dump PHP resources
      */
     public static function dump($value, $flags = 0)
     {

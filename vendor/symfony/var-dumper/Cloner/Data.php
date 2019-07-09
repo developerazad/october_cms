@@ -56,7 +56,7 @@ class Data implements \ArrayAccess, \Countable, \IteratorAggregate
             return $item->class;
         }
         if (Stub::TYPE_RESOURCE === $item->type) {
-            return $item->class.' resource';
+            return $item->class.' resources';
         }
     }
 
