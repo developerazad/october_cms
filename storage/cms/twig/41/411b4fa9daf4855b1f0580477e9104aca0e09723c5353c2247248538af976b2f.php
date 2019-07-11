@@ -39,7 +39,13 @@ class __TwigTemplate_4746ff5b124afc46bbe5a741664f4e416f524d64ae03ee12e4f6b60351b
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "theme", [], "any", false, false, false, 3), "siteName", [], "any", false, false, false, 3), "html", null, true);
         echo "</h3>
     <p class=\"text-center\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam aspernatur blanditiis consectetur, distinctio eius enim id illum impedit ipsum iure odit placeat porro sed tempora unde ut! Ex, voluptates.</p>
-</div>";
+</div>
+
+";
+        // line 7
+        $context['__cms_component_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("resourceLinks"        , $context['__cms_component_params']        );
+        unset($context['__cms_component_params']);
     }
 
     public function getTemplateName()
@@ -54,7 +60,7 @@ class __TwigTemplate_4746ff5b124afc46bbe5a741664f4e416f524d64ae03ee12e4f6b60351b
 
     public function getDebugInfo()
     {
-        return array (  39 => 3,  35 => 1,);
+        return array (  46 => 7,  39 => 3,  35 => 1,);
     }
 
     public function getSourceContext()
@@ -63,6 +69,8 @@ class __TwigTemplate_4746ff5b124afc46bbe5a741664f4e416f524d64ae03ee12e4f6b60351b
     <h2 class=\"text-center\">Welcome to Come2Learn</h2>
     <h3 class=\"text-center\">{{this.theme.siteName}}</h3>
     <p class=\"text-center\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam aspernatur blanditiis consectetur, distinctio eius enim id illum impedit ipsum iure odit placeat porro sed tempora unde ut! Ex, voluptates.</p>
-</div>", "D:\\xampp\\htdocs\\octoberCMS/themes/come2learn/pages/home.htm", "");
+</div>
+
+{% component 'resourceLinks' %}", "D:\\xampp\\htdocs\\octoberCMS/themes/come2learn/pages/home.htm", "");
     }
 }

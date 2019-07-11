@@ -12,8 +12,8 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* D:\xampp\htdocs\octoberCMS/plugins/eduonix/resources/components/links/default.htm */
-class __TwigTemplate_847c2090f67c9ef2f62a9d06e8dd32a9c5dc0f481552900f86227a6607f0be8e extends \Twig\Template
+/* D:\xampp\htdocs\octoberCMS/plugins/genex/resources/components/links/default.htm */
+class __TwigTemplate_84436339938f921fe32a61b200dfa58968fc56b0d3907764688d1562c18de53a extends \Twig\Template
 {
     private $source;
 
@@ -40,7 +40,7 @@ class __TwigTemplate_847c2090f67c9ef2f62a9d06e8dd32a9c5dc0f481552900f86227a6607f
         $context['_seq'] = twig_ensure_traversable(($context["links"] ?? null));
         foreach ($context['_seq'] as $context["_key"] => $context["link"]) {
             // line 4
-            echo "            <li class=\"list-group-item\"><a href=\"";
+            echo "        <li class=\"list-group-item\"><a href=\"";
             echo twig_escape_filter($this->env, $context["link"], "html", null, true);
             echo "\">";
             echo twig_escape_filter($this->env, $context["link"], "html", null, true);
@@ -51,13 +51,13 @@ class __TwigTemplate_847c2090f67c9ef2f62a9d06e8dd32a9c5dc0f481552900f86227a6607f
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['link'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
         // line 6
-        echo "     </ul>
+        echo "    </ul>
 </div>";
     }
 
     public function getTemplateName()
     {
-        return "D:\\xampp\\htdocs\\octoberCMS/plugins/eduonix/resources/components/links/default.htm";
+        return "D:\\xampp\\htdocs\\octoberCMS/plugins/genex/resources/components/links/default.htm";
     }
 
     public function isTraitable()
@@ -75,9 +75,9 @@ class __TwigTemplate_847c2090f67c9ef2f62a9d06e8dd32a9c5dc0f481552900f86227a6607f
         return new Source("<div class=\"links\">
     <ul class=\"list-group\">
         {% for link in links %}
-            <li class=\"list-group-item\"><a href=\"{{ link }}\">{{ link }}</a></li>
+        <li class=\"list-group-item\"><a href=\"{{ link }}\">{{ link }}</a></li>
         {% endfor %}
-     </ul>
-</div>", "D:\\xampp\\htdocs\\octoberCMS/plugins/eduonix/resources/components/links/default.htm", "");
+    </ul>
+</div>", "D:\\xampp\\htdocs\\octoberCMS/plugins/genex/resources/components/links/default.htm", "");
     }
 }

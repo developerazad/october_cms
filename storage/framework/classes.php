@@ -29,4 +29,6 @@
   'system\\Controllers\\mailtemplates' => 'modules\\system\\controllers\\mailtemplates.php',
   'eduonix\\resources\\Plugin' => 'plugins\\eduonix\\resources\\Plugin.php',
   'Eduonix\\Resources\\Components\\Links' => 'plugins\\eduonix\\resources\\components\\Links.php',
+  'genex\\resources\\Plugin' => 'plugins\\genex\\resources\\Plugin.php',
+  'Genex\\Resources\\Components\\Links' => 'plugins\\genex\\resources\\components\\Links.php',
 );
